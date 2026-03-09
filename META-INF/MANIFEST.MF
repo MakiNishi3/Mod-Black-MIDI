@@ -1,0 +1,1076 @@
+Manifest-Version: 1.0
+Built-By: Generated-by-ADT
+Created-By: Android Gradle 3.5.0
+
+Name: assets/graphics/ui_window_overlay2@2x.tga
+SHA1-Digest: +vbQeCLG3BrSZRHMMv0697x3ijY=
+
+Name: res/layout/notification_action.xml
+SHA1-Digest: xnxIzt+kYeaDjWdqvvvDJTsvrOw=
+
+Name: assets/graphics/playOffLeft@2x.tga
+SHA1-Digest: SWbmRvDp42mvo9dnfk5ZpNra8P0=
+
+Name: assets/graphics/ui_window_arrow_o1.tga
+SHA1-Digest: 0Ac578Vye1tHOfMQcnxJIki8g50=
+
+Name: lib/armeabi-v7a/libbassmidi.so
+SHA1-Digest: FLVHsqsJlaHUg6JJJqA4i0GWs+s=
+
+Name: assets/graphics/interface_clear_search.tga
+SHA1-Digest: +n15Hov9Coi68OJsFHWWD/1M6IQ=
+
+Name: assets/graphics/fingering_hand_left.tga
+SHA1-Digest: logr0k1SvkSns1jKTwni8OeEUN4=
+
+Name: assets/graphics/interface_icon_question@2x.tga
+SHA1-Digest: zlUXHtFXvU3mwHCwF3bPfPxoYOY=
+
+Name: assets/graphics/ui_popup_arrow@2x.tga
+SHA1-Digest: sCJ6RMb0yNBPOwAAs4fApGwaytg=
+
+Name: assets/graphics/play_Notes@2x.tga
+SHA1-Digest: HB2kGVkmP0CoUZWZQ0fHwKvbF10=
+
+Name: assets/songs/music.zip
+SHA1-Digest: NiKZAs1AxMKuBOyyHeTAjsZgzmA=
+
+Name: res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png
+SHA1-Digest: 9MYmMKRnfwttaoRGc1WDg0jzgyY=
+
+Name: assets/graphics/interface_stop.tga
+SHA1-Digest: h03j303MP9gRuPyLeIRHMqJ/TuM=
+
+Name: assets/graphics/play_KeyHaze.tga
+SHA1-Digest: RytuNWe6HVvUl1A83byRuBaDYds=
+
+Name: assets/graphics/interface_hand@2x.tga
+SHA1-Digest: b83RBROMqo4m0ElVeZcV7svTHkY=
+
+Name: assets/graphics/interface_notation_zoom_plus@2x.tga
+SHA1-Digest: FJpRAx9YC/ZRl6/+ipEL/RNnRUM=
+
+Name: res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png
+SHA1-Digest: cz2cTpSbxUR34pkCMo3M7a+mSXk=
+
+Name: assets/graphics/ui_window_arrow@2x.tga
+SHA1-Digest: OaofPx6DG3EoHCJqe7SbGe/iwu0=
+
+Name: assets/graphics/slider_RatingSelected.tga
+SHA1-Digest: shB/Pv9OXT6WmBJEZB2LWUxNk1Q=
+
+Name: res/layout-v17/notification_action.xml
+SHA1-Digest: /iIWojZ/hv/HRW3lsWlF/UWaqUA=
+
+Name: assets/graphics/interface_hand.tga
+SHA1-Digest: 6DbQIKWDEz+Kcp2SIE+5XErXNZE=
+
+Name: assets/graphics/interface_part_left.tga
+SHA1-Digest: raLMfa6jF9brDiEDYTJTAzaN2cE=
+
+Name: assets/settings/folders.xml
+SHA1-Digest: smAd5eG8Aw+sNOHmkDjZxmlU/ac=
+
+Name: assets/songs/beat44_rock1.mid
+SHA1-Digest: Tnhjnroi/HF4yAAOz52rPuwRKyQ=
+
+Name: res/drawable/notification_bg_low.xml
+SHA1-Digest: xIXdrlzpZj14pXuCzJ8SLjb+wSg=
+
+Name: assets/graphics/interface_track_split@2x.tga
+SHA1-Digest: fYUgbUHOYNvIK48eOOpXEhx4zBA=
+
+Name: assets/graphics/newsMusic@2x.tga
+SHA1-Digest: HFLAGsJsxYxXfP/4ijUvPtOScJU=
+
+Name: assets/graphics/slider_Volume@2x.tga
+SHA1-Digest: BH41qqvI56lRpTv8a/qhRb2WfDo=
+
+Name: assets/songs/previewMozart.mid
+SHA1-Digest: CP1olbTceLQGl2HD/pqsOF2tssE=
+
+Name: assets/graphics/title_Logo@2x.tga
+SHA1-Digest: uDsxiDx/6lSfawYbYeQfsLvvHx8=
+
+Name: assets/settings/metadata_exercises.xml
+SHA1-Digest: whUOlicCsT4bjrElhUKvcxw4bu8=
+
+Name: res/mipmap-hdpi-v4/ic_launcher.png
+SHA1-Digest: SJKdFBDiW865fdYNpIq/uveSwNs=
+
+Name: assets/graphics/play_Crosshair@2x@2x.tga
+SHA1-Digest: oheND0DjhUZQ7JDXWiecZDSJ3tM=
+
+Name: res/layout/notification_template_part_chronometer.xml
+SHA1-Digest: UY4J/Idje1kIXTDwiAwhZC3nn0Y=
+
+Name: assets/graphics/notation.tga
+SHA1-Digest: up+GSatWpWEenSe9IlDMZ89DhVg=
+
+Name: res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png
+SHA1-Digest: qf8Bo3OrZFOkS8OQT2FTwy3VSA8=
+
+Name: resources.arsc
+SHA1-Digest: GyQzxMF8pmb6KGXl4rcBwG+eVy0=
+
+Name: assets/graphics/interface_speaker_off.tga
+SHA1-Digest: bRKRIu6mEhAsuPOgJPSfnnr+myw=
+
+Name: assets/graphics/newsMusic.tga
+SHA1-Digest: /ywnUvtwSiLs6JLOKGjZXWu/UJk=
+
+Name: assets/graphics/interface_loop@2x.tga
+SHA1-Digest: raHTLap1e67upteCuJnr9dmaQ/Q=
+
+Name: assets/graphics/play_NextNote@2x.tga
+SHA1-Digest: Dtiy8J02fScjfyAUaiV38T7osGQ=
+
+Name: assets/graphics/simple_hand_left.tga
+SHA1-Digest: 4tuwh/sxxuN9vvefXrrQHG7ckZs=
+
+Name: assets/graphics/interface_icon_exclamation.tga
+SHA1-Digest: a1ToYW1X/pkECy5QdD907t1t2uk=
+
+Name: AndroidManifest.xml
+SHA1-Digest: 6m9EMjcNQcsPlTD0MBnx2vDRj5E=
+
+Name: assets/graphics/device_disconnect.tga
+SHA1-Digest: 5tnEnK1IofCA/fRXimk1Z6KL6RQ=
+
+Name: assets/graphics/interface_icon_exclamation@2x.tga
+SHA1-Digest: Wcx6t9JIYkMDQpPzSeNEFJK/nTw=
+
+Name: assets/graphics/interface_track_split.tga
+SHA1-Digest: +IX064dQO4kQL8nnSBPRXUJe9tQ=
+
+Name: assets/graphics/ui_breadcrumb_arrow@2x.tga
+SHA1-Digest: ccJBEmjHTIiFvjM734mPUzPBz8M=
+
+Name: assets/graphics/play_KeysBlack_o2.tga
+SHA1-Digest: RTRqKCGcdbepCZGF2B35DgjWgV0=
+
+Name: assets/graphics/ui_breadcrumb_arrow.tga
+SHA1-Digest: wQWdwbM/d+JqpRQSA0VlZMY6F9k=
+
+Name: META-INF/androidx.lifecycle_lifecycle-runtime.version
+SHA1-Digest: OGGiGAP82euSpAMCew2iu3rdTeE=
+
+Name: assets/graphics/instruments.tga
+SHA1-Digest: 58P7z/qaN6N179KKutOopq6UByY=
+
+Name: assets/graphics/ui_window_arrow_o2@2x.tga
+SHA1-Digest: LWcwr9j8Dze4zevU2cZpGMriHk8=
+
+Name: assets/graphics/interface_settings@2x.tga
+SHA1-Digest: pHiV7rhS9oquwF6XSbJ3haXoelE=
+
+Name: assets/graphics/slider_Scrubber@2x.tga
+SHA1-Digest: ZGuBt1dJvRNapeBAXiEu4cftFOM=
+
+Name: res/xml/network_security_config.xml
+SHA1-Digest: hC/uTfk5VV4+nxXYvO41gPEuoJs=
+
+Name: assets/graphics/ui_window_settings_o2@2x.tga
+SHA1-Digest: KpW7FzCJ+nW08esbExPdwjEEcr0=
+
+Name: assets/graphics/interface_sheet@2x.tga
+SHA1-Digest: mJaN0dZNiQH3pWzafEVA4gSE+8E=
+
+Name: assets/graphics/simple_keyboard_right@2x.tga
+SHA1-Digest: VgpzyLDu6iL66q3Rn7P2AAvXJkk=
+
+Name: assets/graphics/interface_globe@2x.tga
+SHA1-Digest: VhUc91N6USXoUup/6wWKFLSu/Vo=
+
+Name: assets/graphics/interface_record@2x.tga
+SHA1-Digest: 7e612ggjb/H0FL8bU/ftkkEJZ/s=
+
+Name: assets/graphics/interface_user_silhouette.tga
+SHA1-Digest: 3AbLLcB1wMwF+PyqQyZGMw7HJz4=
+
+Name: assets/graphics/ui_timeline_block.tga
+SHA1-Digest: FYTgLs+MLxdsnFou0W/oPcFIa70=
+
+Name: assets/graphics/interface_icon_question.tga
+SHA1-Digest: yYryTjbbYOhz3OkQkqse0xtTr0Q=
+
+Name: res/layout-v22/activity_text.xml
+SHA1-Digest: qKsgxlXiJpkHviDAr2daOapta44=
+
+Name: assets/settings/language_sl.xml
+SHA1-Digest: 3B/zezguQrSdRI46lSzyWLGOHpI=
+
+Name: assets/graphics/newsDownload.tga
+SHA1-Digest: A0/UEaL5XZ7g/UlQj0xu1G+QXQY=
+
+Name: assets/graphics/newsGuide@2x.tga
+SHA1-Digest: weOyO7p12mlKqPk+14NrRZmQXO0=
+
+Name: assets/settings/colors.xml
+SHA1-Digest: mBe9ICPzBvJmxxbDUSjbQpJrtis=
+
+Name: res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png
+SHA1-Digest: cuJ+cwlm5QO6frAFAjbS9w6zhJ4=
+
+Name: assets/graphics/simple_shadow_left.tga
+SHA1-Digest: JosMYoPk0M1gXyIN/VCMa5KXfDQ=
+
+Name: assets/graphics/ui_track_box@2x.tga
+SHA1-Digest: TSzJw8yQWui4u6LggVU5pn7rzd8=
+
+Name: res/drawable-xhdpi-v4/notification_bg_low_normal.9.png
+SHA1-Digest: dnObiFrk1DvtR5VGgJWQwE6oNeo=
+
+Name: assets/graphics/interface_next_bookmark.tga
+SHA1-Digest: OSSVR3RRIFZwoSfO2vGvklqd5vo=
+
+Name: assets/graphics/interface_plus@2x.tga
+SHA1-Digest: I1qRVGqCa2aHKNRFQx1tjyVdGK4=
+
+Name: assets/graphics/fingering_burst.tga
+SHA1-Digest: 5owBW/+pYbFtKmwIVjOUzh9t/D8=
+
+Name: assets/graphics/slider_DifficultyBackground.tga
+SHA1-Digest: uxmO7HTrAaC9gzpYFXZdBZt9X5I=
+
+Name: assets/graphics/play_KeysBlack_o2@2x.tga
+SHA1-Digest: oW9P7/9ZsbjTdmes8C9VGV+JnyA=
+
+Name: assets/graphics/simple_shadow_right.tga
+SHA1-Digest: bAOgFwEmEcSakPyiqDwQzuucSWI=
+
+Name: assets/graphics/playOffLeft.tga
+SHA1-Digest: bOLJnUq9t447W/TRp7R+YqJvtog=
+
+Name: assets/graphics/gradientDown.tga
+SHA1-Digest: 4VN2APWjpdcrvPJ4mHZU6TU1VYc=
+
+Name: res/layout/custom_dialog.xml
+SHA1-Digest: LPI2LaXwMqoid1VOXOaZJZOVS/U=
+
+Name: assets/graphics/interface_metronome@2x.tga
+SHA1-Digest: dU6gGg1TtjChwJkdfWoN2BeBt4s=
+
+Name: assets/graphics/slider_DifficultySelected@2x@2x.tga
+SHA1-Digest: r/07H6akZ1QOnm1ReriZOp5AXl0=
+
+Name: res/mipmap-xxxhdpi-v4/ic_launcher_foreground.png
+SHA1-Digest: hXM6J6x5YcivPeNDqDR1dsHsaok=
+
+Name: assets/graphics/playOffRight.tga
+SHA1-Digest: B1cGpj4PFnRDYTQomPqYFV8BbDU=
+
+Name: assets/graphics/simple_keyboard_left.tga
+SHA1-Digest: XPEXe/O0XV0eXrUvGmxXhxTmdKQ=
+
+Name: assets/graphics/ui_window_sunken_o1@2x.tga
+SHA1-Digest: RI+7n1xDitdHRzvFfQnHrTz1BDI=
+
+Name: res/drawable/notification_icon_background.xml
+SHA1-Digest: 6+9HRP9LkFZ3D64FRz0rkbD0PgM=
+
+Name: assets/graphics/play_Bookmark@2x.tga
+SHA1-Digest: Kxx/hMXDJRUCaKL9NMxWTfNpYog=
+
+Name: assets/graphics/play_Crosshair@2x.tga
+SHA1-Digest: 4NYw1Ifp1yZ9mbzVgjNQyzyUNkY=
+
+Name: res/mipmap-xxxhdpi-v4/ic_launcher_round.png
+SHA1-Digest: XuEXwzXms0p1ZReoGmHeKEKlJs0=
+
+Name: assets/graphics/interface_plus.tga
+SHA1-Digest: W6s+IWDSzc9XRUY5QfdID5MUHh0=
+
+Name: assets/graphics/datagrid_ascending@2x.tga
+SHA1-Digest: HFUKrp39InFPbbkb8WwQqxKsf2w=
+
+Name: assets/graphics/interface_minus.tga
+SHA1-Digest: T7VrvBU8t9kYF71ncCjNX/4Ge60=
+
+Name: assets/graphics/ui_groupedTable_disclosure.tga
+SHA1-Digest: A9Qkio4IS37UiMrQrvISjDrmJ4g=
+
+Name: assets/graphics/ui_window_segment.tga
+SHA1-Digest: u2vnaaH3TEOJRcKszWJdEzjcb20=
+
+Name: assets/graphics/play_Measure.tga
+SHA1-Digest: E5pQv/c1FAKRa+fomUFXbOjBap8=
+
+Name: res/drawable/notification_bg.xml
+SHA1-Digest: aDqPG2lrxlWZ5HG74OGPBXsjF2E=
+
+Name: assets/graphics/interface_icon_information@2x.tga
+SHA1-Digest: NSH8zzmTt/1fRmzSBg9lzZKxMIA=
+
+Name: assets/graphics/ui_window_segment_down.tga
+SHA1-Digest: u2vnaaH3TEOJRcKszWJdEzjcb20=
+
+Name: assets/graphics/fingering_hand_right@2x.tga
+SHA1-Digest: Ux2CXkyNy/BhQvspgJIRHzlFCFA=
+
+Name: assets/graphics/interface_bookmark_edit.tga
+SHA1-Digest: /Lk+E6TpG546//m9La08tVbla78=
+
+Name: res/mipmap-anydpi-v26/ic_launcher_round.xml
+SHA1-Digest: 9j7mkUK2orMDbvvVrLjHFGMYDh8=
+
+Name: assets/graphics/slider_DifficultySelected.tga
+SHA1-Digest: 4qMGlAYtZq6YA76Nzr/p8IrOoMc=
+
+Name: assets/graphics/ui_timeline_stripe.tga
+SHA1-Digest: HebY9/csYhpsdkFsV2eSCatxqcQ=
+
+Name: assets/graphics/interface_progress.tga
+SHA1-Digest: YeMtrEpUEaQqZ0D7Vd9loXeNpmQ=
+
+Name: assets/graphics/play_KeysWhite@2x.tga
+SHA1-Digest: cORpesgMSyrHAkpK6s9jHqVTDmI=
+
+Name: assets/settings/language_pl.xml
+SHA1-Digest: 2BG7A7lhj4irY+rJ8nVumey1j9I=
+
+Name: assets/graphics/fingering_remove.tga
+SHA1-Digest: OyrKm0pm0NFgFPtpGLw0SCHDoCc=
+
+Name: assets/graphics/play_Bookmark.tga
+SHA1-Digest: ZLboHR6VknWncZAlzNskkK7+Ojw=
+
+Name: res/drawable-mdpi-v4/notification_bg_low_normal.9.png
+SHA1-Digest: sUXBSDmIwrVhXMAYtsmpMAdZsVM=
+
+Name: lib/armeabi-v7a/libsynthesia.so
+SHA1-Digest: T7YRhBM/O7jdrs1Wb6HxGUleo1k=
+
+Name: res/mipmap-xhdpi-v4/ic_launcher_foreground.png
+SHA1-Digest: suWYjNgNXiea7xchkuvvgEyE6ao=
+
+Name: assets/graphics/interface_settings.tga
+SHA1-Digest: 5St54fEG5TUYtpvMLVyU8pJ7Ebc=
+
+Name: assets/graphics/interface_speaker_off@2x.tga
+SHA1-Digest: ubhqDzDxPVLmBLqG6DI8EAXwjYs=
+
+Name: assets/graphics/play_Notes.tga
+SHA1-Digest: 7YrY3gRvokZ9NLHXpHso0Ku1S3M=
+
+Name: assets/graphics/ui_track_box.tga
+SHA1-Digest: y+Ihu/5clduR2IwUV4yhr/QXCWU=
+
+Name: assets/settings/language_ru.xml
+SHA1-Digest: qfQiM42l/1meXH3tRZCVLuD98B0=
+
+Name: assets/graphics/ui_timeline_base@2x.tga
+SHA1-Digest: HszzNFzBScZHBUxD02FBguN0Rr0=
+
+Name: assets/settings/language_it.xml
+SHA1-Digest: OBhaYBlCFWKbuGJB5iB9+0vXPS8=
+
+Name: assets/graphics/slider_RatingSelected@2x.tga
+SHA1-Digest: aWRs7tChftk/PYQbVoBUbVd5Iec=
+
+Name: res/layout/notification_template_part_time.xml
+SHA1-Digest: w5hsoFVus+oID5nD1mTLuqw2214=
+
+Name: assets/graphics/ui_header_partition@2x.tga
+SHA1-Digest: RfePDSBFARKQw5tH225FPi8xzLk=
+
+Name: assets/graphics/interface_share.tga
+SHA1-Digest: WTpZX0mx1jlfRAnTYNbQua/y4pk=
+
+Name: assets/graphics/slider_ScrubberSplitter.tga
+SHA1-Digest: xUAKeMS3xUMpKSdseCCkS9rn2qg=
+
+Name: assets/graphics/fingering_hand_left@2x.tga
+SHA1-Digest: ZgHSE6Q9POsDD43n32RaURMRebs=
+
+Name: assets/graphics/interface_user_silhouette@2x.tga
+SHA1-Digest: kjnJX5PwitRZEiqNCEfrtQ1hfBg=
+
+Name: assets/graphics/simple_hand_right@2x.tga
+SHA1-Digest: fh4gMLCP7zkglb9iZwazTkYpVso=
+
+Name: assets/graphics/ui_timeline_loop.tga
+SHA1-Digest: rM9ogL/w6owb3NkpNoaunqngoRk=
+
+Name: assets/graphics/ui_window_arrow_o1@2x.tga
+SHA1-Digest: cIveKkVNxtv29qsz9PThYKpqfjA=
+
+Name: assets/graphics/datagrid_descending@2x.tga
+SHA1-Digest: E+Le2aA1WGD2bxS6SVbMuuD3o9c=
+
+Name: assets/settings/languages.xml
+SHA1-Digest: 9jSYSyjBxgMTR+Wdj1ruq+POt1Q=
+
+Name: res/drawable-mdpi-v4/notification_bg_normal.9.png
+SHA1-Digest: Wl4jBkhtPS9E+JkWaS0GOyoMbuw=
+
+Name: res/mipmap-xhdpi-v4/ic_launcher.png
+SHA1-Digest: G2fssqui0ylx/OFUVnkAm7+4hfE=
+
+Name: res/layout-v17/notification_action_tombstone.xml
+SHA1-Digest: zvpEh2NLD/9F6J5oT5kV5eO+hZ0=
+
+Name: assets/graphics/ui_scrollbar@2x.tga
+SHA1-Digest: 2RdOjiVMa9aV8nZHkmYChRhfTqA=
+
+Name: assets/graphics/ui_window_segment_down_o2.tga
+SHA1-Digest: hNPsAXB+o3+dFH8jcwxrtW26X9c=
+
+Name: res/mipmap-xxhdpi-v4/ic_launcher_round.png
+SHA1-Digest: WV2wc2Qy3uPLr4Nl+D/T+WCOzPI=
+
+Name: assets/graphics/simple_hand_left@2x.tga
+SHA1-Digest: 1tE+56Avn+05GdC2ReuixfPVYUY=
+
+Name: assets/graphics/interface_palette@2x.tga
+SHA1-Digest: kdUwpUQNPeeDgC8txRqCIXhXijw=
+
+Name: res/drawable-hdpi-v4/notification_bg_low_normal.9.png
+SHA1-Digest: D2PhKM51tYZo8a79riJ3XiUD2nc=
+
+Name: assets/graphics/interface_part_right@2x.tga
+SHA1-Digest: R1X8NuR+8c4j1hQaEpWsMmDlS4I=
+
+Name: assets/graphics/interface_volume_high@2x.tga
+SHA1-Digest: rafr2G1LLGRl+RTwtV4b72sTCGA=
+
+Name: res/layout-v21/notification_template_custom_big.xml
+SHA1-Digest: CNAzgGV0YLSZyADb+vTJWIt9IC4=
+
+Name: assets/graphics/interface_notes_hidden@2x.tga
+SHA1-Digest: 66hi7kF3GWinmf9WUlJ807B9PVM=
+
+Name: assets/graphics/interface_speaker_on@2x.tga
+SHA1-Digest: BZGzMho9xcmdpPrt+yFHZ5cik/Y=
+
+Name: assets/settings/ui.xml
+SHA1-Digest: ylT48p2QHBZCDdJdCZ3YyqR5eCQ=
+
+Name: assets/graphics/play_KeysBlack@2x.tga
+SHA1-Digest: 7dOwGNX8Ch4Eeo87fwas5WtqrFU=
+
+Name: assets/graphics/ui_window_segment_o1@2x.tga
+SHA1-Digest: cEl+JpIK7xjJz+LcTdHDMJoZ/kQ=
+
+Name: assets/graphics/ui_window_segment_down_o1@2x.tga
+SHA1-Digest: FTa/M3xcUDOPhvIWlT9KHHulh/8=
+
+Name: assets/songs/beat34_rockWaltz1.mid
+SHA1-Digest: B61/JqapReK8NPj4oPbFQXHad5M=
+
+Name: assets/graphics/slider_RatingBackground@2x.tga
+SHA1-Digest: qRapjfD9yrqhDv+MeamO07cQdnk=
+
+Name: assets/graphics/interface_volume_high.tga
+SHA1-Digest: hc9zD6ViIwvB6Eb82YWZ+r3cJK0=
+
+Name: assets/graphics/slider_Volume.tga
+SHA1-Digest: AMf4luQjiedj5yfZ6sLR2hu729A=
+
+Name: assets/graphics/interface_minus@2x.tga
+SHA1-Digest: RyYS38MePA2b1y65homd4p9PaRE=
+
+Name: assets/graphics/newsInfo@2x.tga
+SHA1-Digest: rjQrGI6oKBv0vUgELP8ktAwwqMA=
+
+Name: assets/graphics/interface_stopwatch.tga
+SHA1-Digest: 8BgZMAnY9X4ZCxgTtcYfU9MhMSw=
+
+Name: res/mipmap-xxxhdpi-v4/ic_launcher.png
+SHA1-Digest: 488Q5l6ExdwdtJkGK6y/Frm9GhI=
+
+Name: assets/graphics/interface_trash.tga
+SHA1-Digest: IiDvrpJklj6kMGdSLwF6cdJSMkQ=
+
+Name: assets/graphics/slider_RatingBackground@2x@2x.tga
+SHA1-Digest: E2imqsZkB0+g69mIC5qqoKL9jFs=
+
+Name: assets/graphics/slider_ScrubberSplitter@2x.tga
+SHA1-Digest: 42cvB64iAdA0ygMJkyoGIm96XQA=
+
+Name: assets/graphics/ui_groupedTable_checkmark@2x.tga
+SHA1-Digest: 5p5GfAFMKEJ8+Gn+q5t4vhgEr+A=
+
+Name: assets/graphics/play_KeysBlack_o1.tga
+SHA1-Digest: fqhfjL61Sm5FOzmnH0J/onho35k=
+
+Name: assets/graphics/interface_sheet.tga
+SHA1-Digest: D0B0yFLkcWF19OHpl3+bWNiEISE=
+
+Name: assets/graphics/interface_notation_zoom_minus@2x.tga
+SHA1-Digest: tuDk7fCStG27obrM9p0aiW52KtI=
+
+Name: assets/graphics/play_KeyDebris.tga
+SHA1-Digest: oqf3zT+LojQgLZPUWuMbE55IyDs=
+
+Name: assets/graphics/ui_window_sunken.tga
+SHA1-Digest: GAibTXLvSH87I4meqrPzMqslCVU=
+
+Name: assets/settings/default_bindings.xml
+SHA1-Digest: p9s0yxTGkW3O5dybzAJzjKtPXMI=
+
+Name: res/drawable-xhdpi-v4/notification_bg_normal.9.png
+SHA1-Digest: URz3Lz/tIjMAtXfNHimWcDQLTtQ=
+
+Name: res/layout/notification_template_icon_group.xml
+SHA1-Digest: X/TDls8oNiZf1k9xwvPgZuqCn/c=
+
+Name: assets/settings/language_fr.xml
+SHA1-Digest: q5bvuCk1MAqqchflzAZGUMKNX30=
+
+Name: assets/graphics/simple_shadow_left@2x.tga
+SHA1-Digest: h+yDmpiagmzOXJaCNkgWiRHKq24=
+
+Name: assets/graphics/ui_scrollbar.tga
+SHA1-Digest: wo3dRAvHQvW4Pvyp6IqYlCVOP1E=
+
+Name: assets/graphics/interface_stop@2x.tga
+SHA1-Digest: fTlA/nPlPr3OytkToFedEx2R8Ns=
+
+Name: assets/graphics/ui_window_overlay1@2x.tga
+SHA1-Digest: CuA9ZidhgVtNLjnleqj63bcHet0=
+
+Name: assets/graphics/interface_icon_information.tga
+SHA1-Digest: HhXEStcIN7DYjr9Yq4L3eP0Ur5k=
+
+Name: assets/graphics/ui_keyboard_drag.tga
+SHA1-Digest: kaK26fi30OqL3+M0/6cmIBKrk60=
+
+Name: assets/graphics/ui_window_arrow.tga
+SHA1-Digest: 46osjucCbmwZKR/p3iNHhP3ajOY=
+
+Name: assets/graphics/interface_part_left@2x.tga
+SHA1-Digest: TGgNeLZCydQM8w93aoXh+SW/JWY=
+
+Name: assets/graphics/ui_groupedTable_lock.tga
+SHA1-Digest: zPBP2UqWr/uAkPtzx3jmpyyF9sg=
+
+Name: assets/graphics/interface_lightning@2x.tga
+SHA1-Digest: FBErQH/xU1dQCOGxms+joeh9720=
+
+Name: assets/graphics/ui_window_settings.tga
+SHA1-Digest: J4zjhh+TVoar7FDmTBy2tOqJpgw=
+
+Name: assets/graphics/simple_hand_right.tga
+SHA1-Digest: sAp2SOzixEEdGTzWn2Lvf/fWH80=
+
+Name: assets/songs/beat44_rockOff.mid
+SHA1-Digest: iEnTfBtcD4qEQgd7fw9wyEn3oTE=
+
+Name: assets/settings/language_pt.xml
+SHA1-Digest: mqm185TQD8o9zcnbtAPdC+JwcO8=
+
+Name: assets/graphics/ui_window_segment_o2@2x.tga
+SHA1-Digest: 3NprFUglKQs65LgtdHkTgBr3kNY=
+
+Name: assets/settings/language.xml
+SHA1-Digest: 5Y+PE+6toJFq7686IN8LuL9JrYg=
+
+Name: assets/graphics/gradientRight.tga
+SHA1-Digest: 5zpgQZx/2LQyuoMPDUMt82AVrho=
+
+Name: assets/graphics/interface_share@2x.tga
+SHA1-Digest: 9ZvadiDjlQq9BGCkmY8487HMOUU=
+
+Name: assets/graphics/ui_window_sunken_o1.tga
+SHA1-Digest: e+4NhXyr5xwQHDioaQPnsM8q7zQ=
+
+Name: res/layout/activity_readme.xml
+SHA1-Digest: f7aUHNxOIPBd6iBe8OkHag3Zvj0=
+
+Name: res/layout/activity_text.xml
+SHA1-Digest: IwdH4+Cc78lUhBZada3/6T8NB9U=
+
+Name: assets/settings/metadata_gmajor.xml
+SHA1-Digest: nt1DBgupf33E2VMHPwlft9VWVQ8=
+
+Name: assets/graphics/ui_timeline_stripe@2x.tga
+SHA1-Digest: VDuY97Mjs5fqgFltqwQ5Go8ub1M=
+
+Name: assets/graphics/ui_timeline_base.tga
+SHA1-Digest: TyDKYI4ssg57WJuOtrCLmUvXu+A=
+
+Name: res/xml/device_filter.xml
+SHA1-Digest: 8RIjty8mZQJ9NIyAIssQCSlH0nY=
+
+Name: assets/graphics/ui_groupedTable_disclosure@2x.tga
+SHA1-Digest: b4CJCqUUO6LCXyv4wbcLGZ6X+Q8=
+
+Name: assets/graphics/slider_Scrubber.tga
+SHA1-Digest: 1z2Khg0CVhXwIM2nKkdfsyKsYew=
+
+Name: assets/graphics/interface_trash@2x.tga
+SHA1-Digest: jjBSHIbuT03ScwvbKLP912MPqhs=
+
+Name: assets/graphics/ui_window_overlay1.tga
+SHA1-Digest: oGxQcZqWnFwqIunlvHpDrqIRDB8=
+
+Name: assets/graphics/ui_window_sunken@2x.tga
+SHA1-Digest: O0JwzZGq22Zn/AQmHOxJbjkzepQ=
+
+Name: assets/graphics/play_KeysBlack.tga
+SHA1-Digest: QQ4WNnAQyb/GGo3UR0j9EV0Fprc=
+
+Name: assets/graphics/interface_notes_hidden.tga
+SHA1-Digest: NSyif7kwRtUW5qCiQ6X3clHYOcY=
+
+Name: assets/graphics/newsDownload@2x.tga
+SHA1-Digest: nAgqGO5T2U5Cr7WLTTvRMH5W1dM=
+
+Name: assets/graphics/lock_open@2x.tga
+SHA1-Digest: Njq93Z0tPAlcc9CbZxfHA+FRbWU=
+
+Name: res/mipmap-mdpi-v4/ic_launcher_round.png
+SHA1-Digest: Cra0nnt7GYbmqOk8C5jGVXsyeQE=
+
+Name: assets/graphics/ui_datagrid_row@2x.tga
+SHA1-Digest: O8Go3tjv+x0io7DAx3WpQoY5lwI=
+
+Name: assets/graphics/ui_window_settings_o1@2x.tga
+SHA1-Digest: 2UCONP8IUmwrNdUx83S421FGfrw=
+
+Name: assets/graphics/interface_speaker_on.tga
+SHA1-Digest: XgCLMPWLWWeaAhi5SOB5Dr4VtOs=
+
+Name: assets/graphics/interface_loop.tga
+SHA1-Digest: +bDGlUvOgDlZr1yQTVnnqYECsf8=
+
+Name: assets/graphics/slider_DifficultyBackground@2x.tga
+SHA1-Digest: Y8G3GrqtGdCnmbdLfgtxQn+4rU0=
+
+Name: assets/graphics/interface_metronome.tga
+SHA1-Digest: 5+qhd3n+5s0OS/+AEngpoqJlmqE=
+
+Name: assets/graphics/ui_window_segment_down_o1.tga
+SHA1-Digest: GdCj11G7yJDhaDYXyoM/mhbwHmo=
+
+Name: assets/graphics/interface_notation_zoom_minus.tga
+SHA1-Digest: zawl/KzFM1+INOnHtRD1Rt9YYME=
+
+Name: assets/graphics/simple_keyboard_left@2x.tga
+SHA1-Digest: 6HjLpLHpqluRVEG4CGkPPkaeKOE=
+
+Name: assets/settings/language_zh.xml
+SHA1-Digest: 6mfbdpHtTvHR8FvvCKXv6oDKcUQ=
+
+Name: assets/graphics/slider_DifficultyBackground@2x@2x.tga
+SHA1-Digest: +0x9/bG2kn0RbwGJ7H6x32zuLFI=
+
+Name: assets/graphics/ui_popup_arrow.tga
+SHA1-Digest: Vmip4YHrO4qDE6dhMut2PS9zSnk=
+
+Name: assets/graphics/ui_timeline_overlay.tga
+SHA1-Digest: a/LtrasXUOehS8AuEPrqAEUt04s=
+
+Name: assets/songs/beat34_rockWaltz2.mid
+SHA1-Digest: 186ueaGykmaEQtWGXZpkh26htB0=
+
+Name: assets/graphics/datagrid_ascending.tga
+SHA1-Digest: 8QPSYWccHKEuUbUXypE2QFlKg58=
+
+Name: res/mipmap-hdpi-v4/ic_launcher_foreground.png
+SHA1-Digest: jGnzPd0LCLNeaKPia69Mwo5PDFU=
+
+Name: res/mipmap-mdpi-v4/ic_launcher.png
+SHA1-Digest: U5W+9QUus+avssr2y2HOJ6OUY70=
+
+Name: assets/graphics/play_KeyDebris@2x.tga
+SHA1-Digest: RB9mPOyo3xH4QFP8QRB68i26pMQ=
+
+Name: assets/graphics/ui_groupedTable_checkmark.tga
+SHA1-Digest: 4eNyVn9uVVKlkHU6O9Up7v5lv6E=
+
+Name: assets/graphics/ui_window@2x.tga
+SHA1-Digest: c3BX+Zefzg9vPy3d6zUXMfTVGuk=
+
+Name: assets/graphics/slider_RatingBackground.tga
+SHA1-Digest: I+QOH+9kt6Wd0fkCfLNGUQd57Ls=
+
+Name: assets/image
+SHA1-Digest: UKJXRTGtOsx3umzrgjwpR8VTqPE=
+
+Name: assets/songs/beat44_bossa.mid
+SHA1-Digest: 9iAM4nZN42AT8alMBzuNRL2ExM0=
+
+Name: assets/graphics/ui_window_settings_o1.tga
+SHA1-Digest: Fr2RXO3C2gqToANuRDKd/t5zGfs=
+
+Name: assets/songs/beat44_clap.mid
+SHA1-Digest: DA1C9Uln8Uyl9QdRLwKDPHGVgy4=
+
+Name: assets/graphics/interface_notes_shown@2x.tga
+SHA1-Digest: ieRoqURKEDRr1+mZ5qs19VGLl8s=
+
+Name: res/layout-v21/notification_template_icon_group.xml
+SHA1-Digest: h08NGzxchh3echI5o2km8/IIwOU=
+
+Name: assets/graphics/ui_window_segment_down@2x.tga
+SHA1-Digest: BIVWSn1wDi++S7EohIngSjOiRdA=
+
+Name: assets/graphics/interface_pause.tga
+SHA1-Digest: gdeWJsh+FbQeL+GqrxvHhAeg4UE=
+
+Name: assets/graphics/interface_play@2x.tga
+SHA1-Digest: uWqcOzTa907oAtin6Z2NkxHx2fs=
+
+Name: assets/graphics/play_KeyShadow.tga
+SHA1-Digest: AQKQO+inX8gCtUzQQ6XpoS6q1B4=
+
+Name: res/mipmap-xxhdpi-v4/ic_launcher_foreground.png
+SHA1-Digest: iZGCNIPKgP6azS0Nc9lIbvCbLIs=
+
+Name: assets/graphics/interface_notes_shown.tga
+SHA1-Digest: wcvmDoa2wM/ofn9WwM99PI8iOZM=
+
+Name: assets/graphics/interface_user.tga
+SHA1-Digest: 3AbLLcB1wMwF+PyqQyZGMw7HJz4=
+
+Name: assets/graphics/newsInfo.tga
+SHA1-Digest: BhFLTZhBNuHeqVl5IRzE7UjVgVs=
+
+Name: assets/songs/effectProgressFanfare.mid
+SHA1-Digest: AoFGyC9XV4fKxT59E6gZZ/kA+J0=
+
+Name: assets/graphics/gradientUp.tga
+SHA1-Digest: 7xeZHW8tUM0VVVQy+LttnMoxQV0=
+
+Name: assets/graphics/playOffRight@2x.tga
+SHA1-Digest: jgP00A8dzmEaevYFHboo05ki8bA=
+
+Name: assets/graphics/ui_keyboard_drag@2x.tga
+SHA1-Digest: FH+Ko+9JX4iH4GT7oc2Nl2PHfgc=
+
+Name: assets/graphics/lock_closed.tga
+SHA1-Digest: JHU91setfobQ6AegvzlQ+TbWCqY=
+
+Name: assets/graphics/fingering_remove@2x.tga
+SHA1-Digest: UmFj4qnXdTX3fWR7bK8U34efc4I=
+
+Name: res/mipmap-anydpi-v26/ic_launcher.xml
+SHA1-Digest: 9j7mkUK2orMDbvvVrLjHFGMYDh8=
+
+Name: res/mipmap-xxhdpi-v4/ic_launcher.png
+SHA1-Digest: CMsSOkNelUfpu7DGSJVaiU+fPEs=
+
+Name: assets/graphics/bravura.otf
+SHA1-Digest: fXow2cOduEBmOiO7ulpCXv5nXQY=
+
+Name: res/mipmap-xhdpi-v4/ic_launcher_round.png
+SHA1-Digest: G2SwcMpqnO2GSWmdJTg5OSrimQQ=
+
+Name: res/drawable-v21/notification_action_background.xml
+SHA1-Digest: PFJMv8jpWQbo59VxPageEF6sy4s=
+
+Name: assets/graphics/interface_user@2x.tga
+SHA1-Digest: kjnJX5PwitRZEiqNCEfrtQ1hfBg=
+
+Name: assets/graphics/simple_keyboard_right.tga
+SHA1-Digest: 8BfWL+ln72JUtvPMvFAq1xAKT8E=
+
+Name: assets/graphics/ui_groupedTable_default@2x.tga
+SHA1-Digest: +cps1d0ZXqr3xvdYepulabdmIdM=
+
+Name: res/layout/notification_template_custom_big.xml
+SHA1-Digest: AziJetEoTZHltsVOY96PWNdL/BU=
+
+Name: assets/graphics/play_Notes@2x@2x.tga
+SHA1-Digest: xuD9uQj8uS4TSpaJ22ZcrX7H10M=
+
+Name: assets/settings/language_es.xml
+SHA1-Digest: SsJAkGfBj6hxru+AS/yvZaUw3xA=
+
+Name: assets/graphics/ui_linechart_pip.tga
+SHA1-Digest: 1YN8HyrFlrN/h7TRTM67WgRxaKs=
+
+Name: assets/graphics/play_KeyHaze@2x.tga
+SHA1-Digest: toN07c7eDyM15aYTB59CI5bgKzc=
+
+Name: assets/graphics/interface_part_right.tga
+SHA1-Digest: S+Ic8EWKLarm4M7ybM4wcZvl/gk=
+
+Name: assets/graphics/play_KeyRail.tga
+SHA1-Digest: /2dwi9B2dZBboSLAAg+71tV0usU=
+
+Name: assets/graphics/ui_timeline_overlay@2x.tga
+SHA1-Digest: bKKa+VFogZGbFKXMCWAbNjjORyg=
+
+Name: assets/graphics/datagrid_descending.tga
+SHA1-Digest: cOvnrVim3vjlv6hOb1DkpBM6/IU=
+
+Name: assets/graphics/interface_next_bookmark@2x.tga
+SHA1-Digest: 6o95jJIpHTl6jWrCqyXDmRSo+LA=
+
+Name: assets/graphics/ui_window_settings@2x.tga
+SHA1-Digest: 6ojiAql0azqvrjL0ks8L/kOBXes=
+
+Name: assets/graphics/play_KeysWhite.tga
+SHA1-Digest: VuzD+/dvE+3zSE1O5a68h4UVA5w=
+
+Name: assets/songs/beat44_rock2.mid
+SHA1-Digest: 5mo0WD6h9uxY2MNcjp4KL+mrGqQ=
+
+Name: assets/graphics/ui_datagrid_row.tga
+SHA1-Digest: ecppMYti4VMd/JWtipC7fHiq/IA=
+
+Name: assets/graphics/interface_label@2x.tga
+SHA1-Digest: sv2pmHXY49rFxsnQMeZKS4zen+A=
+
+Name: assets/graphics/interface_pause@2x.tga
+SHA1-Digest: fDWcrTFbABLUScORbcOUC9FmMow=
+
+Name: assets/graphics/title_Logo.tga
+SHA1-Digest: AoidmdXYFTkbKuP1hkN5Uaw9pts=
+
+Name: assets/graphics/ui_timeline_block@2x.tga
+SHA1-Digest: cOpY3MnQTqdaXHP2pqp/MJNWUbQ=
+
+Name: assets/graphics/interface_record.tga
+SHA1-Digest: SS4dtv6x6l+kzncLFsDhutMJ+4o=
+
+Name: assets/graphics/ui_window.tga
+SHA1-Digest: dj3CrP4kUovsznzSwbrwG+vP0sg=
+
+Name: assets/graphics/interface_volume_low.tga
+SHA1-Digest: zzYMSM/BCsxDAee4R0SU8o3rrY8=
+
+Name: res/layout-v17/notification_template_custom_big.xml
+SHA1-Digest: S5J584BfnMcG2ojt9bxf5e2RWyc=
+
+Name: assets/graphics/quad.tga
+SHA1-Digest: 0TRQwpB6uR6Gl1QlNoOwivPiYhM=
+
+Name: assets/graphics/ui_window_sunken_o2.tga
+SHA1-Digest: 3FNYqdJupXpHl1dwDczIo9VSp+8=
+
+Name: res/layout-v21/notification_action_tombstone.xml
+SHA1-Digest: /taTKObI0IKrTRN6OCoabuxcROg=
+
+Name: assets/graphics/interface_previous_bookmark@2x.tga
+SHA1-Digest: A1tS091dq7fGFyLUca+PBLAGAD4=
+
+Name: META-INF/androidx.versionedparcelable_versionedparcelable.versio
+ n
+SHA1-Digest: BeF7ZGqBckDCBhhvlPj0xwl01dw=
+
+Name: assets/graphics/play_KeysBlack_o1@2x.tga
+SHA1-Digest: 5Jgj46uRIZdExoLJOEiX5Q5Sn+A=
+
+Name: assets/graphics/ui_window_segment_down_o2@2x.tga
+SHA1-Digest: Dw0nD6FgGEbIiX5hK7+X47KNn+w=
+
+Name: assets/graphics/device_disconnect@2x.tga
+SHA1-Digest: 8TeveMY46fi4VcleeBvZofXQkB4=
+
+Name: assets/graphics/ui_window_segment@2x.tga
+SHA1-Digest: BIVWSn1wDi++S7EohIngSjOiRdA=
+
+Name: res/drawable-mdpi-v4/notification_bg_low_pressed.9.png
+SHA1-Digest: 58BeVrWmam0XTYtOcBJSh3YmiJQ=
+
+Name: assets/graphics/interface_bookmark_edit@2x.tga
+SHA1-Digest: dTBXGAB2hPsOzSoQuuVFMYys0nw=
+
+Name: assets/graphics/play_NextNote.tga
+SHA1-Digest: PXBORwBaWfxcGOzJGzMzKctKn6g=
+
+Name: assets/graphics/interface_play.tga
+SHA1-Digest: vtIEPlhZ+y72pJC5iTHVSdZtiYs=
+
+Name: assets/settings/language_de.xml
+SHA1-Digest: TlS6zZ5691uaZEFsy5Tdp4nqRTI=
+
+Name: res/layout-v21/notification_action.xml
+SHA1-Digest: P4YKs8lFCo9pYCz8ZhBe8UmhUjs=
+
+Name: assets/graphics/gradientLeft.tga
+SHA1-Digest: GbYR/q4/PkcLr03EqlYulllbC+E=
+
+Name: assets/graphics/ui_window_overlay2.tga
+SHA1-Digest: LwBv0i/AChyVN+ii6pQWGW9+w4g=
+
+Name: assets/graphics/ui_window_segment_o1.tga
+SHA1-Digest: XJZ+GBLtURmrNixrYZqpjbBOLZ0=
+
+Name: res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png
+SHA1-Digest: 4j+L3Jzr2U70TU9dUenWhtYe/lU=
+
+Name: assets/graphics/play_Margin.tga
+SHA1-Digest: RTkULXvy5ywWxpuri3bNCwd0LDA=
+
+Name: assets/graphics/ui_linechart_pip@2x.tga
+SHA1-Digest: CNDeQakjgIAhh6k+knBk9iL9YfU=
+
+Name: res/mipmap-hdpi-v4/ic_launcher_round.png
+SHA1-Digest: JpgkIdL52t1WFTKdRXTf5+dS2U0=
+
+Name: assets/graphics/interface_icon_error@2x.tga
+SHA1-Digest: c/nb/pHyIH2OS55QQVZwc+sSmuI=
+
+Name: assets/settings/language_th.xml
+SHA1-Digest: e8rHwzkrrfeAwTK63MFv/AEcrnU=
+
+Name: assets/settings/metadata_store.xml
+SHA1-Digest: mWNnTsdRG2b4TB576plvYuo+h0A=
+
+Name: res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png
+SHA1-Digest: inKyhhyZgO65645KR/OH06l6dAc=
+
+Name: assets/graphics/ui_window_sunken_o2@2x.tga
+SHA1-Digest: kFmPEf/WXmmZRB8m09BlTuFvCNs=
+
+Name: assets/graphics/instruments@2x.tga
+SHA1-Digest: IYOT8URHQnKN6o4j3xxjMHF/cjA=
+
+Name: assets/graphics/interface_owner_synthesia@2x.tga
+SHA1-Digest: DqvD38cR+SChCiJWesofsrwG7lc=
+
+Name: assets/graphics/ui_header_partition.tga
+SHA1-Digest: ASaGRTB0ujOeinwQhvFZ3N/cUik=
+
+Name: assets/graphics/interface_owner_synthesia.tga
+SHA1-Digest: 8Pmrhisfhf3XGYCvX0h+O8TLcc4=
+
+Name: assets/graphics/interface_zoom.tga
+SHA1-Digest: SURNR2jGssrJ34GNuzXYXdqGsd4=
+
+Name: assets/graphics/ui_window_segment_o2.tga
+SHA1-Digest: HZlQ6PQ3z2u2vhe4nCmIhogFXgQ=
+
+Name: assets/graphics/play_Crosshair.tga
+SHA1-Digest: 9ryH4l8+5heG+JUTHxTcna1qXY8=
+
+Name: assets/graphics/play_KeySpark@2x.tga
+SHA1-Digest: JMytqbICq+li3eepCUv+ZS6yetY=
+
+Name: assets/graphics/interface_clear_search@2x.tga
+SHA1-Digest: nbV2Hn1ovv5DWxIq2igdHTLtQEc=
+
+Name: assets/graphics/notation_flip.tga
+SHA1-Digest: mRo2FsfCcif/tdiCq9pW7AYDMY8=
+
+Name: res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png
+SHA1-Digest: iJFesSsAAmE1zFB9XbiCZW1cKKU=
+
+Name: res/drawable/notification_tile_bg.xml
+SHA1-Digest: B0Vc5TLM+l13vY/pU7EbaTDwrdM=
+
+Name: assets/graphics/slider_RatingSelected@2x@2x.tga
+SHA1-Digest: EMMpfkdfifHromWr7+9kddwpNYY=
+
+Name: assets/graphics/interface_label.tga
+SHA1-Digest: /aWr304aHfjUX6skGao8ccpKDSk=
+
+Name: assets/graphics/lock_open.tga
+SHA1-Digest: zanFlzgpubcuD/Fm+yHxcxFn78k=
+
+Name: res/mipmap-mdpi-v4/ic_launcher_foreground.png
+SHA1-Digest: n/1hJn5l1ovLwOGfmknBgdx+LZ4=
+
+Name: assets/graphics/interface_globe.tga
+SHA1-Digest: SJKNvlp/ekGHtmEJ1wSVRkQgdvk=
+
+Name: META-INF/androidx.core_core.version
+SHA1-Digest: BeF7ZGqBckDCBhhvlPj0xwl01dw=
+
+Name: assets/graphics/play_KeysPercussion.tga
+SHA1-Digest: Jf+e8oH/NaRdgE/N9uVxuQuItlI=
+
+Name: lib/armeabi-v7a/libbass.so
+SHA1-Digest: ApDl2xGu9AxnWF3U/RjNOYOxlMM=
+
+Name: assets/graphics/play_KeySpark.tga
+SHA1-Digest: IEgsx7fS+Lb/au9vfwdy/t81cWo=
+
+Name: assets/graphics/ui_timeline_loop@2x.tga
+SHA1-Digest: M5JATEOn+qj+Siy/ZhKtsiQ2Q+8=
+
+Name: assets/graphics/interface_lightning.tga
+SHA1-Digest: nl6siWJ+xupi8xjvc1sdLZZ9wgY=
+
+Name: assets/graphics/interface_zoom@2x.tga
+SHA1-Digest: 2bDbVU7nFULw6+Brw5Sg+RTgrq4=
+
+Name: assets/settings/language_nl.xml
+SHA1-Digest: gephkjLBD9VBJoLfgoFtsfttBfA=
+
+Name: res/layout/notification_action_tombstone.xml
+SHA1-Digest: Ku8+FG2P0kmQ+5SHXOsK+qk1QHw=
+
+Name: assets/graphics/interface_notation_zoom_plus.tga
+SHA1-Digest: oTOwAc/bm4k0jWn4pN1l9kwizPs=
+
+Name: assets/graphics/simple_shadow_right@2x.tga
+SHA1-Digest: +i/fleuqPB2OajAAPtSws4mweMs=
+
+Name: assets/graphics/ui_groupedTable_default.tga
+SHA1-Digest: RjadL91t4JqdBpxUwUnXqCoQT1s=
+
+Name: assets/graphics/interface_progress@2x.tga
+SHA1-Digest: Q9Li7I9rN9tgQxHD0LUsKIBkcvI=
+
+Name: assets/graphics/newsGuide.tga
+SHA1-Digest: +MHHSBfzOx8VZNelHKMTnZOPg/k=
+
+Name: assets/graphics/ui_linechart_series.tga
+SHA1-Digest: wiVeBQsFKXf4cGtWozl2/3U77u4=
+
+Name: assets/graphics/slider_DifficultySelected@2x.tga
+SHA1-Digest: XINOtB89UADEY6dpmQDHkef2rOA=
+
+Name: assets/graphics/ui_switch.tga
+SHA1-Digest: ebb64lNwJHRMT/kPScakM3eHiDA=
+
+Name: assets/graphics/interface_icon_error.tga
+SHA1-Digest: u++Hh7nVkWaqXDuTTKAA5qNFRuA=
+
+Name: assets/settings/metadata_classical.xml
+SHA1-Digest: tKzZiFTIAC2H1tn0SH/woqBuBzs=
+
+Name: assets/graphics/interface_stopwatch@2x.tga
+SHA1-Digest: KL5A61Fs518haQWGfoThDx916PQ=
+
+Name: assets/graphics/ui_window_arrow_o2.tga
+SHA1-Digest: wwMvMQed810yWmCWO9QBsWMWiW0=
+
+Name: assets/graphics/ui_window_settings_o2.tga
+SHA1-Digest: CtT5/WsGr2rp5Rkj1qOJ4D3itFY=
+
+Name: assets/graphics/lock_closed@2x.tga
+SHA1-Digest: McOdbcZ75xQoOjyirzvtKDXCYLY=
+
+Name: res/drawable-hdpi-v4/notification_bg_low_pressed.9.png
+SHA1-Digest: NP77wvGcwseigxPz8Z8jideVqXk=
+
+Name: assets/graphics/interface_palette.tga
+SHA1-Digest: mrZhL0hKxJcYpFg98bZxN2JcOUw=
+
+Name: assets/graphics/ui_switch@2x.tga
+SHA1-Digest: 7V3wyOzcDtm57PfM40pQQUzPO48=
+
+Name: assets/settings/metadata_games.xml
+SHA1-Digest: rOVPWlxbHRhQSxEOiBtycFVaPu8=
+
+Name: assets/graphics/interface_previous_bookmark.tga
+SHA1-Digest: BIXVg6RdNaA3+KcgH5MxssUMqug=
+
+Name: assets/graphics/ui_groupedTable_lock@2x.tga
+SHA1-Digest: Cm9Ojn9rThFOAdvZeggWsV/b574=
+
+Name: assets/graphics/interface_volume_low@2x.tga
+SHA1-Digest: rt1L1I+4J+BxfKSkHbYdfhLVSXY=
+
+Name: assets/readme_android.html
+SHA1-Digest: xJIRK9KbXtZ4TlUHXCVKfloLH+Q=
+
+Name: classes.dex
+SHA1-Digest: JObhLm0F0uhioq3p4HxJqGnYRLA=
+
+Name: assets/graphics/fingering_hand_right.tga
+SHA1-Digest: 6fZWZSHp2+0MKPmDXdtC1L6rqFo=
+
+Name: res/drawable-hdpi-v4/notification_bg_normal.9.png
+SHA1-Digest: ralFi/xjLzZzimSmlAGCFAUgfbE=
+
+Name: assets/graphics/particle.tga
+SHA1-Digest: DB76uPBo4+RWTObz3SUEYVyAu98=
+
