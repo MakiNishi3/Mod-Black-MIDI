@@ -1,0 +1,241 @@
+<UiDescription>
+
+  <!-- The base hue for the color scheme of the application -->
+  <scalar id="baseHue" value="200" />
+  <scalar id="acceptHue" value="120" />
+
+  <!-- Each color requires an id and either 'rgb' or 'hsv': comma-separated lists
+       that are 3 or 4 integers long (4 to specify alpha).  RGB values are [0..255]
+       and HSV are [0..360] for H and [0..100] for S and V. -->
+
+  <!-- Colors specified at the top level are the default theme.  Theme elements
+       inherit all the default colors and can override as few as they like. The
+       theme element's id will be shown in Synthesia as the theme name. -->
+
+  <!-- Overriding these in a theme is probably a bad idea.  They're only used for
+       elements that aren't designed for flexible colors. -->
+  <color id="black" rgb="0, 0, 0" />
+  <color id="white" rgb="255, 255, 255" />
+  <color id="transparent" rgb="0, 0, 0, 0" />
+  <color id="transparentWhite" rgb="255, 255, 255, 0" />
+
+  <!-- The screen is cleared to this color at the beginning of each frame, on all
+       screens.  But, because we need the play screen to be as fast as possible (and
+       the menu screens can afford a little overdrawing) this is actually the color
+       of the falling-note area on the play screen.  Every other screen starts by
+       (re)filling the entire screen to menuBackground, defined below. -->
+  <color id="screenBackground" rgb="48, 48, 48" />
+
+  <!-- The dark background that appears when a window slides in from the top of the screen -->
+  <color id="screenOverlayTransition" rgb="0, 0, 0, 70" />
+
+  <!-- The main colors used on menu-type screen.  In the default theme these are off-white and light blue -->
+  <color id="menuBackground" rgb="240, 240, 240" />
+  <color id="menuBackgroundAccent" hsv="baseHue, 18, 87" />
+
+  <!-- Various single-pixel borders used on menu-type screens -->
+  <color id="separatorLine" rgb="160, 160, 160" />
+
+  <!-- Colors used for the little symbols at the right-most side of lists -->
+  <color id="disclosure" hsv="0, 0, 50" />
+  <color id="checkmark" hsv="220, 60, 60" />
+  <color id="asterisk" hsv="0, 0, 0, 64" />
+  <color id="lock" hsv="0, 0, 50" />
+
+  <!-- The text color for the right-hand "detail" text in lists -->
+  <color id="settingsDetail" hsv="220, 60, 60" />
+
+  <!-- "Sunken" colors are for buttons against a similar background color, e.g. header buttons -->
+  <color id="buttonFace" hsv="baseHue, 91, 71" />
+  <color id="buttonFaceHover" hsv="baseHue, 100, 100" />
+  <color id="buttonSunken" hsv="baseHue, 85, 65" />
+  <color id="buttonSunkenHover" hsv="baseHue, 85, 55" />
+  <color id="buttonText" rgb="255, 255, 255" />
+  <color id="buttonTextHover" rgb="255, 255, 255" />
+
+  <!-- Accept is for default/primary actions (the big green "Play!" button on the title screen) -->
+  <color id="buttonAccept" hsv="acceptHue, 90, 61" />
+  <color id="buttonAcceptHover" hsv="acceptHue, 95, 82" />
+
+  <!-- Deny is for delete/removal actions that can't be undone, usually red -->
+  <color id="buttonDeny" hsv="0, 77, 60" />
+  <color id="buttonDenyHover" hsv="0, 77, 85" />
+
+  <!-- These are used virtually everywhere and should coordinate well with menuBackground[Accent] -->
+  <color id="textAgainstBackground" rgb="48,48,48" />
+  <color id="textAgainstBackgroundFaded" rgb="48, 48, 48, 120" />
+
+  <!-- Variations on textAgainstBackground that are used to draw attention to things -->
+  <color id="accentAgainstBackground" hsv="baseHue, 100, 70" />
+  <color id="warnAgainstBackground" hsv="20, 69, 100" />
+
+  <!-- Scrollbar colors for the little control that appears at the right-hand side of windows -->
+  <color id="scrollBackground" rgb="0, 0, 0, 96" />
+  <color id="scrollForeground" rgb="255, 255, 255, 128" />
+  <color id="scrollForegroundHover" rgb="255, 255, 255, 192" />
+
+  <!-- Switch colors for the little left/right toggle switch on the Settings screen -->
+  <color id="switchBorder" hsv="0, 0, 67" />
+  
+  <!-- An example of a SegmentButton is the strip of sorting choices at the bottom of the song library screen -->
+  <color id="buttonSegment" hsv="0, 0, 86" />
+  <color id="buttonSegmentDown" hsv="0, 0, 86" />
+
+  <!-- A breadcrumb is the little "trail" or "path" like you find at the top of the song library screen -->
+  <color id="breadcrumbItemBackground" hsv="baseHue, 50, 87, 60" />
+  <color id="breadcrumbItemBackgroundHover" hsv="baseHue, 100, 100, 128" />
+
+  <!-- Datagrids are used to show all the scores for a song -->
+  <color id="datagridRowBackground" rgb="0, 0, 0, 0" />
+  <color id="datagridRowBackgroundAlternating" rgb="0, 0, 0, 16" />
+  <color id="datagridRowBackgroundSelected" hsv="baseHue, 100, 100, 96" />
+
+  <!-- A color that should contrast with menuBackground, menuBackgroundAccent, and buttonFace.  This is used
+       as the color in the thin border around some of the windows that slide in from the top of the screen. -->
+  <color id="popupBorder" hsv="baseHue, 80, 40" />
+
+  <!-- Tooltips are the small windows with dark backgrounds that appear on the Play screen -->
+  <color id="tooltipBackground" hsv="0, 0, 10, 240" />
+  <color id="tooltipText" hsv="0, 0, 100" />
+  <color id="tooltipTextFaded" hsv="0, 0, 100, 187" />
+  <color id="tooltipTextAccent" hsv="90, 77, 90" />
+  <color id="tooltipTextAccentFaded" hsv="90, 77, 90, 128" />
+
+  <!-- GroupText is the colors song groups appear in the library.  AllSongsGroupText is the special (default
+       orange) color that the special auto-generated groups appear in. -->
+  <color id="songLibraryTimeScrubber" hsv="baseHue, 50, 100" />
+  <color id="songLibraryGroupText" hsv="baseHue, 70, 80" />
+  <color id="songLibraryAllSongsGroupText" hsv="30, 70, 100" />
+
+  <!-- These shouldn't be redefined in any themes.  They're used with the song score boxes which ignore the theme! -->
+  <color id="songSettingsGrayText" rgb="202, 202, 202" />
+  <color id="songSettingsGrayBox" rgb="100, 100, 100" />
+  <color id="songSettingsGrayBoxHover" rgb="120, 120, 120" />
+  <color id="songSettingsFadedIcon" rgb="255, 255, 255, 192" />
+
+  <!-- Background color of screen headers -->
+  <color id="header" hsv="baseHue, 91, 71" />
+
+  <!-- Light text against dark header background. -->
+  <color id="headerText" rgb="255, 255, 255" />
+
+  <!-- For selected header mode buttons (finger hint icon changes to this color when in finger hint editing mode, etc.) -->
+  <color id="headerActiveIcon" hsv="40, 80, 100" />
+
+  <!-- For record buttons; should probably be red in nearly every theme -->
+  <color id="headerRecordIcon" hsv="0, 70, 100" />
+
+  <color id="footerText" hsv="baseHue, 45, 100" />
+
+  <!-- For the title that appears briefly just as Play begins -->
+  <color id="titleBarBackground" hsv="baseHue, 90, 70" />
+  <color id="titleBarDarkAccent" hsv="baseHue, 90, 40" />
+  <color id="titleBarLightAccent" hsv="baseHue, 100, 100" />
+  <color id="titleBarMajorText" hsv="0, 0, 100" />
+  <color id="titleBarMinorText" hsv="0, 0, 100, 192" />
+
+  <!-- Felt is the thin red strip just above the keys.  Annotations are the text on keys or falling notes. -->
+  <color id="keyboardFelt" hsv="0, 80, 63" />
+  <color id="keyboardWhiteKeys" hsv="54, 6, 100" />
+  <color id="keyboardDisabledAnnotation" rgb="92, 92, 92" />
+  <color id="keyboardEnabledAnnotation" rgb="232, 232, 232" />
+
+  <!-- The falling-note area's background is "screenBackground", above. -->
+  <color id="fallingNoteGuide" rgb="90, 90, 90" />
+  <color id="fallingNoteGuideAlt" rgb="60, 60, 60" />
+  <color id="fallingMeasureLine" rgb="60, 60, 60" />
+  <color id="fallingMeasureLabel" rgb="170, 170, 170, 192" />
+  <color id="fallingText" rgb="180, 180, 180, 160" />
+
+  <!-- Sheet music area -->
+  <color id="notationBackground" rgb="255, 255, 255" />
+  <color id="notationMeasureHighlight" hsv="baseHue, 18, 100" />
+  <color id="notationDivisionHighlight" hsv="baseHue, 70, 100" />
+  <color id="notationNoteMatched" hsv="acceptHue, 100, 100" />
+  <color id="notationNoteUnknown" rgb="192, 0, 0" />
+         
+  <!-- For the prompt that appears when a keyboard connection is lost during play. -->
+  <color id="deviceDisconnectText" hsv="0, 0, 0" />
+  <color id="deviceDisconnectBackground" hsv="60, 100, 100" />
+  <color id="deviceDisconnectButton" hsv="60, 100, 80" />
+
+  <!-- The little elements that appear when you click "Help" during play. -->
+  <color id="playHelpLine" hsv="0, 0, 100" />
+  <color id="playHelpText" hsv="0, 0, 100" />
+
+  <!-- The bar shown at the top of the play screen that shows your current position in the song. -->
+  <color id="timelineFilled" rgb="0, 145, 0" />
+  <color id="timelineEmpty" hsv="0, 0, 15" />
+  <color id="timelineLoop" hsv="30, 100, 94" />
+
+  <color id="bookmarkMidi" hsv="200, 100, 100" />
+  <color id="bookmarkUser" hsv="50, 90, 90" />
+  <color id="bookmarkMetadata" hsv="30, 100, 100" />
+  <color id="bookmarkKeySignature" hsv="270, 50, 70" />
+  <scalar id="bookmarkLineAlpha" value="64" />
+  <scalar id="bookmarkEditingAlpha" value="32" />
+
+  <!-- The "newsStandard" color is just "buttonFace" -->
+  <color id="newsEmphasis" hsv="baseHue + -180, 100, 87" />
+
+  <theme id="Tangerine">
+    <scalar id="baseHue" value="20" />
+    <scalar id="acceptHue" value="200" />
+  </theme>
+
+  <theme id="Synthesia Classic">
+    <color id="menuBackground" hsv="0, 0, 25" />
+    <color id="menuBackgroundAccent" hsv="0, 0, 30" />
+
+    <color id="header" hsv="0, 0, 20" />
+
+    <color id="buttonFace" hsv="0, 0, 42" />
+    <color id="buttonFaceHover" hsv="0, 0, 60" />
+    <color id="buttonSunken" hsv="0, 0, 20" />
+    <color id="buttonSunkenHover" hsv="0, 0, 15" />
+    <color id="buttonText" rgb="255, 255, 255" />
+    <color id="buttonTextHover" rgb="255, 255, 255" />
+
+    <color id="buttonAccept" hsv="120, 40, 50" />
+    <color id="buttonAcceptHover" hsv="120, 50, 60" />
+
+    <color id="textAgainstBackground" hsv="0, 0, 100" />
+    <color id="textAgainstBackgroundFaded" hsv="0, 0, 100, 96" />
+    <color id="accentAgainstBackground" hsv="60, 70, 100" />
+    <color id="warnAgainstBackground" hsv="0, 75, 85" />
+
+    <color id="datagridRowBackgroundSelected" hsv="0, 0, 100, 64" />
+
+    <color id="popupBorder" hsv="0, 0, 10" />
+
+    <color id="breadcrumbItemBackground" hsv="0, 0, 40, 96" />
+    <color id="breadcrumbItemBackgroundHover" hsv="0, 0, 40" />
+
+    <color id="disclosure" hsv="60, 70, 70" />
+    <color id="checkmark" hsv="60, 80, 80" />
+    <color id="lock" hsv="60, 70, 70" />
+    <color id="settingsDetail" hsv="0, 0, 60" />
+
+    <color id="footerText" hsv="0, 0, 80" />
+
+    <color id="buttonSegment" hsv="0, 0, 15" />
+    <color id="buttonSegmentDown" hsv="0, 0, 15" />
+
+    <color id="songLibraryTimeScrubber" hsv="0, 0, 60" />
+    <color id="songLibraryGroupText" hsv="200, 67, 100" />
+
+    <color id="separatorLine" hsv="0, 0, 10" />
+
+    <color id="switchBorder" rgb="0, 0, 0" />
+
+    <color id="titleBarBackground" hsv="220, 25, 33" />
+    <color id="titleBarDarkAccent" hsv="223, 16, 17" />
+    <color id="titleBarLightAccent" hsv="219, 17, 73" />
+    <color id="titleBarMajorText" hsv="0, 0, 100" />
+    <color id="titleBarMinorText" hsv="220, 14, 66" />
+
+    <color id="newsEmphasis" hsv="60, 70, 100" />
+
+  </theme>
+
+</UiDescription>

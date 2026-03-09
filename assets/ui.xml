@@ -1,0 +1,1542 @@
+<UiDescription>
+
+  <!-- Top-level ui elements require an id; children don't.  Every element must include exactly one of the following:
+
+       * type: ui element starts from a basic type like 'button' or 'label'
+       * inherit: ui element starts as a copy of a previously defined top-level element, referenced by id.
+       * find: like inherit, but for children created by inheriting from a container type. Specifying 'find'
+         with the id of some child will let you add/change properties to an existing element.  (The headerBar
+         element near the top of this file is a good example. You can 'find' the backButton and add text.)
+
+       The single exception to "must include exactly one" above is that 'id' can be specified inside a 'find'
+       element to rename it in-situ.
+
+       All screens are designed for 1024x768 and are scaled dynamically (min 1024x600) based on
+       the align and anchor properties of each control. -->
+
+  <!-- Buttons and windows have two interesting properties related to background/overlay1/overlay2
+       that control how the texture is displayed:
+
+       textureBorder:   the number of pixels from any edge until you get to the solid-color center area.
+       textureFromEdge: the number of pixels between the edge of the texture and the first non-transparent
+                        pixel. The following should be true: textureFromEdge <= textureBorder
+
+       For the default button texture, this is 5 and 1, respectively. (That is, 4 pixels of rounded border,
+       set 1 pixel away from the outer texture extents, for a total of 4+1=5 pixels from edge to center.)
+  -->
+
+  <!-- Establish our basic color theme, most things inherit from these. -->
+  <ui id="button" type="button" color="buttonFace" colorHover="buttonFaceHover" fontColor="buttonText" fontColorHover="buttonTextHover" />
+  <ui id="sunkenButton" inherit="button" color="buttonSunken" colorHover="buttonSunkenHover" background="ui_window_sunken" backgroundOverlay1="ui_window_sunken_o1" backgroundOverlay2="ui_window_sunken_o2" textureBorder="10" textureFromEdge="3" hoverShimmy="0" />
+  <ui id="backgroundLabel" type="label" color="textAgainstBackground" fontSize="14" align="center" anchor="none" />
+  <ui id="settingsLabel" type="label" color="textAgainstBackground" fontSize="17" position="10, 12" />
+  <ui id="settingsDetail" inherit="settingsLabel" color="settingsDetail" align="right" anchor="right" position="0, 12" />
+  <ui id="settingsArea" type="groupedTable" labelTemplate="settingsLabel" detailTemplate="settingsDetail" color="menuBackground" hrColor="separatorLine" checkmarkColor="checkmark" disclosureColor="disclosure" asteriskColor="asterisk" lockColor="lock" background="ui_window_settings" backgroundOverlay1="ui_window_settings_o1" backgroundOverlay2="ui_window_settings_o2" textureBorder="13" textureFromEdge="2" anchor="both" size="0, 44" />
+  <ui id="settingsWindow" type="window" color="menuBackground" hrColor="separatorLine" background="ui_window_settings" backgroundOverlay1="ui_window_settings_o1" backgroundOverlay2="ui_window_settings_o2" textureBorder="13" textureFromEdge="2" anchor="both" size="0, 44" />
+  <ui id="settingsHr" type="spacer" size="100, 1" color="separatorLine" anchor="both" />
+  <ui id="settingsButton" inherit="button" fontSize="24" autoWidthPadding="34" hoverShimmy="0" color="menuBackgroundAccent" background="ui_window_settings" backgroundOverlay1="ui_window_settings_o1" backgroundOverlay2="ui_window_settings_o2" textureBorder="13" textureFromEdge="2" size="0, 44" fontColor="textAgainstBackground" />
+  <ui id="settingsCautionButton" inherit="settingsButton" fontColor="buttonText" color="buttonDeny" colorHover="buttonDenyHover" />
+  <ui id="settingsAddButton" inherit="settingsButton" color="buttonFace" imageAlign="center" image="interface_plus" autoWidthPadding="18" />
+  <ui id="textbox" type="textbox" fontSize="17" fontColor="textAgainstBackground" hintColor="textAgainstBackgroundFaded" color="buttonFace" />
+  <ui id="popup" type="popup" color="popupBorder" texture="ui_popup_arrow" padding="32" arrowOffset="16" anchor="none, none" />
+  <ui id="breadcrumb" type="breadcrumb" color="buttonFace" fontColor="textAgainstBackground" fontColorHover="textAgainstBackground" labelBackground="breadcrumbItemBackground" labelBackgroundHover="breadcrumbItemBackgroundHover" />
+  <ui id="scrollingDataGrid" type="scrollingDataGrid" color="textAgainstBackgroundFaded" rowBackgroundColor="datagridRowBackground" rowBackgroundAlternatingColor="datagridRowBackgroundAlternating" fontColor="textAgainstBackground" headerFontColor="textAgainstBackground" />
+  <ui id="backButton" position="4, 2" inherit="button" size="1, 40" autoWidthPadding="12" textPadding="12" textAlign="right" fontSize="18" color="buttonSunken" colorHover="buttonSunkenHover" background="ui_window_arrow" backgroundOverlay1="ui_window_arrow_o1" backgroundOverlay2="ui_window_arrow_o2" textureBorder="20" textureFromEdge="0" hoverShimmy="0" />
+  <ui id="headerTextButton" inherit="sunkenButton" fontSize="18" autoWidthPadding="14" size="0, 42" position="0, 1" textureBorder="10" textureFromEdge="-3" />
+  <ui id="headerButton" type="button" background="" backgroundOverlay1="" backgroundOverlay2="" color="white" colorHover="white" textureBorder="0" textureFromEdge="0" hoverShimmy="0" fontColor="headerText" fontSize="24" size="48, 44" imageAlign="center" />
+  <ui id="headerLabel" type="label" color="headerText" anchor="none" position="512, 6"  fontSize="24" align="center" />
+  <ui id="segmentButton" type="segmentButton" size="0, 40" textureBorder="17" textureFromEdge="4" background="ui_window_segment" backgroundOverlay1="ui_window_segment_o1" backgroundOverlay2="ui_window_segment_o2" backgroundDown="ui_window_segment_down" backgroundDownOverlay1="ui_window_segment_down_o1" backgroundDownOverlay2="ui_window_segment_down_o2" color="buttonSegment" downColor="buttonSegmentDown" spacerColor="textAgainstBackgroundFaded" fontColor="textAgainstBackground" textPadding="9" />
+  <ui id="softEdgeWindow" type="window" color="menuBackground" backgroundOverlay1="" backgroundOverlay2="" />
+  <ui id="tooltipWindow" inherit="softEdgeWindow" color="tooltipBackground" />
+  <ui id="switch" type="switch" color="white" foregroundColor="buttonAcceptHover" backgroundColor="switchBorder" />
+  <ui id="headerSep" type="image" texture="ui_header_partition" />
+
+
+  <!-- A few commonly used elements, shared throughout the interface -->
+  <ui id="headerBar" type="frame" anchor="both" size="1024, 44">
+    <ui id="background" type="spacer" anchor="both" size="1024, 44" color="header" />
+    <ui id="backButton" inherit="backButton" />
+    <ui id="titleText" inherit="headerLabel" />
+  </ui>
+
+  <ui id="popupCancelSaveWindow" type="window" color="buttonFace" autoSizePadding="9, 9" position="512, 250" align="center, center" anchor="none, none">
+    <ui id="cancelButton" inherit="sunkenButton" tid="cancel" fontSize="18" autoWidthPadding="8" size="1, 32" position="9, 9" />
+    <ui id="saveButton" inherit="sunkenButton" tid="save" fontSize="18" autoWidthPadding="8" size="1, 32" align="right" anchor="right" position="391, 9" />
+    <ui id="titleText" type="label" color="buttonText" fontSize="24" maxWidth="370" position="200, 9" align="center" anchor="none" />
+    <ui id="content" type="window" color="menuBackground" size="382, 212" position="9, 49" />
+  </ui>
+
+  <ui id="sidebarButtonActive" type="frame" childrenSensitive="0" size="240, 44">
+    <ui id="background" type="spacer" color="buttonFaceHover" size="240, 44" />
+    <ui id="text" type="label" position="10, 12" color="buttonText" maxWidth="240" />
+    <ui type="spacer" color="separatorLine" size="240, 1" position="0, 44" />
+  </ui>
+  <ui id="sidebarButtonInactive" type="frame" childrenSensitive="0" size="240, 44">
+    <ui id="text" type="label" position="10, 12" color="textAgainstBackground" maxWidth="240" />
+    <ui type="spacer" color="separatorLine" size="240, 1" position="0, 44" />
+  </ui>
+
+  <ui id="simplePopup" inherit="popup" autoSizePadding="0, 0">
+    <ui inherit="softEdgeWindow" color="popupBorder" autoSizePadding="9, 9">
+      <ui inherit="softEdgeWindow" color="menuBackgroundAccent" autoSizePadding="9, 9" position="9, 9">
+        <ui id="settingsList" inherit="settingsArea" size="262, 44" position="10, 10" />
+      </ui>
+    </ui>
+  </ui>
+
+  <ui id="waitSpinner" type="image" texture="interface_progress" color="buttonFace" position="32, 32" align="center, center" />
+
+  <ui id="volumeSlider" type="frame" size="280, 44" position="820, 0" align="right" anchor="right">
+    <ui type="image" id="low" position="10, 6" anchor="right" texture="interface_volume_low" color="textAgainstBackgroundFaded" />
+    <ui type="image" id="high" position="250, 6" anchor="right" texture="interface_volume_high" color="textAgainstBackgroundFaded" />
+    <ui id="volumeSlider" type="slider" size="200, 44" position="40, 0" foreground="slider_Volume" background="slider_Volume" immediateUpdate="1" foregroundColor="buttonFace" backgroundColor="textAgainstBackgroundFaded" splitter="slider_ScrubberSplitter" splitterWidth="24" maxValue="200" />
+  </ui>
+
+  <!-- Add one of these anywhere in a screen to control the background color it's cleared to each frame -->
+  <ui id="bg" type="spacer" visible="0" color="menuBackground" />
+
+
+  <!-- Loading Screen -->
+  <ui id="loadingScreen" type="frame" anchor="both, both" size="1024, 768">
+    <ui id="bg" inherit="bg" color="menuBackgroundAccent" />
+
+    <ui type="flowLayout" spacing="10" position="512, 200" anchor="none">
+      <ui type="label" tid="songLoading" align="center" color="textAgainstBackground" fontSize="48" />
+      <ui id="spinner" type="waitSpinner" align="center" />
+    </ui>
+  </ui>
+
+
+  <!-- Title Screen -->
+  <ui id="titleButton" inherit="button" size="350, 55" fontSize="24" align="center" />
+  <ui id="leftTitleButton" inherit="titleButton" align="left" />
+  <ui id="titleScreen" type="frame" anchor="both, both" size="1024, 768">
+    <ui id="bg" inherit="bg" color="menuBackgroundAccent" />
+
+    <!-- Header -->
+    <ui type="spacer" anchor="both" size="1024, 88" color="header" />
+    <ui type="image" texture="title_Logo" align="left" position="16, 14" />
+
+    <ui inherit="headerButton" fontSize="24" align="right" id="profile" autoWidthPadding="5" size="0, 44" anchor="right" position="1016, 33" hoverShimmy="0" fontColor="footerText" fontColorHover="headerText" />
+
+    <!-- Footer -->
+    <ui id="footer" type="spacer" anchor="both, bottom" position="0,720" size="1024, 48" color="header" />
+
+    <ui type="flowLayout" position="1016, 724" padding="2" align="right" anchor="right, bottom">
+      <ui type="label" id="versionLabel" align="right" color="footerText" fontSize="14" />
+      <ui type="label" id="copyrightLabel" align="right" color="footerText" fontSize="14" />
+    </ui>
+
+    <ui type="flowLayout" direction="horizontal" padding="6" position="4, 723" anchor="left, bottom">
+      <ui inherit="headerTextButton" id="language" />
+      <ui type="flowLayout" position="0, 1" padding="2">
+        <ui type="label" id="inputDevice" align="left" color="footerText" fontSize="14" />
+        <ui type="label" id="outputDevice" align="left" color="footerText" fontSize="14" />
+      </ui>
+    </ui>
+
+    <!-- Main buttons -->
+    <ui type="flowLayout" position="14, 120" padding="12" excludeHidden="1">
+      <ui inherit="leftTitleButton" id="play" tid="playSong" color="buttonAccept" colorHover="buttonAcceptHover" />
+      <ui inherit="leftTitleButton" id="freeplay" tid="freePlay" color="buttonAccept" colorHover="buttonAcceptHover" />
+      <ui type="spacer" size="1, 8" />
+      <ui inherit="leftTitleButton" id="unlock" tid="unlock" />
+      <ui inherit="leftTitleButton" id="settings" tid="settings" />
+      <ui inherit="leftTitleButton" id="exit" tid="exit" />
+    </ui>
+
+    <!-- News and Recent sidebar -->
+    <ui type="frame" id="newsLayout" position="400, 96" anchor="both" size="604, 0" autoSizePadding="-1, 1">
+      <ui type="flowLayout" excludeHidden="1" padding="3" anchor="both">
+        <ui id="newsHead" inherit="settingsLabel" tid="whatsNew" />
+        <ui id="newsList" inherit="settingsArea" size="604, 44" anchor="both" />
+        <ui id="newsSpacer" type="spacer" size="1, 10" />
+        <ui id="recentHead" inherit="settingsLabel" tid="recentlyPlayed" />
+      </ui>
+    </ui>
+
+    <ui id="recentList" inherit="settingsArea" position="400, 96" size="604, 44" anchor="both" />
+    <ui id="feedbackList" inherit="settingsArea" position="400, 150" size="604, 44" anchor="both" visible="0" />
+
+    <!-- Profile popup -->
+    <ui id="profilePopup" inherit="popup" autoSizePadding="0, 0">
+      <ui inherit="softEdgeWindow" autoSizePadding="9, 9" color="popupBorder">
+        <ui inherit="softEdgeWindow" color="menuBackgroundAccent" autoSizePadding="1, 9" position="9, 9">
+          <ui type="scrollContainer" size="420, 200" vertical="always">
+            <ui id="profileList" inherit="settingsArea" position="9, 9" size="388, 44" />
+          </ui>
+          <ui id="profileEditButton" inherit="settingsButton" autoWidthPadding="-1" size="388, 44" position="9, 212" tid="manageProfiles" />
+        </ui>
+      </ui>
+    </ui>
+
+    <!-- Language popup -->
+    <ui id="languagePopup" inherit="simplePopup" />
+
+  </ui>
+
+
+  <!-- Unlock -->
+  <ui id="unlockScreen" type="flowLayout" position="0, 20" anchor="none" excludeHidden="1">
+
+    <ui id="unlockedFrame" type="frame" autoSizePadding="-1, 12" size="650, 1" position="391, 0" align="center" anchor="none">
+      <ui type="flowLayout" padding="16" excludeHidden="1">
+        <ui id="licenseTitle" inherit="backgroundLabel" color="accentAgainstBackground" fontSize="34" position="325, 15" maxWidth="680" tid="unlockCongrats" />
+        <ui id="licenseInfo" inherit="settingsArea" size="650, 44" />
+      </ui>
+    </ui>
+    <ui type="spacer" size="1, 16" />
+
+    <ui id="featureList" type="frame" autoSizePadding="-1, 0" size="650, 1" position="391, 0" align="center" anchor="none">
+      <ui inherit="settingsWindow" autoSizePadding="-1, 12" size="650, 1" position="0, 0">
+        <ui type="flowLayout" position="0, 12">
+          <ui inherit="settingsLabel" color="accentAgainstBackground" tid="feature1" />
+          <ui inherit="settingsLabel" fontSize="14" wrap="630" tid="feature2" />
+          <ui type="spacer" size="1, 20" />
+          <ui inherit="settingsLabel" color="accentAgainstBackground" tid="feature3" />
+          <ui inherit="settingsLabel" fontSize="14" wrap="630" tid="feature4" />
+          <ui type="spacer" size="1, 20" />
+          <ui inherit="settingsLabel" color="accentAgainstBackground" tid="freePlay" />
+          <ui inherit="settingsLabel" fontSize="14" wrap="630" tid="feature6" />
+        </ui>
+      </ui>
+    </ui>
+    <ui type="spacer" size="1, 16" />
+
+    <ui id="unlockViaAppStore" type="frame" size="650, 210" position="391, 0" align="center" anchor="none">
+      <ui inherit="settingsWindow" size="650, 208">
+        <ui type="flowLayout" padding="10" position="325, 96" align="left, center" excludeHidden="1">
+          <ui id="spinner" type="waitSpinner" align="center" />
+          <ui type="flowLayout" padding="1" excludeHidden="1">
+            <ui id="storeMessage1" inherit="settingsLabel" align="center" position="0, 0" />
+            <ui id="storeMessage2" inherit="settingsLabel" align="center" position="0, 0" />
+          </ui>
+
+          <ui type="flowLayout" id="successPane" align="center">
+            <ui type="spacer" size="1, 14" />
+            <ui type="image" texture="instruments" uv="0, 0, 48, 48" />
+          </ui>
+        </ui>
+
+        <ui id="storeButtons" type="distributedLayout" size="0, 200" extentsArePadded="1" position="325, 0" excludeHidden="1">
+          <ui inherit="settingsLabel" position="0, 0" align="center" wrap="630" tid="inAppDesc" />
+          <ui id="inAppPurchase" inherit="titleButton" color="buttonAccept" colorHover="buttonAcceptHover" size="550, 55" align="center" tid="inAppButton" />
+          <ui id="restoreButton" type="flowLayout">
+            <ui type="flowLayout" direction="horizontal" align="center" padding="10">
+              <ui inherit="settingsLabel" tid="restore1" position="0, 16" align="left, center" />
+              <ui id="inAppRestore" inherit="titleButton" autoWidthPadding="10" size="1, 30" tid="restore2" fontSize="17" align="left" />
+            </ui>
+          </ui>
+          <ui inherit="settingsLabel" position="0, 0" align="center" wrap="630" tid="inAppMoreInfo" />
+        </ui>
+      </ui>
+    </ui>
+    <ui type="spacer" size="1, 16" />
+
+    <ui id="claim" type="flowLayout" padding="10" direction="horizontal" align="center" position="391, 0">
+      <ui inherit="settingsLabel" tid="claimLabel" position="0, 16" align="left, center" />
+      <ui id="claimButton" inherit="titleButton" autoWidthPadding="10" size="1, 30" tid="claimButton" fontSize="17" align="left" />
+    </ui>
+
+    <ui id="unlockViaKey" align="center" position="391, 20" inherit="settingsWindow" autoSizePadding="-1, 0" size="650, 0">
+      <ui type="distributedLayout" size="0, 240" extentsArePadded="1" position="325, 0">
+
+        <ui id="buyNow" inherit="titleButton" color="buttonAccept" colorHover="buttonAcceptHover" fontSize="22" size="550, 55" tid="unlockButton" maxWidth="500" image="interface_globe" />
+
+        <ui type="flowLayout" padding="10" direction="horizontal" align="center">
+          <ui inherit="settingsLabel" position="0, 30" align="left, center" tid="shortCode1" />
+          <ui id="codeBox" inherit="settingsWindow" size="250, 60">
+            <ui id="codeText" inherit="textbox" fontSize="48" position="125, 33" maxLength="9" align="center, center" />
+          </ui>
+
+          <ui id="shortUnlock" inherit="titleButton" align="left" fontSize="17" autoWidthPadding="10" size="1, 40" position="0, 10" tid="shortCode2" />
+        </ui>
+
+        <ui type="flowLayout" padding="10" direction="horizontal" align="center">
+          <ui inherit="settingsLabel" tid="lostKey1" position="0, 16" align="left, center" />
+          <ui id="retrieve" inherit="titleButton" autoWidthPadding="10" size="1, 30" tid="lostKey2" fontSize="17" align="left" />
+        </ui>
+
+      </ui>
+    </ui>
+
+    <ui type="spacer" size="1, 16" />
+    <ui id="keyboardSpacer" type="spacer" size="1, 500" />
+  </ui>
+
+
+  <!-- Song Library -->
+  <ui id="libraryStatus" type="label" fontSize="24" align="center" position="512, 300" color="textAgainstBackgroundFaded" visible="0" anchor="none" />
+
+  <ui id="songLibraryRowScore" type="frame" size="73, 40">
+    <ui id="songScoreBg" type="spacer" size="62, 40" />
+    <ui id="songScore" type="label" fontSize="36" align="center, center" position="32, 21" color="white" fontEffect="outline" />
+  </ui>
+  <ui id="songLibraryRowTitle" type="frame" size="660, 40" anchor="both">
+    <ui type="image" texture="ui_datagrid_row" size="1024, 42" position="-73, -1" anchor="both" />
+    <ui id="songLock" type="image" texture="lock_open" color="textAgainstBackgroundFaded" position="10, 18" align="center, center" visible="0" />
+    <ui id="songTitle" type="label" maxWidth="660" anchor="both" fontSize="20" color="textAgainstBackground" align="left, center" position="0, 20" />
+  </ui>
+  <ui id="songLibraryRowPlayed" type="frame" size="80, 40" anchor="right">
+    <ui id="lastPlayed" type="label" fontSize="14" color="textAgainstBackground" position="76, 5" align="right" />
+    <ui id="playCount" type="label" fontSize="12" color="textAgainstBackground" position="76, 20" align="right" />
+  </ui>
+  <ui id="songLibraryRowRating" type="slider" size="86, 40" anchor="right" foreground="slider_RatingSelected" background="slider_RatingBackground" step="25" />
+  <ui id="songLibraryRowDifficulty" type="frame" size="108, 40" anchor="right">
+    <ui id="difficulty" type="slider" size="70, 40" foreground="slider_DifficultySelected" background="slider_DifficultyBackground" step="10" />
+    <ui id="songCount" type="label" anchor="both" fontSize="20" color="textAgainstBackgroundFaded" align="right, center" position="72, 20" />
+  </ui>
+
+  <ui id="songLibraryRatingPopup" inherit="popup" autoSizePadding="0, 0">
+    <ui id="window" inherit="softEdgeWindow" color="popupBorder" autoSizePadding="9, 9">
+      <ui id="outerFlow" type="flowLayout" padding="10" position="0, 10">
+        <ui id="content" type="window" color="menuBackground" autoSizePadding="-1, 10" size="382, 0" position="9, 9">
+          <ui id="flow" type="flowLayout" padding="10" position="0, 10">
+            <ui id="heading" inherit="backgroundLabel" align="center" position="191, 0" fontSize="24" tid="columnRating" />
+            <ui id="slider" type="slider" size="172, 80" anchor="right" align="center" position="191, 0" foreground="slider_RatingSelected@2x" background="slider_RatingBackground@2x" step="25" />
+          </ui>
+        </ui>
+        <ui id="clear" inherit="titleButton" color="buttonDeny" colorHover="buttonDenyHover" hoverShimmy="0" tid="clear" align="left" position="9, 0" size="382, 44" />
+      </ui>
+    </ui>
+  </ui>
+
+  <ui id="songLibraryDifficultyPopup" inherit="songLibraryRatingPopup">
+    <ui find="window"><ui find="outerFlow"><ui find="content"><ui find="flow">
+      <ui find="heading" tid="columnDifficulty" />
+      <ui find="slider" size="140, 80" foreground="slider_DifficultySelected@2x" background="slider_DifficultyBackground@2x" step="10" />
+    </ui></ui></ui></ui>
+  </ui>
+
+  <ui id="songLibraryScreen" type="frame" anchor="both, both" size="1024, 768">
+    <ui id="bg" inherit="bg" color="menuBackground" />
+
+    <ui type="spacer" anchor="both" size="1024, 108" color="menuBackgroundAccent" />
+
+    <ui inherit="headerBar">
+      <ui find="backButton" tid="synthesia" />
+      <ui id="songControls" type="flowLayout" align="center" anchor="none" direction="horizontal" position="512, 0" excludeHidden="1" visible="0">
+        <ui inherit="headerSep" />
+        <ui id="playPause" inherit="headerButton" image="interface_play" imageColor="headerText" />
+        <ui inherit="headerSep" />
+        <ui type="spacer" size="4, 0" />
+        <ui type="frame" size="400, 44">
+          <ui id="loadedSongTitle" inherit="headerLabel" fontSize="16" position="200, 13" maxWidth="410" align="center, center" />
+          <ui id="scrubber" type="slider" size="400, 24" position="0, 18" foreground="slider_Scrubber" background="slider_Scrubber" foregroundColor="songLibraryTimeScrubber" backgroundColor="headerText" color="headerText" maxValue="1000" splitter="slider_ScrubberSplitter" splitterWidth="24" />
+        </ui>
+        <ui type="spacer" size="4, 0" />
+        <ui inherit="headerSep" />
+        <ui id="deleteControls" type="flowLayout" direction="horizontal">
+          <ui id="delete" inherit="headerButton" image="interface_trash" />
+          <ui inherit="headerSep" />
+        </ui>
+      </ui>
+      <ui id="continueButton" inherit="headerTextButton" tid="continue" align="right" anchor="right" position="1014, 1" />
+      <ui id="badSongDeleteFlow" type="flowLayout" direction="horizontal" position="1024, 0" visible="0" anchor="right" align="right">
+        <ui inherit="headerSep" />
+        <ui id="badSongDeleteButton" inherit="headerButton" image="interface_trash" />
+      </ui>
+    </ui>
+
+    <ui inherit="settingsWindow" size="794, 44" position="10, 54" anchor="both" layer="10">
+      <ui id="breadcrumb" inherit="breadcrumb" position="10, 23" align="left, center" fontSize="18" maxWidth="794" anchor="both" />
+    </ui>
+
+    <ui inherit="settingsWindow" id="searchBox" size="200, 44" position="1014, 54" align="right" anchor="right" layer="10">
+      <ui id="search" inherit="textbox" emptyHint="textboxHintSearch" maxLength="80" width="162" fontSize="17" position="3, 11" />
+      <ui id="clearSearchButton" type="image" hitTest="1" texture="interface_clear_search" color="textAgainstBackgroundFaded" position="198, 7" align="right" anchor="right" />
+    </ui>
+
+    <ui type="spacer" size="1024, 57" position="0, 768" color="menuBackgroundAccent" align="left, bottom" anchor="both, bottom" />
+
+    <ui id="songList" type="boundDataGrid" size="0, 603" position="0, 108" mode="selectable" rowHeight="40" rowBackgroundSelectedColor="datagridRowBackgroundSelected" anchor="both, both" />
+
+    <ui inherit="libraryStatus" id="emptyStillScanning" tid="emptyStillScanning" />
+    <ui inherit="libraryStatus" id="emptyWithFilter" tid="emptyWithFilter" />
+    <ui inherit="libraryStatus" id="emptyScannerIdle" tid="emptyScannerIdle" />
+    <ui inherit="libraryStatus" id="emptyIdleTopLevel" tid="emptyIdleTopLevel" />
+
+    <ui id="songSort" inherit="segmentButton" position="512, 722" align="center" anchor="none, bottom" fontSize="12" />
+
+    <ui type="flowLayout" direction="horizontal" position="1014, 744" align="right, center" anchor="right, bottom" padding="15">
+      <ui id="scanningIndicator" type="image" texture="interface_progress" color="buttonFace" position="0, 7" />
+      <ui id="libraryStatus" inherit="backgroundLabel" color="textAgainstBackgroundFaded" align="left" fontSize="24" />
+    </ui>
+
+    <ui id="moreSongs" inherit="button" position="10, 742" align="left, center" anchor="left, bottom" tid="libraryMoreSongs" size="0, 38" autoWidthPadding="6" fontSize="14" />
+
+  </ui>
+
+  <ui id="recycleSongWindow" inherit="popupCancelSaveWindow" size="800, 270">
+    <ui find="saveButton" visible="0" />
+    <ui find="content" size="782, 158">
+      <ui type="distributedLayout" position="391, 4" size="382, 128" extentsArePadded="1">
+        <ui id="questionLabel" inherit="backgroundLabel" fontSize="18" />
+        <ui id="pathLabel" inherit="backgroundLabel" fontSize="18" maxWidth="782" />
+      </ui>
+    </ui>
+    <ui id="recycleButton" inherit="titleButton" color="buttonDeny" colorHover="buttonDenyHover" hoverShimmy="0" align="left" size="782, 44" position="9, 217" />
+  </ui>
+
+
+  <!-- Song Settings -->
+  <ui id="songSettingsButtonBlock" type="frame" size="220, 250">
+    <ui id="blockTitle" type="label" maxWidth="250" color="textAgainstBackground" fontSize="22" align="center" position="110, 2" />
+    <ui id="blockDetail" type="label" maxWidth="250" color="textAgainstBackgroundFaded" fontSize="17" align="center" position="110, 27" />
+
+    <ui id="b" type="button" position="1, 53" size="218, 194" color="songSettingsGrayBox" colorHover="songSettingsGrayBoxHover" />
+    <ui id="bL" type="button" position="1, 53" size="106, 97" />
+    <ui id="bR" type="button" position="112, 53" size="107, 97" />
+    <ui id="bB" type="button" position="1, 155" size="218, 92" color="songSettingsGrayBox" colorHover="songSettingsGrayBoxHover" />
+  </ui>
+
+  <ui id="songSettingsWatchButtonFrame" type="frame" size="218, 97">
+    <ui type="label" color="songSettingsGrayText" align="center, center" position="109, 48" fontSize="17" wrap="180" tid="watchAndListen" />
+  </ui>
+  <ui id="songSettingsInstrumentAndHandsButtonFrame" type="frame" size="218, 92">
+    <ui type="label" color="songSettingsGrayText" align="center, center" position="109, 46" fontSize="17" wrap="180" tid="instrumentsAndHands" />
+  </ui>
+
+  <ui id="songSettingsScreen" type="frame" anchor="both, both" size="1024, 768" >
+
+    <!-- We fake "menuBackground" while actually clearing to the falling-note background
+         so that when you choose to split a part and the screen slides over to the custom
+         part editor, the background color is correct. -->
+    <ui id="bg" inherit="bg" color="screenBackground" />
+    <ui type="spacer" size="1024,768" anchor="both, both" color="menuBackground" />
+
+    <ui type="frame" anchor="both" size="1024, 44">
+      <ui type="spacer" anchor="both" size="1024, 44" color="header" />
+
+      <ui type="flowLayout" padding="2" direction="horizontal" position="4, 0" excludeHidden="1">
+        <ui id="backButton" inherit="backButton" position="0, 2" tid="songs" />
+      </ui>
+
+      <ui type="flowLayout" padding="10" align="center" anchor="none" direction="horizontal" position="512, 0" excludeHidden="1">
+        <ui id="songTitleScoreWindow" inherit="softEdgeWindow" size="60, 36" position="0, 22" align="left, center">
+          <ui id="songTitleScoreText" type="label" align="center, center" position="32, 19" fontEffect="outline" fontSize="32" />
+        </ui>
+        <ui id="songTitleText" maxWidth="480" inherit="headerLabel" align="left, center" position="0, 23" />
+      </ui>
+
+      <ui type="flowLayout" padding="2" align="right" anchor="right" direction="horizontal" position="1014, 0" excludeHidden="1">
+        <ui id="benchmarkButton" inherit="headerButton" image="interface_stopwatch" />
+        <ui id="continueButton" inherit="headerTextButton" tid="continue" position="0, 1" />
+      </ui>
+    </ui>
+  </ui>
+
+  <ui id="songSettingsSimpleTabContentsLabel" type="label" fontSize="20" align="center" wrap="550" position="602, 141" color="textAgainstBackgroundFaded" visible="0" anchor="none" />
+
+  <ui id="songSettingsSimpleFrame" type="frame" anchor="both, both" size="1024, 724" position="0, 44">
+
+    <ui type="frame" id="sidebarFrame" size="1024, 434" position="0, 290" anchor="both, both">
+      <ui type="spacer" anchor="both" size="1024, 48" color="header" />
+      <ui id="modeHeaderText" inherit="headerLabel" align="center, center" position="512, 25" />
+
+      <ui type="flowLayout" id="sidebar" position="0, 48" padding="1" />
+      <ui type="spacer" anchor="left, both" size="1, 386" color="separatorLine" position="180, 48" />
+      <ui type="spacer" position="181, 48" size="843, 386" anchor="both, both" color="menuBackgroundAccent" />
+
+      <ui inherit="songSettingsSimpleTabContentsLabel" id="watchOnlyNonApplicable" tid="modeHelp2" />
+      <ui inherit="songSettingsSimpleTabContentsLabel" id="noScoresYet" tid="modeHelp3" />
+    </ui>
+
+    <ui type="distributedLayout" direction="horizontal" position="0, 15" size="1024, 250" maxSpacing="35" extentsArePadded="1" anchor="both">
+      <ui inherit="songSettingsButtonBlock">
+        <ui find="b" id="watch" size="218, 97" />
+        <ui find="bL" visible="0" />
+        <ui find="bR" visible="0" />
+        <ui find="bB" id="instrumentsAndHands" />
+      </ui>
+      <ui type="spacer" />
+      <ui inherit="songSettingsButtonBlock">
+        <ui find="blockTitle" id="Melody1" tid="modeMelody1" />
+        <ui find="blockDetail" id="Melody2" tid="modeMelody2" />
+        <ui find="b" id="combinedMelody" />
+        <ui find="bL" id="splitLeftMelody" />
+        <ui find="bR" id="splitRightMelody" />
+        <ui find="bB" id="splitBothMelody" />
+      </ui>
+      <ui type="spacer" />
+      <ui inherit="songSettingsButtonBlock">
+        <ui find="blockTitle" id="Rhythm1" tid="modeRhythm1" />
+        <ui find="blockDetail" id="Rhythm2" tid="modeRhythm2" />
+        <ui find="b" id="combinedRhythm" />
+        <ui find="bL" id="splitLeftRhythm" />
+        <ui find="bR" id="splitRightRhythm" />
+        <ui find="bB" id="splitBothRhythm" />
+      </ui>
+      <ui type="spacer" />
+      <ui inherit="songSettingsButtonBlock">
+        <ui find="blockTitle" id="Recital1" tid="modeRecital1" />
+        <ui find="blockDetail" id="Recital2" tid="modeRecital2" />
+        <ui find="b" id="combinedRecital" />
+        <ui find="bL" id="splitLeftRecital" />
+        <ui find="bR" id="splitRightRecital" />
+        <ui find="bB" id="splitBothRecital" />
+      </ui>
+    </ui>
+
+    <ui id="assignHands" type="flowLayout" position="620, 155" padding="18" align="left, center" anchor="none">
+      <ui type="flowLayout" padding="8" direction="horizontal" align="center">
+        <ui type="image" texture="interface_icon_exclamation" position="0, 0" align="left, center" />
+        <ui tid="assignHands" type="label" wrap="560" color="textAgainstBackground" fontSize="22" align="left, center" />
+      </ui>
+      <ui id="assignHandsHelp" inherit="button" tid="help" align="center" autoWidthPadding="25" size="1, 40" />
+    </ui>
+    <ui id="noInput" type="flowLayout" position="620, 155" padding="10" align="left, center" anchor="none">
+      <ui tid="noInput" type="label" wrap="560" color="textAgainstBackground" fontSize="22" align="center" />
+      <ui id="noInputSettings" inherit="button" tid="settings" align="center" autoWidthPadding="25" size="1, 40" />
+    </ui>
+
+  </ui>
+
+  <ui type="frame" id="songSettingsSimpleContent" position="181, 338" size="843, 386" anchor="both, both" />
+  <ui inherit="settingsLabel" id="simpleInstructionLabel" wrap="500" anchor="both" />
+
+  <ui id="songSettingsSimpleInstructions" inherit="songSettingsSimpleContent">
+    <ui type="flowLayout" padding="0" anchor="both" position="15, 31">
+      <ui id="l0" inherit="simpleInstructionLabel" />
+      <ui id="l1" inherit="simpleInstructionLabel" />
+      <ui id="l2" inherit="simpleInstructionLabel" />
+      <ui id="l3" inherit="simpleInstructionLabel" />
+      <ui id="l4" inherit="simpleInstructionLabel" />
+      <ui id="l5" inherit="simpleInstructionLabel" />
+      <ui id="l6" inherit="simpleInstructionLabel" />
+    </ui>
+
+    <ui type="frame" position="550, 10" size="280, 230" anchor="right" childrenSensitive="0">
+      <ui id="leftUnder" type="image" texture="simple_keyboard_left" position="0, 0" />
+      <ui id="rightUnder" type="image" texture="simple_keyboard_right" position="140, 0" />
+      <ui id="leftOver" type="image" position="0, 0" />
+      <ui id="rightOver" type="image" position="140, 0" />
+      <ui id="leftHand" type="image" texture="simple_hand_left" position="0, 140" color="transparentWhite" />
+      <ui id="rightHand" type="image" texture="simple_hand_right" position="140, 140" color="transparentWhite" />
+    </ui>
+  </ui>
+
+  <ui id="songSettingsSimpleScoreTable" inherit="songSettingsSimpleContent">
+    <ui inherit="settingsWindow" anchor="both, both" size="823, 366" position="10, 10">
+      <ui id="tableDummy" type="frame" size="775, 360" anchor="both, both" position="5, 6" />
+    </ui>
+  </ui>
+
+  <ui id="songSettingsSimpleProgressBreakdownValue" inherit="settingsLabel" align="right" anchor="right" position="447, 0" />
+  <ui id="songSettingsSimpleProgressBreakdownRow" type="frame" anchor="both" size="823, 26">
+    <ui id="text" inherit="songSettingsSimpleProgressBreakdownValue" anchor="both" align="left" maxWidth="400" position="10, 0" />
+    <ui id="c1" inherit="songSettingsSimpleProgressBreakdownValue" />
+    <ui id="c2" inherit="songSettingsSimpleProgressBreakdownValue" position="632, 0" />
+    <ui id="c3" inherit="songSettingsSimpleProgressBreakdownValue" position="815, 0" />
+  </ui>
+
+  <ui id="songSettingsSimpleProgressBreakdown" inherit="songSettingsSimpleContent">
+    <ui type="flowLayout" padding="6" position="10, 15" anchor="both">
+      <ui inherit="settingsLabel" position="10, 0" tid="pointsAveraged" wrap="823" anchor="both" />
+      <ui inherit="settingsWindow" id="needsHRs" anchor="both" size="823, 159">
+        <ui type="flowLayout" padding="0" anchor="both">
+          <ui type="spacer" size="1, 4" />
+          <ui inherit="songSettingsSimpleProgressBreakdownRow" position="3, 0">
+            <ui find="text" visible="0" />
+            <ui find="c1" fontSize="24" text="#1" />
+            <ui find="c2" fontSize="24" text="#2" />
+            <ui find="c3" fontSize="24" text="#3" />
+          </ui>
+          <ui type="spacer" size="1, 5" />
+          <ui inherit="settingsHr" size="823, 1" />
+          <ui type="spacer" size="1, 5" />
+          <ui id="r1" inherit="songSettingsSimpleProgressBreakdownRow" />
+          <ui id="r2" inherit="songSettingsSimpleProgressBreakdownRow" />
+          <ui id="r3" inherit="songSettingsSimpleProgressBreakdownRow" />
+          <ui type="spacer" size="1, 2" />
+          <ui inherit="settingsHr" size="823, 1" />
+          <ui type="spacer" size="1, 7" />
+          <ui id="r4" inherit="songSettingsSimpleProgressBreakdownRow">
+            <ui find="text" tid="date" />
+          </ui>
+        </ui>
+      </ui>
+    </ui>
+  </ui>
+
+  <ui id="songSettingsInstrumentLabel" inherit="settingsLabel" position="10, 21" />
+  <ui id="songSettingsInstrumentCategory" type="frame" childrenSensitive="0" size="174, 32">
+    <ui id="background" type="spacer" color="buttonFaceHover" size="174, 32" />
+    <ui id="text" type="label" position="10, 16" color="buttonText" align="left, center" />
+    <ui type="spacer" color="separatorLine" size="174, 1" position="0, 32" />
+  </ui>
+
+
+  <ui id="songSettingsHButton" type="frame">
+    <ui id="icon" type="image" align="center, center" position="22, 22" />
+    <ui id="text" type="label" color="white" fontSize="17" position="45, 22" align="left, center" />
+  </ui>
+  <ui id="songSettingsVButton" type="frame" size="78, 69">
+    <ui id="icon" type="image" align="center, center" position="40, 25" />
+    <ui id="text" type="label" color="white" fontSize="14" maxWidth="78" position="41, 55" align="center, center" />
+  </ui>
+
+  <ui id="songSettingsAdvancedCursorFollowIcon" type="image" color="songSettingsFadedIcon" align="center, bottom" visible="0" />
+  <ui id="songSettingsAdvancedFrame" type="frame" anchor="both, both" size="1024, 768">
+
+    <ui type="frame" anchor="both" size="1024, 44">
+      <ui type="spacer" anchor="both" size="1024, 44" color="header" />
+
+      <ui type="flowLayout" padding="2" direction="horizontal" position="4, 0" excludeHidden="1">
+        <ui id="backButton" inherit="backButton" position="0, 2" tid="back" />
+        <ui id="helpButton" inherit="headerTextButton" tid="help" />
+      </ui>
+
+      <ui id="titleText" inherit="headerLabel" tid="instrumentsAndHands" />
+    </ui>
+
+    <ui type="frame" anchor="both, bottom" size="1024, 52" position="0, 716">
+      <ui type="spacer" anchor="both, both" size="1024, 52" color="menuBackgroundAccent" />
+
+      <ui type="flowLayout" position="5, 5" direction="horizontal" padding="38">
+        <ui inherit="songSettingsHButton" id="reset" autoSizePadding="3, 1">
+          <ui find="icon" texture="interface_lightning" />
+          <ui find="text" tid="reset" fontSize="14" color="textAgainstBackground" />
+        </ui>
+        <ui inherit="backgroundLabel" align="left" wrap="300" position="0, 4" tid="dragToCopy" />
+      </ui>
+
+      <ui id="all" inherit="button" hoverShimmy="0" tid="allParts" autoWidthPadding="6" size="1, 44" position="512, 5" align="center, top" anchor="none" visible="0" />
+
+      <ui id="autoColor" inherit="button" tid="autoColor" autoWidthPadding="10" size="1, 40" position="1016, 7" align="right, top" anchor="right" />
+    </ui>
+
+    <ui id="instrumentPane" type="scrollContainer" anchor="both, both" position="0, 44" size="1019, 672">
+      <ui type="flowLayout" position="0, 20" anchor="both">
+        <ui id="instrumentList" type="gridLayout" padding="20" fixedDimension="962" position="20, 0" childLayout="rightToLeft" anchor="both" />
+        <ui type="spacer" size="1, 20" />
+      </ui>
+    </ui>
+
+    <ui inherit="instrumentPopup" id="instrumentPopup" />
+    <ui id="modePopup" inherit="simplePopup" />
+  </ui>
+
+  <ui id="colorPopupButton" inherit="button" size="60, 44" />
+  <ui id="colorPopupColumn" type="flowLayout" padding="6" excludeHidden="1" />
+  <ui id="colorPopup" inherit="popup" autoSizePadding="0, 0" >
+    <ui inherit="softEdgeWindow" color="popupBorder" autoSizePadding="9, 9">
+      <ui inherit="softEdgeWindow" color="menuBackground" autoSizePadding="10, 10" position="9, 9">
+        <ui type="flowLayout" position="10, 10" padding="10" direction="horizontal" excludeHidden="1">
+          <ui inherit="colorPopupColumn" id="background"><ui id="icon" type="image" position="30, 0" align="center" texture="interface_owner_synthesia" /></ui>
+          <ui inherit="colorPopupColumn" id="left"><ui id="icon" type="image" position="30, 0" align="center" texture="interface_part_left" /></ui>
+          <ui inherit="colorPopupColumn" id="right"><ui id="icon" type="image" position="30, 0" align="center" texture="interface_part_right" /></ui>
+        </ui>
+      </ui>
+    </ui>
+  </ui>
+
+  <ui id="songSettingsAdvancedInstrument" type="window" size="340, 137">
+    <ui type="image" texture="ui_track_box" position="1, 67" />
+
+    <ui inherit="songSettingsHButton" id="instrument" size="294, 66">
+      <ui find="icon" position="30, 33" />
+      <ui find="text" position="61, 28" fontSize="22" maxWidth="233" />
+      <ui id="noteCount" type="label" color="white" fontSize="14" position="61, 50" align="left, center" />
+    </ui>
+
+    <ui type="frame" id="preview" size="44, 70" position="296, 0">
+      <ui id="icon" type="image" align="center, center" position="22, 35" />
+    </ui>
+
+    <ui inherit="songSettingsVButton" id="mode" position="0, 68" size="184, 69">
+      <ui find="icon" position="95, 25" visible="0" />
+      <ui type="distributedLayout" direction="horizontal" position="95, 25" excludeHidden="1" align="center, center" size="184, 40" maxSpacing="10" extentsArePadded="1">
+        <ui type="image" id="left" texture="interface_part_left" />
+        <ui type="image" id="right" texture="interface_part_right" />
+        <ui type="image" id="background" texture="interface_owner_synthesia" position="0, 2" />
+        <ui type="image" id="discard" texture="fingering_remove" position="0, 6" />
+      </ui>
+
+      <ui find="text" position="95, 55" maxWidth="184" />
+    </ui>
+
+    <ui inherit="songSettingsVButton" id="color" position="184, 68">
+      <ui find="icon" visible="0" texture="interface_notes_shown" />
+      <ui id="iconHolder" type="frame" align="center, center" position="40, 25" size="32, 32" />
+    </ui>
+
+    <ui inherit="songSettingsVButton" id="audible" position="262, 68" />
+  </ui>
+
+
+  <!-- Various popup help windows -->
+
+  <ui id="helpLabel" inherit="backgroundLabel" align="left" wrap="650" />
+  <ui id="helpSpacer" type="spacer" size="1, 15" />
+  <ui id="helpWindow" type="window" color="buttonFace" autoSizePadding="9, 9" position="512, 280" align="center, center" anchor="none, none">
+    <ui id="backButton" inherit="backButton" tid="back" fontSize="18" position="9, 5" />
+    <ui id="title" inherit="headerLabel" maxWidth="500" position="350, 9" />
+    <ui id="content" inherit="softEdgeWindow" autoSizePadding="-1, 9" size="682, 1" position="9, 49">
+      <ui id="flow" type="flowLayout" padding="0" align="center" position="341, 9" />
+    </ui>
+  </ui>
+  <ui id="helpWindowWithButton" inherit="helpWindow">
+    <ui find="content">
+      <ui find="flow" padding="8" align="left" position="341, 9">
+        <ui id="textFlow" type="flowLayout" padding="0" align="center" />
+        <ui id="moreInfoButton" inherit="titleButton" fontSize="20" align="center" size="660, 55" />
+      </ui>
+    </ui>
+  </ui>
+
+  <ui id="helpCannotChangePercussion" inherit="helpWindow">
+    <ui find="title" tid="percussionT" />
+    <ui find="content"><ui find="flow">
+        <ui inherit="helpLabel" tid="percussion1" />
+    </ui></ui>
+  </ui>
+
+  <ui id="helpDemoLocked" inherit="helpWindowWithButton">
+    <ui find="title" tid="demoUnlockT" />
+    <ui find="content">
+      <ui find="flow">
+        <ui find="textFlow">
+          <ui inherit="helpLabel" tid="demoUnlock1" />
+        </ui>
+        <ui find="moreInfoButton" tid="unlock" />
+      </ui>
+    </ui>
+  </ui>
+
+  <ui id="helpIpadAddSongs" inherit="helpWindowWithButton">
+    <ui find="title" tid="importSongsT" />
+    <ui find="content">
+      <ui find="flow">
+        <ui find="textFlow">
+          <ui inherit="helpLabel" tid="importSongs1" />
+          <ui inherit="helpSpacer" />
+          <ui inherit="helpLabel" tid="importSongs2" />
+        </ui>
+        <ui find="moreInfoButton" tid="importSongsB" image="interface_globe" />
+      </ui>
+    </ui>
+  </ui>
+
+  <ui id="helpDesktopAddSongs" inherit="helpWindowWithButton">
+    <ui find="title" tid="addFoldersT" />
+    <ui find="content">
+      <ui find="flow">
+        <ui find="textFlow">
+          <ui inherit="helpLabel" tid="addFolders1" />
+          <ui inherit="helpSpacer" />
+          <ui inherit="helpLabel" tid="addFolders2" />
+        </ui>
+        <ui find="moreInfoButton" tid="addFoldersB" />
+      </ui>
+    </ui>
+  </ui>
+
+  <ui id="helpInstrumentReset" inherit="helpWindow">
+    <ui find="title" tid="resetIconT" />
+    <ui find="content">
+      <ui find="flow">
+        <ui inherit="helpLabel" tid="resetIcon1" />
+      </ui>
+    </ui>
+  </ui>
+
+  <ui id="helpSongScore" inherit="helpWindow">
+    <ui find="title" tid="songPointsT" />
+    <ui find="content"><ui find="flow">
+        <ui inherit="helpLabel" tid="songPoints1" />
+        <ui inherit="helpSpacer" />
+        <ui inherit="helpLabel" tid="songPoints2" />
+    </ui></ui>
+  </ui>
+
+  <ui id="helpReadOnlySong" inherit="helpWindow">
+    <ui find="title" tid="readOnlySongT" />
+    <ui find="content"><ui find="flow">
+        <ui inherit="helpLabel" tid="readOnlySong1" />
+    </ui></ui>
+  </ui>
+
+  <ui id="helpUnlockDeactivated" inherit="helpWindow">
+    <ui find="title" tid="unlockErrorDeactivatedT" />
+    <ui find="content"><ui find="flow">
+        <ui inherit="helpLabel" tid="unlockErrorDeactivated1" />
+        <ui inherit="helpSpacer" />
+        <ui inherit="helpLabel" tid="unlockErrorDeactivated2" />
+    </ui></ui>
+  </ui>
+
+  <ui id="helpUnlockShortCodeNoConnection" inherit="helpWindow">
+    <ui find="title" tid="unlockErrorNoInternetT" />
+    <ui find="content"><ui find="flow">
+        <ui inherit="helpLabel" tid="serviceCannotConnect" />
+    </ui></ui>
+  </ui>
+
+  <ui id="helpServiceError" inherit="helpWindow">
+    <ui find="title" text="" />
+    <ui find="content">
+      <ui find="flow">
+        <ui inherit="helpLabel" id="message" tid="serviceUnknownErr" />
+      </ui>
+    </ui>
+  </ui>
+
+  <ui id="helpServiceThrottled" inherit="helpWindow">
+    <ui find="title" text="" />
+    <ui find="content">
+      <ui find="flow">
+        <ui inherit="helpLabel" tid="serviceThrottled" />
+      </ui>
+    </ui>
+  </ui>
+
+  <ui id="helpUnlockShortCodeNotFound" inherit="helpWindow">
+    <ui find="title" tid="shortCodeFailureT" />
+    <ui find="content">
+      <ui find="flow">
+        <ui inherit="helpLabel" tid="shortCodeFailure" />
+      </ui>
+    </ui>
+  </ui>
+
+  <ui id="helpUnlockShortCodeTooManyRetrievals" inherit="helpWindow">
+    <ui find="title" tid="unlockErrorTooManyT" />
+    <ui find="content"><ui find="flow">
+        <ui inherit="helpLabel" tid="unlockErrorTooMany1" />
+    </ui></ui>
+  </ui>
+
+  <ui id="helpDeviceDisconnect" type="window" color="deviceDisconnectBackground" autoSizePadding="-1, 20" size="800, 0" position="512, 384" anchor="none, none" align="center, center">
+    <ui id="textFlow" type="flowLayout" padding="8" position="400, 44" excludeHidden="1">
+      <ui type="image" texture="device_disconnect" align="center" />
+      <ui type="label" color="deviceDisconnectText" fontSize="24" tid="deviceLost" align="center" />
+      <ui type="spacer" size="1, 5" />
+      <ui id="bluetooth" inherit="settingsScreenButton" align="center" tid="bluetooth" visible="0" color="deviceDisconnectButton" colorHover="deviceDisconnectButton" fontColor="deviceDisconnectText" fontColorHover="deviceDisconnectText" />
+    </ui>
+
+    <ui id="backButton" inherit="backButton" tid="back" fontSize="18" position="9, 5" color="deviceDisconnectButton" colorHover="deviceDisconnectButton" fontColor="deviceDisconnectText" fontColorHover="deviceDisconnectText" />
+  </ui>
+
+  <ui id="helpConfirmEarlyQuit" inherit="helpWindowWithButton">
+    <ui find="title" tid="songProgressLossT" />
+    <ui find="backButton" tid="cancel" />
+    <ui find="content">
+      <ui find="flow" padding="30">
+        <ui find="textFlow">
+          <ui inherit="helpLabel" tid="songProgressLoss1" />
+        </ui>
+        <ui find="moreInfoButton" tid="songProgressLossB" />
+      </ui>
+    </ui>
+  </ui>
+
+
+  <!-- Play -->
+  <ui type="label" id="playTitleLabel" position="1124, 0" color="titleBarMajorText" fontEffect="outline" />
+  <ui inherit="playTitleLabel" position="0, 19" align="left, bottom" fontSize="14" id="playTitleCreditName" color="titleBarMinorText" />
+  <ui inherit="playTitleLabel" position="0, 22" align="left, bottom" fontSize="22" id="playTitleCreditValue" maxWidth="256" />
+  <ui id="playTitleBar" type="frame" size="1024, 188" position="0, 215" anchor="both, none" layer="10">
+    <ui id="bg" inherit="bg" color="screenBackground" />
+
+    <ui type="flowLayout" anchor="both">
+      <ui type="spacer" id="s0" size="1024, 6" anchor="both" color="titleBarLightAccent" />
+      <ui type="spacer" id="s1" size="1024, 6" anchor="both" color="titleBarDarkAccent" />
+      <ui type="spacer" id="s2" size="1024, 164" anchor="both" color="titleBarBackground" />
+      <ui type="spacer" id="s3" size="1024, 6" anchor="both" color="titleBarDarkAccent" />
+      <ui type="spacer" id="s4" size="1024, 6" anchor="both" color="titleBarLightAccent" />
+    </ui>
+
+    <ui type="distributedLayout" position="0, 12" size="1024, 164" extentsArePadded="1" excludeHidden="1" anchor="both">
+      <ui inherit="playTitleLabel" maxWidth="1024" anchor="both" id="playTitleGroup" fontSize="16" visible="0" />
+      <ui inherit="playTitleLabel" maxWidth="1024" anchor="both" id="playTitleMain" fontSize="44"  />
+      <ui inherit="playTitleLabel" maxWidth="1024" anchor="both" id="playTitleSub" fontSize="26" visible="0" />
+      <ui id="creditsFrame" type="frame" size="1024, 22" anchor="both" visible="0" />
+    </ui>
+  </ui>
+
+  <ui id="playToolboxButton" inherit="headerButton" autoWidthPadding="4" color="headerText" colorHover="headerText" />
+  <ui id="headerImageButton" inherit="playToolboxButton" size="44, 44" />
+
+  <ui id="playMenuDrawer" type="flowLayout" anchor="both" excludeHidden="1" padding="-1">
+
+    <ui type="frame" id="menu" anchor="both" size="1024, 44">
+      <ui type="spacer" anchor="both" size="1024, 44" color="header" />
+      <ui type="flowLayout" padding="6" direction="horizontal" position="4, 0" excludeHidden="1">
+        <ui id="backButton" inherit="backButton" position="0, 2" tid="back" />
+        <ui id="helpButton" inherit="headerTextButton" tid="help" />
+      </ui>
+
+      <ui type="flowLayout" position="512, 22" align="center, center" anchor="none" direction="horizontal" excludeHidden="1" id="playControls">
+        <ui inherit="headerSep" />
+        <ui inherit="playToolboxButton" id="playPause" image="interface_pause" />
+        <ui inherit="headerSep" id="separator" />
+        <ui inherit="playToolboxButton" id="previousBookmark" image="interface_previous_bookmark" />
+        <ui inherit="playToolboxButton" id="nextBookmark" image="interface_next_bookmark" />
+        <ui inherit="headerSep" />
+        <ui inherit="playToolboxButton" id="speedDown" image="interface_minus" />
+        <ui type="frame" size="56, 44">
+          <ui id="speedText" type="numericLabel20" color="headerText" align="center" position="28, 3" />
+          <ui type="flowLayout" position="28, 24" align="center" anchor="none" direction="horizontal">
+            <ui id="bpmValue" type="numericLabel" color="headerText" />
+            <ui id="bpmText" text=" BPM" type="label" color="headerText" fontSize="12" />
+          </ui>
+        </ui>
+        <ui inherit="playToolboxButton" id="speedUp" image="interface_plus" />
+        <ui inherit="headerSep" />
+      </ui>
+
+      <ui type="flowLayout" position="1014, 22" align="right, center" anchor="right" direction="horizontal" excludeHidden="1" id="toolbox">
+        <ui inherit="playToolboxButton" id="display" image="interface_settings" />
+        <ui inherit="playToolboxButton" id="metronome" image="interface_metronome" />
+        <ui inherit="playToolboxButton" id="zoom" image="interface_zoom" />
+        <ui inherit="playToolboxButton" id="labels" image="interface_label" />
+        <ui inherit="playToolboxButton" id="bookmarks" image="interface_bookmark_edit" />
+        <ui inherit="playToolboxButton" id="fingerHints" image="interface_hand" />
+        <ui inherit="playToolboxButton" id="loops" image="interface_loop" />
+        <ui id="recitalSpacer" type="spacer" size="50, 1" visible="0" />
+      </ui>
+    </ui>
+
+    <ui type="frame" id="timeline" anchor="both" size="1024, 47">
+      <ui type="flowLayout" position="6, 29" padding="6" layer="4" direction="horizontal" sensitive="0" childrenSensitive="0">
+        <ui type="numericLabel" id="currentTime" />
+        <ui type="numericLabel" id="practiceOverage" />
+      </ui>
+      <ui layer="4" type="numericLabel" sensitive="0" id="totalTime" position="1020, 29" align="right" anchor="right" />
+    </ui>
+
+    <ui id="notationRoot" type="frame" anchor="both" autoSizePadding="-1, 0" size="1024, 0" visible="0">
+      <ui id="notationControls" inherit="tooltipWindow" color="white" autoSizePadding="6, 6" position="1100, 19" align="left" anchor="right" layer="2">
+        <ui type="flowLayout" padding="20" direction="horizontal" position="6, 6">
+          <ui id="zoomMinus" type="image" hitTest="1" size="44, 44" color="black" texture="interface_notation_zoom_minus" />
+          <ui id="zoomPlus" type="image" hitTest="1" size="44, 44" color="black" texture="interface_notation_zoom_plus" />
+        </ui>
+      </ui>
+    </ui>
+  </ui>
+
+  <ui id="playTimelineTooltip" type="flowLayout" direction="horizontal" padding="3">
+    <ui type="label" color="tooltipText" tid="time:" fontSize="12" />
+    <ui type="numericLabel" color="tooltipTextAccent" id="timeText" />
+    <ui type="spacer" size="20, 1" />
+    <ui type="label" color="tooltipText" tid="measure:" fontSize="12" />
+    <ui type="numericLabel" color="tooltipTextAccent" id="measureText" />
+  </ui>
+
+  <ui id="playStatsTemplate" inherit="tooltipWindow" size="250, 33" visible="0">
+    <ui type="label" position="10, 10" tid="notes:" color="tooltipTextFaded" fontSize="12" />
+    <ui id="notesLabel" type="numericLabel" position="53, 10" color="tooltipTextAccent" />
+    <ui type="label" position="130, 10" tid="errors:" color="tooltipTextFaded" fontSize="12" />
+    <ui id="errorsLabel" type="numericLabel" position="180, 10" color="tooltipTextAccent" />
+  </ui>
+
+  <ui id="playLoopTemplate" inherit="tooltipWindow" size="250, 20" autoSizePadding="-1, 10" visible="0">
+    <ui id="flow" type="flowLayout" excludeHidden="1" padding="1" position="0, 10" />
+  </ui>
+
+  <ui id="playScoreWindow" type="scoreWindow" size="250, 0" layer="2" position="1014, 0" align="right" anchor="right">
+    <ui type="flowLayout" id="scoreWindowFlow" excludeHidden="1" padding="20" align="right" position="250, 0">
+      <ui id="playMelodyStats" inherit="playStatsTemplate" />
+      <ui id="playRhythmStats" inherit="playStatsTemplate" size="250, 52">
+        <ui type="label" position="10, 30" tid="points:" color="tooltipTextFaded" fontSize="12" />
+        <ui type="flowLayout" direction="horizontal" padding="6" position="53, 30">
+          <ui id="scoreLabel" type="numericLabel" color="tooltipText" />
+          <ui id="multiplierLabel" type="numericLabel" color="tooltipTextAccentFaded" />
+        </ui>
+      </ui>
+
+      <ui id="playLoopMelody" inherit="playLoopTemplate" />
+      <ui id="playLoopRhythm" inherit="playLoopTemplate" size="150, 20" position="100, 0" />
+    </ui>
+  </ui>
+
+  <ui id="playLoopMelody" inherit="tooltipWindow" size="250, 20" visible="0">
+    <ui id="flow" type="flowLayout" excludeHidden="1" padding="1" position="0, 10" />
+  </ui>
+  <ui id="playLoopRhythm" inherit="playLoopMelody" size="150, 20" />
+
+  <ui id="playRhythmRow" type="frame" size="170, 17" position="10, 0">
+    <ui id="loop" type="label" color="tooltipTextFaded" fontSize="12" />
+    <ui id="score" type="numericLabel" color="tooltipTextAccent" position="80, 0" />
+  </ui>
+  <ui id="playMelodyRow" type="frame" size="240, 17" position="10, 0">
+    <ui type="label" color="tooltipTextFaded" fontSize="12" tid="time:" position="60, 0" />
+    <ui type="label" color="tooltipTextFaded" fontSize="12" tid="notes:" position="160, 0" />
+    <ui id="loop" type="label" color="tooltipTextFaded" fontSize="12" />
+    <ui id="timeOverage" type="numericLabel" color="tooltipTextAccent" position="106, 0" />
+    <ui id="noteOverage" type="numericLabel" color="tooltipTextAccent" position="200, 0" />
+  </ui>
+
+  <ui id="playBookmarkControls" inherit="tooltipWindow" color="buttonFace" layer="11" autoSizePadding="0, 0" position="55, 0" align="left, bottom">
+    <ui inherit="softEdgeWindow" color="buttonFace" autoSizePadding="9, 9">
+      <ui inherit="softEdgeWindow" color="menuBackgroundAccent" autoSizePadding="10, 10" position="9, 9">
+        <ui type="flowLayout" padding="10" position="10, 10">
+          <ui id="bookmarkSource" inherit="settingsArea" size="350, 44" />
+          <ui inherit="backgroundLabel" tid="bookmarkInstructions" position="150, 0" />
+          <ui type="spacer" size="1, 5" />
+          <ui id="clearAll" inherit="settingsCautionButton" tid="clearBookmarks" fontSize="20" size="350, 44" autoWidthPadding="-1" />
+        </ui>
+      </ui>
+    </ui>
+  </ui>
+
+  <ui id="playLoopingSubControls" inherit="tooltipWindow" size="258, 64" position="50, 0">
+    <ui id="f" type="flowLayout" padding="10" direction="horizontal" position="10, 10">
+      <ui id="prev" inherit="button" image="interface_previous_bookmark" size="44, 44" />
+      <ui type="frame" size="130, 44" id="f">
+        <ui id="l" type="label" color="tooltipText" fontSize="18" position="65, 22" align="center, center" />
+      </ui>
+      <ui id="next" inherit="button" image="interface_next_bookmark" size="44, 44" />
+    </ui>
+  </ui>
+
+  <ui id="playLoopingControls" type="frame" align="left, bottom" autoSizePadding="-1, 1" size="1024, 0" sensitive="0" anchor="both" visible="0" layer="7">
+    <ui inherit="tooltipWindow" autoSizePadding="10, 10" position="512, 0" align="center" anchor="none">
+      <ui type="flowLayout" direction="horizontal" padding="10" position="10, 0">
+        <ui type="label" color="tooltipText" tid="loopInstructions" fontSize="18" position="0, 26" align="left, center" />
+        <ui id="clearLoop" inherit="button" fontSize="18" align="left, center" tid="clear" autoWidthPadding="10" size="1, 38" position="0, 26" />
+      </ui>
+    </ui>
+
+    <ui inherit="tooltipWindow" autoSizePadding="10, 10" position="512, 64" align="center" anchor="none">
+      <ui type="flowLayout" direction="horizontal" padding="15" position="10, 0">
+        <ui type="frame" autoSizePadding="0, 0">
+          <ui type="label" color="tooltipText" tid="loopDelay" fontSize="18" position="0, 26" align="left, center" />
+          <ui type="label" color="tooltipText" tid="loopMaxErrorsT" fontSize="18" position="0, 75" align="left, center" />
+        </ui>
+        <ui type="frame" autoSizePadding="0, 0">
+          <ui id="loopDelay" type="slider" size="400, 24" position="0, 15" foreground="slider_Scrubber" background="slider_Scrubber" foregroundColor="songLibraryTimeScrubber" backgroundColor="headerText" color="headerText" maxValue="8" step="1" splitter="slider_ScrubberSplitter" splitterWidth="24" />
+          <ui id="loopErrors" type="slider" size="400, 24" position="0, 64" foreground="slider_Scrubber" background="slider_Scrubber" foregroundColor="songLibraryTimeScrubber" backgroundColor="headerText" color="headerText" maxValue="8" step="1" splitter="slider_ScrubberSplitter" splitterWidth="24" immediateUpdate="1" />
+        </ui>
+        <ui type="frame" autoSizePadding="-1, 0" size="60, 0">
+          <ui id="loopErrorCount" type="label" color="tooltipText" maxWidth="80" fontSize="18" position="30, 75" align="center, center" />
+        </ui>
+      </ui>
+    </ui>
+
+    <ui type="frame" position="0, 178" autoSizePadding="-1, 1" anchor="both" sensitive="0">
+      <ui id="loopStart" inherit="playLoopingSubControls"><ui find="f"><ui find="f"><ui find="l" tid="loopStart" /></ui></ui></ui>
+      <ui id="loopWhole" inherit="playLoopingSubControls" anchor="none" align="center" position="512, 0"><ui find="f"><ui find="f"><ui find="l" tid="entireLoop" /></ui></ui></ui>
+      <ui id="loopEnd" inherit="playLoopingSubControls" anchor="right" align="right" position="974, 0"><ui find="f"><ui find="f"><ui find="l" tid="loopEnd" /></ui></ui></ui>
+    </ui>
+  </ui>
+
+  <ui id="playFingerHintControls" inherit="tooltipWindow" align="left, bottom" autoSizePadding="10" size="1, 44" position="40, 0" visible="0" layer="7">
+    <ui type="label" color="tooltipText" tid="fingerHintInstructions" fontSize="18" position="10, 22" align="left, center" />
+  </ui>
+
+  <ui id="playComboFrame" type="flowLayout" direction="horizontal" align="center" anchor="none" position="512, -24" />
+  <ui id="playComboLabel" type="label" color="white" fontEffect="outline" fontSize="24" />
+
+  <ui id="playPopup" inherit="popup" color="buttonFace" layer="11" />
+
+  <ui id="labelPopup" inherit="playPopup" autoSizePadding="0, 0">
+    <ui inherit="softEdgeWindow" color="buttonFace" autoSizePadding="9, 9">
+      <ui inherit="softEdgeWindow" color="menuBackgroundAccent" autoSizePadding="10, 10" position="9, 9">
+        <ui type="flowLayout" padding="10" position="0, 10" excludeHidden="1">
+          <ui id="labelType" inherit="segmentButton" position="210, 0" align="center" />
+          <ui id="labelMode" inherit="settingsArea" size="420, 44" position="10, 0" />
+          <ui id="labelUpcomingOnly" inherit="settingsArea" size="420, 44" position="10, 0" />
+        </ui>
+      </ui>
+    </ui>
+  </ui>
+
+  <ui id="zoomPopup" inherit="playPopup" autoSizePadding="0, 0">
+    <ui inherit="softEdgeWindow" color="buttonFace" autoSizePadding="9, 9">
+      <ui inherit="softEdgeWindow" color="menuBackgroundAccent" autoSizePadding="10, 10" position="9, 9">
+        <ui type="flowLayout" position="10, 10" excludeHidden="1" padding="10">
+          <ui id="tabletZoomHint" inherit="backgroundLabel" wrap="480" align="left" tid="pinchKeyboard" />
+          <ui id="desktopZoomHint" inherit="backgroundLabel" wrap="480" align="left" tid="dragKeyboard" />
+          <ui id="zoomMode" inherit="settingsArea" size="480, 44" />
+          <ui type="frame" autoSizePadding="0, 0">
+            <ui type="flowLayout" direction="horizontal" padding="10" position="0, 0">
+              <ui id="zoomOut" inherit="button" image="interface_minus" size="44, 44" />
+              <ui id="zoomIn" inherit="button" image="interface_plus" size="44, 44" />
+            </ui>
+            <ui type="flowLayout" direction="horizontal" padding="10" position="480, 0" align="right">
+              <ui id="octaveLeft" inherit="button" image="playOffLeft" size="44, 44" />
+              <ui id="octaveRight" inherit="button" image="playOffRight" size="44, 44" />
+            </ui>
+          </ui>
+        </ui>
+      </ui>
+    </ui>
+  </ui>
+
+  <ui id="displayPopup" inherit="playPopup" autoSizePadding="0, 0">
+    <ui inherit="softEdgeWindow" color="buttonFace" autoSizePadding="9, 9">
+      <ui inherit="softEdgeWindow" color="menuBackgroundAccent" autoSizePadding="10, 10" position="9, 9">
+        <ui type="flowLayout" padding="10" position="10, 10">
+          <ui id="mode" inherit="settingsArea" size="470, 44" />
+          <ui id="measureLines" inherit="settingsArea" size="470, 44" />
+        </ui>
+      </ui>
+    </ui>
+  </ui>
+
+  <ui id="playMetronomePopup" inherit="playPopup" autoSizePadding="0, 0">
+    <ui inherit="softEdgeWindow" color="buttonFace" autoSizePadding="9, 9">
+      <ui inherit="softEdgeWindow" color="menuBackgroundAccent" autoSizePadding="10, 10" position="9, 9">
+        <ui type="flowLayout" padding="10" position="10, 10">
+          <ui id="velocity" inherit="settingsArea" size="470, 44"><ui inherit="volumeSlider" position="420, 0"><ui find="low" visible="0" /><ui find="high" visible="0" /></ui></ui>
+          <ui id="options" inherit="settingsArea" size="470, 44" />
+        </ui>
+      </ui>
+    </ui>
+  </ui>
+
+  <ui id="instrumentPopup" inherit="popup" size="496, 530" >
+    <ui inherit="softEdgeWindow" color="popupBorder" size="496, 531">
+      <ui inherit="softEdgeWindow" color="menuBackgroundAccent" size="478, 513" position="9, 9">
+        <ui type="spacer" size="174, 513" color="menuBackground" />
+        <ui type="flowLayout" id="categories" />
+        <ui inherit="settingsArea" id="instruments" labelTemplate="songSettingsInstrumentLabel" position="186, 12" size="280, 61" />
+        <ui type="spacer" color="separatorLine" size="1, 513" position="174, 0" />
+      </ui>
+    </ui>
+  </ui>
+
+  <!-- Play Help -->
+  <ui id="playHelpBind" type="flowLayout" padding="3">
+    <ui type="spacer" size="0, 5" />
+    <ui id="line" type="spacer" color="playHelpLine" size="2, 14" />
+    <ui type="flowLayout" direction="horizontal" padding="3" align="right" excludeHidden="1" position="4, 0">
+      <ui id="text" type="label" color="playHelpText" fontSize="12" position="0, 2" />
+      <ui id="keybindBox" inherit="softEdgeWindow" autoSizePadding="2, 1" color="buttonFace">
+        <ui id="keybind" type="label" color="playHelpText" position="3, 2" fontSize="12" />
+      </ui>
+    </ui>
+  </ui>
+
+  <ui id="playHelpBinding" type="flowLayout" direction="horizontal" padding="3" position="10, 0">
+    <ui id="text" type="label" color="playHelpText" fontSize="18" />
+    <ui inherit="softEdgeWindow" autoSizePadding="6, 1" color="buttonFace">
+      <ui id="keybind" type="label" color="playHelpText" position="8, 1" fontSize="18" />
+    </ui>
+  </ui>
+
+  <ui id="playHelpDirections" type="flowLayout" position="10, 0" align="left, bottom">
+    <ui inherit="tooltipWindow" autoSizePadding="10, 10">
+      <ui id="bindings" type="flowLayout" position="0, 10" padding="2" />
+    </ui>
+    <ui type="spacer" size="0, 10" />
+    <ui inherit="tooltipWindow" autoSizePadding="10, 10"><ui type="label" color="tooltipText" fontSize="18" position="10, 10" tid="visitShortcuts" /></ui>
+    <ui type="spacer" size="0, 15" />
+  </ui>
+
+
+  <!-- Benchmark results -->
+  <ui id="benchmarkScreen" type="frame" anchor="both, both" size="1024, 768" >
+    <ui id="bg" inherit="bg" color="menuBackground" />
+
+    <ui inherit="headerBar">
+      <ui find="backButton" tid="back" />
+      <ui find="titleText" tid="benchmark" />
+    </ui>
+
+    <ui type="flowLayout" position="0, 54" padding="4">
+      <ui id="text1" inherit="settingsLabel" />
+      <ui id="text2" inherit="settingsLabel" />
+      <ui id="text3" inherit="settingsLabel" />
+    </ui>
+
+    <ui id="saveButton" inherit="button" position="1014, 76" align="right, center" anchor="right" autoWidthPadding="10" size="0, 44" tid="saveToDesktop" />
+    <ui id="saved" inherit="settingsLabel" position="1014, 76" align="right, center" anchor="right" tid="saved" visible="0" />
+  </ui>
+  
+  <!-- Shared Setting screen elements -->
+  <ui id="settingsScreenBase" type="frame" anchor="both, both" size="1024, 768" >
+    <ui id="bg" inherit="bg" color="menuBackground" />
+
+    <ui inherit="headerBar">
+      <ui find="backButton" tid="synthesia" />
+      <ui find="titleText" tid="settings" />
+    </ui>
+
+    <ui type="spacer" anchor="left, both" size="1, 724" color="separatorLine" position="240, 44" />
+
+    <ui type="flowLayout" id="sidebar" position="0, 44" padding="1" />
+    <ui type="spacer" position="241, 44" size="783, 724" anchor="both, both" color="menuBackgroundAccent" />
+    <ui type="frame" id="settingsContent" position="241, 44" size="783, 724" anchor="both, both" />
+  </ui>
+
+  <ui id="settingsScreenValue" type="frame" anchor="both, both" size="1024, 768" >
+    <ui type="spacer" anchor="both, both" size="1024, 768" color="menuBackgroundAccent" />
+    <ui id="header" inherit="headerBar"><ui find="backButton" tid="settings" /></ui>
+    <ui id="scroll" type="scrollContainer" position="0, 44" size="1024, 724" anchor="both, both">
+      <ui type="flowLayout" id="flow" padding="6" position="20, 20" anchor="both" />
+    </ui>
+  </ui>
+
+  <ui id="settingsScreenButton" inherit="settingsButton" color="menuBackground" fontSize="20" size="725, 44" anchor="both" autoWidthPadding="-1" />
+  <ui id="settingsScreenAboutButton" inherit="settingsScreenButton" tid="aboutLegal" />
+
+  <!-- Free Play -->
+  <ui id="freePlayScreen" type="frame" anchor="both, both" size="1024, 768">
+    <ui id="bg" inherit="bg" color="screenBackground" />
+
+    <ui id="header" type="frame" anchor="both" size="1024, 44">
+      <ui id="background" type="spacer" anchor="both" size="1024, 44" color="header" />
+
+      <ui type="flowLayout" position="4, 0" direction="horizontal" padding="16">
+        <ui id="backButton" inherit="backButton" tid="synthesia" />
+        <ui type="flowLayout" position="0, 22" align="left, center" direction="horizontal">
+          <ui inherit="headerImageButton" id="saveRecording" image="interface_share" visible="0" />
+          <ui inherit="headerImageButton" id="editRecording" image="interface_trash" visible="0" background="ui_window" color="transparent" colorHover="transparent" />
+        </ui>
+      </ui>
+
+      <ui type="flowLayout" position="512, 22" align="center, center" anchor="none" direction="horizontal">
+        <ui type="flowLayout" direction="horizontal" id="recordControls" visible="0">
+          <ui inherit="headerSep" /><ui inherit="headerImageButton" id="play" image="interface_play" />
+          <ui inherit="headerSep" /><ui inherit="headerImageButton" id="record" image="interface_record" imageColor="headerRecordIcon" />
+        </ui>
+        <ui inherit="headerSep" />
+        <ui type="flowLayout" direction="horizontal" id="speedControls">
+          <ui inherit="headerImageButton" id="speedDown" image="interface_minus" />
+          <ui type="frame" size="56, 44">
+            <ui type="flowLayout" position="28, 12" align="center" anchor="none" direction="horizontal">
+              <ui id="bpmValue" type="numericLabel16" color="headerText" />
+              <ui id="bpmText" text=" BPM" type="label" color="headerText" fontSize="16" />
+            </ui>
+          </ui>
+          <ui inherit="headerImageButton" id="speedUp" image="interface_plus" />
+          <ui inherit="headerSep" />
+          <ui inherit="headerImageButton" id="style" image="interface_metronome" />
+          <ui inherit="headerSep" id="separator" />
+        </ui>
+      </ui>
+
+      <ui type="flowLayout" position="512, 22" align="center, center" anchor="none" direction="horizontal" excludeHidden="1">
+        <ui id="recordTime" type="numericLabel20" color="headerText" />
+        <ui id="recordTimeMs" type="numericLabel16" color="headerText" position="0, 5" />
+      </ui>
+
+      <ui type="flowLayout" position="1004, 22" align="right, center" anchor="right" direction="horizontal" excludeHidden="1" id="toolbox">
+        <ui inherit="headerImageButton" id="zoom" image="interface_zoom" />
+        <ui inherit="headerImageButton" id="labels" image="interface_label" />
+        <ui type="spacer" size="2, 1" />
+      </ui>
+    </ui>
+
+    <ui type="flowLayout" position="10, 54" padding="10" direction="horizontal" layer="10" excludeHidden="1">
+      <ui inherit="softEdgeWindow" color="buttonFace" size="64, 0" autoSizePadding="-1, 9">
+        <ui type="flowLayout" padding="14" position="32, 9" excludeHidden="1">
+          <ui type="image" align="center" id="instrument" hitTest="1" />
+          <ui type="image" align="center" id="color" hitTest="1" />
+        </ui>
+      </ui>
+      <ui id="recordingPanel" type="recordingPanel" size="64, 0" autoSizePadding="0, 0" visible="0">
+        <ui inherit="softEdgeWindow" color="buttonFace" autoSizePadding="9, 9">
+          <ui id="trackList" type="flowLayout" padding="14" position="9, 9" direction="horizontal" excludeHidden="1">
+            <ui id="t1" inherit="recordingPanelTrack" />
+            <ui id="t2" inherit="recordingPanelTrack" />
+            <ui id="t3" inherit="recordingPanelTrack" />
+            <ui id="t4" inherit="recordingPanelTrack" />
+            <ui id="t5" inherit="recordingPanelTrack" />
+            <ui id="t6" inherit="recordingPanelTrack" />
+          </ui>
+        </ui>
+      </ui>
+      <ui type="cachingLabel" id="chordLabel" position="0, 12" color="tooltipText" fontSize="36" align="left" fontEffect="outline" />
+    </ui>
+  </ui>
+
+  <ui id="freeplayStylePopup" inherit="playPopup" autoSizePadding="0, 0">
+    <ui inherit="softEdgeWindow" color="buttonFace" autoSizePadding="9, 9">
+      <ui inherit="softEdgeWindow" color="menuBackgroundAccent" autoSizePadding="10, 10" position="9, 9">
+        <ui type="flowLayout" padding="10" position="10, 10">
+          <ui id="styles" inherit="settingsArea" size="260, 44" />
+        </ui>
+      </ui>
+    </ui>
+  </ui>
+
+  <ui id="recordingPanelTrack" type="frame" size="44, 0" autoSizePadding="-1, 0" visible="0">
+    <ui type="flowLayout" padding="14" position="22, 0" excludeHidden="1">
+      <ui type="image" align="center" id="instrument" hitTest="1" />
+      <ui type="image" align="center" id="color" hitTest="1" />
+      <!--<ui type="image" align="center" id="sounded" hitTest="1" /> -->
+      <ui id="delete" type="button" align="center" color="buttonDeny" colorHover="buttonDenyHover" size="44, 44" hoverShimmy="0" image="interface_trash" backgroundOverlay1="" backgroundOverlay2="" visible="0" />
+    </ui>
+  </ui>
+
+  <!-- Custom Part -->
+  <ui id="customPartScreen" type="frame" anchor="both, both" size="1024, 768">
+    <!-- Uses the background color from songSettingsScreen (because it's
+         a slide-in transition which technically counts as an overlay) -->
+
+    <ui inherit="headerBar" id="header">
+      <ui find="backButton" tid="back" />
+      <ui find="titleText" visible="0" />
+
+      <ui type="flowLayout" position="250, 22" align="center, center" direction="horizontal" id="controlsA">
+        <ui inherit="headerSep" /><ui inherit="headerImageButton" id="left" image="interface_part_left" />
+        <ui inherit="headerSep" /><ui inherit="headerImageButton" id="right" image="interface_part_right" />
+        <ui inherit="headerSep" /><ui inherit="headerImageButton" id="background" image="interface_owner_synthesia" />
+        <ui inherit="headerSep" /><ui inherit="headerImageButton" id="discard" image="fingering_remove" />
+        <ui inherit="headerSep" />
+      </ui>
+
+      <ui type="flowLayout" position="512, 22" align="center, center" anchor="none" direction="horizontal">
+        <ui inherit="headerSep" />
+        <ui inherit="headerImageButton" id="splitFromHere" tid="splitFromHere" image="interface_lightning" imageAlign="left" autoWidthPadding="12" fontSize="16" />
+        <ui inherit="headerSep" />
+      </ui>
+
+      <ui type="flowLayout" position="870, 22" align="right, center" anchor="right" direction="horizontal" id="controlsB">
+        <ui inherit="headerSep" /><ui inherit="headerImageButton" id="discard" image="fingering_remove" />
+        <ui inherit="headerSep" /><ui inherit="headerImageButton" id="background" image="interface_owner_synthesia" />
+        <ui inherit="headerSep" /><ui inherit="headerImageButton" id="left" image="interface_part_left" />
+        <ui inherit="headerSep" /><ui inherit="headerImageButton" id="right" image="interface_part_right" />
+        <ui inherit="headerSep" />
+      </ui>
+
+      <ui type="flowLayout" position="1024, 22" align="right, center" anchor="right" direction="horizontal">
+        <ui inherit="headerImageButton" id="mute" image="interface_speaker_on" />
+      </ui>
+
+    </ui>
+    <ui type="frame" id="timeline" anchor="both" size="1024, 47" position="0, 44" />
+
+    <ui id="splitDecision" inherit="tooltipWindow" autoSizePadding="10, 10" position="1100, 700" align="left, bottom" anchor="right, bottom">
+      <ui type="flowLayout" padding="20" direction="horizontal" position="10, 10">
+        <ui id="accept" tid="continue" inherit="button" autoWidthPadding="20" size="0, 44" />
+        <ui id="cancel" tid="cancel" inherit="button" autoWidthPadding="14" size="0, 44" color="buttonDeny" colorHover="buttonDenyHover" />
+      </ui>
+    </ui>
+
+  </ui>
+
+  <!-- Music devices -->
+  <ui id="musicDeviceScreen" type="flowLayout" padding="6" anchor="both" position="20, 20" excludeHidden="1">
+    <ui id="musicBackend" type="flowLayout" padding="6" anchor="both">
+      <ui inherit="settingsLabel" tid="musicBackend" />
+      <ui id="backendTable" inherit="settingsArea" size="725, 44" />
+      <ui inherit="backgroundLabel" position="362, 0" tid="musicBackendHelp" wrap="640" />
+      <ui type="spacer" size="1, 5" />
+    </ui>
+
+    <ui inherit="settingsLabel" tid="musicInput" />
+    <ui id="inputTable" inherit="settingsArea" size="725, 44" />
+    <ui type="spacer" size="1, 5" />
+
+    <ui inherit="settingsLabel" tid="musicOutput" />
+    <ui id="outputTable" inherit="settingsArea" size="725, 44" />
+    <ui type="spacer" size="1, 35" />
+
+    <ui id="keyboardHelp" inherit="settingsScreenButton" tid="helpConnecting" image="interface_globe" />
+    <ui type="spacer" size="1, 5" />
+    <ui id="bluetooth" inherit="settingsScreenButton" tid="bluetooth" visible="0" />
+    <ui type="spacer" size="1, 15" />
+    <ui id="keyboardTrouble" inherit="settingsScreenButton" tid="keyboardTrouble" image="interface_globe" fontColor="buttonText" color="buttonDeny" colorHover="buttonDenyHover" visible="0" />
+    <ui type="spacer" size="1, 15" />
+  </ui>
+
+  <ui id="inputDeviceScreen" inherit="settingsScreenValue">
+    <ui find="header"><ui find="backButton" tid="musicDevices" /></ui>
+      <ui find="scroll"><ui find="flow">
+        <ui id="enabled" inherit="settingsArea" size="984, 44" />
+        <ui id="virtualPiano" inherit="backgroundLabel" position="492, 0" tid="virtualPianoHelp" />
+
+        <ui id="enabledOnly" type="flowLayout" padding="6" anchor="both" excludeHidden="1">
+          <ui id="fullDevice" type="flowLayout" padding="6" anchor="both">
+            <ui type="spacer" size="1, 8" />
+            <ui inherit="settingsLabel" tid="inputDeviceSettings" />
+            <ui id="volumeArea" inherit="settingsArea" size="984, 44"><ui inherit="volumeSlider" /></ui>
+            <ui inherit="backgroundLabel" position="492, 0" tid="inputScaleHelp" />
+            <ui type="spacer" size="1, 8" />
+
+            <ui id="rangeArea" inherit="settingsArea" size="984, 44">
+              <ui id="rangeResetButton" inherit="button" tid="resetNoteRange" autoWidthPadding="18" size="0, 34" position="820, 5" align="right" anchor="right" />
+            </ui>
+            <ui inherit="backgroundLabel" position="492, 0" tid="noteRangeHelp" />
+          </ui>
+
+          <ui type="spacer" size="1, 24" />
+          <ui id="keyboard" type="keyboard" width="984" anchor="both" />
+          <ui type="spacer" size="1, 24" />
+        </ui></ui>
+    </ui>
+  </ui>
+
+  <ui id="outputDeviceScreen" inherit="settingsScreenValue">
+    <ui find="header"><ui find="backButton" tid="musicDevices" /></ui>
+    <ui find="scroll">
+      <ui find="flow" excludeHidden="1">
+        <ui id="enabled" inherit="settingsArea" size="966, 44" />
+        <ui type="spacer" size="1, 8" />
+
+        <ui id="enabledOnly" type="flowLayout" padding="20" anchor="both" excludeHidden="1">
+          <ui type="flowLayout" padding="6" anchor="both" excludeHidden="1">
+            <ui inherit="settingsLabel" tid="outputDeviceUses" />
+            <ui id="outputTypes" inherit="settingsArea" size="966, 44" />
+            <ui id="localCaution" inherit="backgroundLabel" position="483, 0" tid="localCaution" wrap="906" />
+          </ui>
+
+          <ui id="volumeSection" type="flowLayout" padding="6" anchor="both">
+            <ui id="volumeArea" inherit="settingsArea" size="966, 44"><ui inherit="volumeSlider" /></ui>
+            <ui inherit="backgroundLabel" position="483, 0" tid="outputScaleHelp" wrap="966" />
+          </ui>
+          
+          <ui id="reverbSection" type="flowLayout" padding="6" visible="0" anchor="both">
+            <ui id="reverbArea" inherit="settingsArea" size="966, 44"><ui inherit="volumeSlider"><ui find="low" visible="0" /><ui find="high" visible="0" /></ui></ui>
+          </ui>
+
+          <ui id="preload" inherit="settingsArea" size="966, 44" visible="0" />
+
+          <ui id="soundsetSection" type="flowLayout" padding="6" visible="0" anchor="both">
+            <ui inherit="settingsLabel" tid="outputSoundSet" />
+            <ui id="soundsets" inherit="settingsArea" size="966, 44" />
+          </ui>
+
+          <ui id="channelSection" type="flowLayout" padding="6" anchor="both">
+            <ui id="outputChannel" inherit="settingsArea" size="966, 44" />
+            <ui inherit="backgroundLabel" position="483, 0" tid="outputChannelHelp" wrap="906" />
+          </ui>
+
+          <ui type="spacer" size="1, 1" />
+          <ui type="flowLayout" padding="6" anchor="both">
+            <ui id="keyboard" type="keyboard" width="966" anchor="both" />
+            <ui inherit="backgroundLabel" position="483, 0" tid="testHelp" />
+            <ui id="testButton" inherit="settingsButton" anchor="right" align="right" position="966, 0" tid="test" />
+          </ui>
+          <ui type="spacer" size="1, 1" />
+        </ui>
+      </ui>
+    </ui>
+  </ui>
+
+  <ui id="keyLightScreen" inherit="settingsScreenValue">
+    <ui find="header"><ui find="backButton" tid="back" /></ui>
+    <ui find="scroll"><ui find="flow">
+      <ui id="channels" inherit="settingsArea" size="966, 44" />
+      <ui type="spacer" size="1, 14" />
+    </ui></ui>
+  </ui>
+
+
+  <!-- Color theme template -->
+  <ui id="themeTemplate" type="frame" size="550, 244">
+    <ui type="spacer" position="-2, -2" size="554, 248" color="black" />
+
+    <ui inherit="headerBar" id="header" size="550, 44">
+      <ui find="background" size="550, 44" />
+      <ui find="backButton" tid="back" />
+      <ui find="titleText" tid="colorTheme" position="275, 6" />
+    </ui>
+
+    <ui type="spacer" position="0, 44" size="550, 100" color="menuBackground" />
+    <ui inherit="titleButton" id="themeButton" position="275, 70" />
+
+    <ui type="spacer" position="0, 144" size="550, 100" color="menuBackgroundAccent" />
+
+    <ui inherit="settingsArea" align="center" position="275, 165" size="520, 44" id="table" />
+    <ui inherit="backgroundLabel" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit..." position="275, 216" />
+  </ui>
+
+  <!-- Shortcut binding -->
+  <ui id="shortcutBindingScreen" inherit="settingsScreenValue">
+    <ui find="scroll"><ui find="flow">
+      <ui id="table" inherit="settingsArea" size="984, 44" />
+      <ui id="footer" inherit="backgroundLabel" position="512, 0" />
+      <ui type="spacer" size="1, 8" />
+      <ui type="flowLayout" direction="horizontal" excludeHidden="1" padding="20" position="984, 0" anchor="right" align="right">
+        <ui id="resetButton" inherit="settingsCautionButton" tid="resetToDefault" />
+        <ui id="addButton" inherit="settingsAddButton" />
+      </ui>
+    </ui></ui>
+  </ui>
+
+  <!-- Shortcut binding popup -->
+  <ui id="shortcutBindingWindow" inherit="popupCancelSaveWindow">
+    <ui find="content" size="382, 158">
+      <ui type="distributedLayout" position="191, 4" size="382, 158" extentsArePadded="1">
+        <ui inherit="backgroundLabel" fontSize="18" wrap="360" tid="bindKey" />
+        <ui id="bindText" inherit="backgroundLabel" fontSize="28" text=" " wrap="360" />
+      </ui>
+    </ui>
+    <ui id="deleteButton" inherit="titleButton" color="buttonDeny" colorHover="buttonDenyHover" hoverShimmy="0" tid="deleteShortcut" align="left" size="382, 44" position="9, 217" />
+  </ui>
+
+  <ui id="settingsProfileFlow" type="flowLayout" padding="6" position="20, 20" anchor="both" />
+  <ui id="settingsProfileAdd" type="flowLayout" direction="horizontal" excludeHidden="1" padding="20" position="484, 0" anchor="right" align="right"><ui id="addButton" inherit="settingsAddButton" /></ui>
+
+  <!-- Profile details -->
+  <ui id="profileDetailsScreen" inherit="settingsScreenValue">
+    <ui find="header"><ui find="backButton" tid="userProfiles" /></ui>
+    <ui find="scroll"><ui find="flow">
+      <ui id="table" inherit="settingsArea" size="984, 44" />
+      <ui type="spacer" size="1, 8" />
+      <ui id="deleteButton" inherit="settingsCautionButton" autoWidthPadding="-1" size="984, 44" anchor="both" tid="deleteUser" />
+      <ui id="footer" inherit="backgroundLabel" position="512, 0" tid="deleteUserHelp" />
+    </ui></ui>
+  </ui>
+
+  <!-- Add Profile dialog -->
+  <ui id="profileAddWindow" inherit="popupCancelSaveWindow" autoSizePadding="10, 10">
+    <ui find="titleText" tid="newProfile" position="350, 9" />
+    <ui find="saveButton" position="691, 9" />
+    <ui find="content" color="menuBackgroundAccent" size="682, 90">
+      <ui type="flowLayout" position="10, 14" padding="8">
+        <ui inherit="settingsWindow" id="searchBox" size="662, 44">
+          <ui id="box" inherit="textbox" emptyHint="name" maxLength="30" width="657" fontSize="17" position="3, 11" />
+        </ui>
+        <ui type="spacer" size="1, 0" />
+        <ui type="flowLayout" direction="horizontal" padding="5" align="center" position="331, 0">
+          <ui type="frame" size="16, 16" align="left, center">
+            <ui id="statusIcon" type="image" />
+          </ui>
+          <ui id="statusLabel" inherit="backgroundLabel" align="left, center" />
+        </ui>
+      </ui>
+    </ui>
+  </ui>
+
+  <!-- Service Wait -->
+  <ui id="serviceWaitWindow" type="window" color="buttonFace" size="800, 170" position="512, 280" align="center, center" anchor="none, none">
+    <ui id="titleText" inherit="headerLabel" position="400, 9" />
+    <ui id="content" inherit="softEdgeWindow" size="782, 112" position="9, 49">
+      <ui type="flowLayout" direction="horizontal" padding="5" align="center" position="391, 55">
+        <ui type="frame" size="16, 16" align="left, center">
+          <ui id="animatedIcon" type="image" texture="interface_progress" color="buttonFace" />
+        </ui>
+        <ui id="statusLabel" tid="contactingServer" inherit="backgroundLabel" align="left, center" />
+      </ui>
+    </ui>
+  </ui>
+
+  <!-- Watched Folders -->
+  <ui id="watchedFoldersButtons" type="flowLayout" direction="horizontal" excludeHidden="1" padding="20" anchor="right" align="right">
+    <ui id="helpButton" inherit="settingsButton" tid="help" />
+    <ui id="addButton" inherit="settingsAddButton" />
+  </ui>
+
+  <ui id="watchedFolderDetailsScreen" inherit="settingsScreenValue">
+    <ui find="header"><ui find="backButton" tid="songs" /></ui>
+    <ui find="scroll"><ui find="flow" excludeHidden="1">
+      <ui id="tableOptions" inherit="settingsArea" size="984, 44" />
+      <ui type="spacer" size="1, 8" />
+      <ui id="deleteButton" inherit="settingsCautionButton" autoWidthPadding="-1" size="984, 44" anchor="both" tid="stopSearching" visible="0" />
+    </ui></ui>
+  </ui>
+
+  <!-- Watched Folder Add popup -->
+  <ui id="folderAddDialogButton" inherit="button" size="180, 44" />
+  <ui id="folderAddWindow" inherit="popupCancelSaveWindow" size="800, 510" position="512, 400">
+    <ui find="saveButton" position="791, 9" tid="add" />
+    <ui find="content" color="menuBackgroundAccent" size="782, 452">
+      <ui inherit="settingsWindow" size="762, 44" position="10, 14">
+        <ui id="path" inherit="breadcrumb" maxWidth="742" position="10, 13" fontSize="15" />
+      </ui>
+      <ui id="specialFlow" type="flowLayout" position="10, 68" padding="8" />
+      <ui inherit="settingsWindow" size="572, 343" position="200, 68">
+        <ui id="datagrid" inherit="scrollingDataGrid" mode="selectable" position="8, 5" size="0, 337" />
+      </ui>
+      <ui id="songCount" inherit="backgroundLabel" align="left" position="208, 420" fontSize="18" />
+    </ui>
+  </ui>
+
+</UiDescription>

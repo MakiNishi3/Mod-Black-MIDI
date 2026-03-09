@@ -1,0 +1,780 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UiDescription>
+
+  <!-- General -->
+  <text id="synthesia" v="Synthesia" /> <!-- Our product name.  Probably the same in all languages. -->
+
+  <text id="continue" v="Ga door" />
+  <text id="back" v="Terug" />
+  <text id="cancel" v="Afbreken" />
+  <text id="save" v="Opslaan" />
+  <text id="help" v="Help" />
+  <text id="add" v="Voeg toe" />
+  <text id="name" v="Naam" />
+  <text id="clear" v="Opschonen" /> <!-- to remove, to wipe clean -->
+
+  <text id="textboxHintSearch" v="Zoeken..." />
+
+  <text id="metronome" v="Metronoom" />
+  <text id="bookmarks" v="Bladlegger" />
+  <text id="fingerHints" v="Vinger Hint" /> <!-- Hints about which finger to use on each piano key -->
+  <text id="sheetMusic" v="Bladmuziek" />
+
+
+
+
+  <!-- Title screen -->
+  <text id="playSong" v="Spelen" />
+  <text id="freePlay" v="Vrij spel" /> <!-- This leads to an area where you are free to play any notes you want.  So "free" as in freedom.  Not "free" as in "zero cost". -->
+  <text id="tutorial" v="Introductie" />
+  <text id="settings" v="Instellingen" />
+  <text id="exit" v="Afsluiten" /> <!-- Button that ends/quits/exits the program -->
+
+  <text id="whatsNew" v="Wat is Nieuw" /> <!-- Heading above a list of news entries -->
+  <text id="recentlyPlayed" v="Onlangs gespeeld" /> <!-- Heading for a list of songs that the user recently played -->
+
+  <text id="feedback1" v="Geniet u van Synthesia?" />
+  <text id="feedback2" v="Beoordeel de app" />
+  <text id="feedback3" v="Ervaart u problemen?" />
+  <text id="feedback4" v="Neem contact op" />
+
+  <!-- All of the following refer to the relative amount of time that has passed since an event.  The %1% is always a whole number between 2 and 60. -->
+  <text id="justNow" v="Zojuist" />
+  <text id="aMinuteAgo" v="Een minuut geleden" />
+  <text id="minutesAgo" v="%1% minuten geleden" />
+  <text id="anHourAgo" v="Een uur geleden" />
+  <text id="hoursAgo" v="%1% uren geleden" />
+  <text id="aDayAgo" v="Gisteren" />
+  <text id="daysAgo" v="%1% dagen geleden" />
+  <text id="aWeekAgo" v="Vorige week" />
+  <text id="weeksAgo" v="%1% weken geleden" />
+  <text id="aMonthAgo" v="Vorige maand" />
+  <text id="monthsAgo" v="%1% maanden geleden" />
+  <text id="aYearAgo" v="Vorig jaar" />
+  <text id="longAgo" v="Lang geleden" />
+
+  <text id="titleInput" v="In: %1%" /> <!-- 1: list of music input device names -->
+  <text id="titleOutput" v="Uit: %1%" /> <!-- 1: list of music output device names -->
+
+  <text id="noProfile" v="IPNime26" />
+  <text id="noProfileDescription" v="Subscribe IPNime26 Channel" />
+  <text id="manageProfiles" v="Profielenbeheer" />
+
+
+
+
+  <!-- Tutorial screen -->
+  <text id="skipTutorial" v="Sla introductie over" />
+
+  <text id="tutA1" v="Welkom bij Synthesia!" />
+  <text id="tutA2" v="De basis in 58 seconds." />
+
+  <text id="tutB1" v="Veeg in het vallende noten deel om het toetsenbord te verschuiven." />
+  <text id="tutC1" v="Knijp nu in het vallende noten deel om het toetsenbord om in- of uit te zoomen." /> <!-- We're using Apple's definition of "pinch" which can go in either direction (bigger or small), so this can be a zoom-in or zoom-out -->
+
+  <text id="tutD1" v="Nu is het uw beurt!  De muziek wacht totdat u de juiste noot speelt." />
+  <text id="tutD2" v="Tip: De nummers tonen de aanbevolen vinger om te gebruiken.  Duim is 1, pink is 5." />
+
+  <text id="tutE1" v="Goed gedaan!" />
+
+  <text id="tutF1" v="Dat was het!  De rest leert u gaandeweg." />
+  <text id="tutF2" v="Geniet van Synthesia!" />
+
+
+
+
+  <!-- Unlock screen -->
+  <text id="demoUnlockT" v="Synthesia Demo" />
+  <text id="demoUnlock1" v="Deze demo biedt de mogelijkheid om uw keyboard verbinding te testen met een paar liedjes.  Voor alle Synthesia functies heeft u de volledige versie nodig!" />
+
+  <text id="unlock" v="Volledige Synthesia versie" />
+  <text id="unlockButton" v="Bezoek de Synthesia webpagina voor uw aankoop!" />
+  <text id="unlockButton_a" v="Of koop in plaats daarvan een ontgrendel-code op onze website" />
+
+  <text id="lostKey1" v="Bent u uw unlock key kwijt?" /> <!-- This "key" refers to a software unlock code that enables all the features in the software (not a piano key).  These lines refer to a feature that helps a user recover a key they no longer have. -->
+  <text id="lostKey2" v="Ontvang uw unlock key" />
+
+  <text id="shortCode1" v="Typ uw verkorte code here:" />
+  <text id="shortCode2" v="OK" />
+
+  <text id="shortCodeValidate" v="Unlock key valideren..." />
+
+  <text id="shortCodeFailureT" v="Kon geen unlock key vinden" />
+  <text id="shortCodeFailure" v="De verkorte code is bij ons niet bekend. Probeert u het nog eens alstublieft." />
+
+  <text id="unlockOwner" v="Geregistreerd aan" />
+  <text id="unlockType" v="Registratietype" />
+
+  <text id="unlockPersonal" v="Persoonlijk thuisgebruik" />
+  <text id="unlockEducation" v="%1% gebruiker licensie" /> <!-- 1: the number of licenses allowed (at the same time) by this unlock key -->
+
+  <text id="unlockDuration" v="Gratis Updates" /> <!-- Heading in front of either "Until [Date]" or "Forever" -->
+  <text id="unlockDurationUnlimited" v="Voor altijd" />
+
+  <text id="inAppDesc" v="Verkrijg toegang tot de overige inbegrepen muziek en importeer uw eigen MIDI bestanden." />
+  <text id="inAppDesc_i" v="Verkrijg toegang tot de overige inbegrepen muziek en importeer uw eigen muziek met iTunes File Sharing of andere apps." />
+  <text id="inAppButton" v="Registreer nu!" />
+  <text id="inAppButtonPrice" v="Registreer nu voor slechts %1%" /> <!-- 1: a price in a localized currency like $4.99 or ¥499 -->
+  <text id="inAppMoreInfo_a" v="Als u de in-app-ontgrendeling in het verleden al heeft gekocht, controleert u of u bent ingelogd bij Google Play met hetzelfde account dat de oorspronkelijke aankoop heeft gedaan. (Soms kan het herstarten van uw apparaat ertoe bijdragen dat een eerdere aankoop opnieuw verschijnt.)" />
+
+  <!-- Question in front of a button that will restore the user's purchase without charging them additional money -->
+  <text id="restore1" v="Reeds geregistreerd?" />
+  <text id="restore2" v="Herstel vorige aankoop" />
+
+  <text id="feature1" v="Speel de inbegrepen muziek" /> <!-- Heading that describes a feature that becomes available after unlocking: being able to play all of the included songs instead of just a few -->
+  <text id="feature2" v="Synthesia heeft meer dan 150 muziekstukken.  Registreren geeft u toegang tot deze allemaal.  Elk stuk is reeds voorzien van vinger-hints en verdeeld over twee handen voor aparte oefeningen." />
+  <text id="feature3" v="Toevoegen van eigen muziek" />
+  <text id="feature4" v="Synthesia kan elk MIDI bestand spelen dat u zelf maakt of op Internet vindt.  Bezoek ook de music store op de Synthesia website voor de hoogste kwaliteit muziek." />
+  <text id="feature4_i" v="Synthesia kan elk van de miljoenen MIDI bestanden spelen die u op Internet vindt of welke u zelf maakt!  Registreren stelt u in staat muziek te importeren met iTunes File Sharing of andere toepassingen met de &quot;Open in Synthesia&quot; optie binnen Safari of Mail." />
+  <text id="feature6" v="Experimenteer met instrumenten, leer akkoorden, en speel van alles wat u wilt.  Selecteer een achtergrond stijl en &quot;Jam along&quot;." />
+
+  <text id="communicateWithStore_i" v="Verbinding maken met de App Store..." />
+  <text id="communicateWithStore_a" v="Verbinding maken met Google Play..." />
+  <text id="unlocking" v="Registreren..." />
+  <text id="unlockCongrats" v="Gefeliciteerd, u heeft nu alle Synthesia functies!" />
+
+  <!-- An in-app purchase entitles the user to a discount on our other platforms -->
+  <text id="claimLabel" v="Geïnteresseerd in Synthesia voor PC of Mac?" />
+  <text id="claimButton" v="Eis uw korting op" />
+
+  <text id="unlockRestricted1" v="Aankopen zijn niet beschikbaar op deze tablet." />
+  <text id="unlockRestricted2_i" v="(Controleer bij Algemeen &gt; Restricties in de Instellingen app.)" />
+
+  <text id="unlockFailed" v="Er ging iets fout tijdens bij Aankoop of bij Herstel." />
+  <text id="leaveAndReturn" v="(Verlaat dit scherm en ga terug om opnieuw te proberen.)" />
+
+  <text id="connectionFailed1" v="Er ging iets fout tijdens de verbinding." />
+  <text id="connectionFailed2" v="(Controleer uw internet verbinding.)" />
+
+
+
+
+  <!-- Song Library -->
+  <text id="emptyStillScanning" v="Zoeken naar muziek, even wachten a.u.b. ..." />
+  <text id="emptyWithFilter" v="Geen muziek gevonden.  Verander uw zoekactie." />
+  <text id="emptyScannerIdle" v="Geen muziek gevonden in deze groep.  Selecteert u hierboven iets anders." />
+  <text id="emptyIdleTopLevel" v="Geen muziek gevonden.  Ga naar de Muziek sectie bij Instellingen om muziek toe te voegen." />
+
+  <text id="columnTitle" v="Titel" />
+  <text id="columnFolder" v="Map" />
+  <text id="columnDifficulty" v="Moeilijkheid" />
+  <text id="columnRating" v="Beoordeling" />
+  <text id="columnPlayCount" v="Populair" />
+  <text id="columnLastPlayed" v="Laatst gespeeld" />
+
+  <text id="libraryMoreSongs" v="Meer muziek krijgen" />
+
+  <text id="deleteSongT" v="Deze muziek wordt PERMANENT verwijderd, zeker weten?" />
+  <text id="deleteSongB" v="Verwijder muziek!" />
+  <text id="deleteSongT_w" v="Deze muziek naar de Prullenbak verplaatsen, zeker weten?" /> <!-- "Recycle Bin" is Windows-specific terminology -->
+  <text id="deleteSongB_w" v="Verplaats naar Prullenbak!" />
+  <text id="deleteSongT_m" v="Deze muziek naar de Prullenbak verplaatsen, zeker weten?" /> <!-- "Trash" is Mac-specific terminology -->
+  <text id="deleteSongB_m" v="Verplaats naar Prullenbak!" />
+
+  <text id="songLoading" v="Muziek laden..." />
+  <text id="loadingError" v="Fout tijdens muziek laden!" />
+
+  <text id="all" v="All" /> <!-- Short for "All Songs" -->
+  <text id="allOneList" v="Alles (een grote lijst)" />
+  <text id="allGrouped" v="Alles (gegroepeerd per map)" />
+
+
+
+
+  <!-- Song View -->
+  <text id="songs" v="Muziek" /> <!-- Button leading to a list of songs -->
+
+  <text id="watchAndListen" v="Kijk en luister" />
+
+  <text id="modeMelody1" v="Oefen de melodie" />
+  <text id="modeMelody2" v="Muziek wacht op u" />
+
+  <text id="modeRhythm1" v="Oefen het ritme" />
+  <text id="modeRhythm2" v="Constante snelheid" />
+
+  <text id="modeRecital1" v="Voordracht" />
+  <text id="modeRecital2" v="Eén poging op volle snelheid" />
+
+  <text id="modeHelp2" v="U kan geen punten verdienen in de &quot;Kijk en luister&quot; modus." />
+  <text id="modeHelp3" v="Er zijn nog geen statistieken voor deze modus. Probeer de muziek te spelen!" />
+
+  <text id="leftHand" v="Linker Hand" />
+  <text id="rightHand" v="Rechter Hand" />
+  <text id="bothHands" v="Beide Handen" />
+
+  <text id="left" v="Links" />
+  <text id="right" v="Rechts" />
+  <text id="both" v="Beide" />
+
+  <text id="melodyPractice" v="Melodie Oefening" />
+  <text id="rhythmPractice" v="Ritme Oefening" />
+
+  <text id="watch1" v="Synthesia speelt de gehele muziek automatisch." />
+  <text id="watch2" v="Leun achterover en geniet." />
+  <text id="watch3" v="Probeert u zich voor te stellen hoe u uw handen moet bewegen." />
+  <text id="watch4" v="Let op bepaalde veranderingen van de melodie of ritme." />
+  <text id="watch5" v="Dit is een fijne manier om bekend te geraken met de muziek voordat u deze zelf probeert." />
+
+  <text id="rhythm1" v="Pas de snelheid aan totdat u foutloos speelt." />
+  <text id="rhythm2" v="Speel zo snel mogelijk als u confortabel aankan." />
+  <text id="rhythm3" v="Werk stap voor stap naar de 100% snelheid toe." />
+  <text id="rhythm4" v="Oefen de melodie eerst om dit makkelijker te maken." />
+  <text id="rhythm5" v="Voorkomen van fouten is cruciaal.  Zet de snelheidheid niet te hoog opdat u in paniek raakt." />
+
+  <text id="melody1" v="De muziek wacht op u totdat u de juiste noot heeft gespeeld." />
+  <text id="melody2" v="Neem de tijd.  Er zijn geen minpunten voor langzaam spelen." />
+  <text id="melody3" v="Fouten voorkomen is het aller belangrijkste." />
+  <text id="melody4" v="Het vasthouden van de noten zolang als aangeven is net zo belangrijk." />
+  <text id="melody5" v="Als u niet oppast, ontwikkelt u spiergeheugen met de fouten inbegrepen!" />
+
+  <text id="recital1" v="De finale stap zodra u de melodie en ritme onder de knie heeft." />
+  <text id="recital2" v="De snelheid van de muziek staat op 100%.  Doe de andere oefeningen eerst, voordat u deze probeert." />
+
+  <text id="pointsAveraged" v="De punten zijn het gemiddelde van uw drie beste pogingen.  &quot;Beide Handen&quot; tellen ook voor elke hand!" />
+  <text id="date" v="Datum" /> <!-- Calendar date column heading in a table -->
+
+  <text id="criteriaAvoidMistakes" v="Speel elke noot en voorkom fouten" />
+  <text id="criteriaFullDuration" v="Houdt de noten vast gedurende de volledige tijd" />
+  <text id="criteriaFullSpeed" v="Speel zo dicht tegen 100% snelheid als u kan" />
+
+  <text id="tabInstructions" v="Instructies" />
+  <text id="tabProgress" v="Vooruitgang" />
+  <text id="tabChart" v="Lijngrafiek" />
+  <text id="tabTable" v="Punten verdiend" />
+
+
+
+
+  <!-- Hands, Colors, and Instruments -->
+  <text id="reset" v="Reset" />
+
+  <!-- Notes that will be played automatically in the background -->
+  <text id="background" v="Achtergrond" />
+
+  <!-- Text on a button that will customize a selection -->
+  <text id="custom" v="Custom" />
+
+  <text id="dragToCopy" v="Kopiëer een instelling door deze naar een ander instrument te slepen." />
+  <text id="allParts" v="Alle onderdelen" />
+
+  <!-- A button that will automatically assign colors to each instrument based on song settings -->
+  <text id="autoColor" v="Auto Kleur" />
+
+  <text id="colorBlue" v="Blauw" />
+  <text id="colorGreen" v="Groen" />
+  <text id="colorOrange" v="Oranje" />
+  <text id="colorYellow" v="Geel" />
+  <text id="colorPurple" v="Paars" />
+  <text id="colorRed" v="Rood" />
+
+  <text id="instrumentsAndHands" v="Handen, Kleuren en Instrumenten" />
+  <text id="assignHands" v="Ken handen toe aan één of meerdere instrumenten" />
+  <text id="noInput" v="Zet een inputapparaat aan om het nummer zelf te spelen." />
+
+
+
+
+  <!-- Track splitting screen -->
+
+  <!-- A button that begins a "hand splitting" operation, where every note in the song from the selected time
+  forward, is assigned to the left or right hand based on a horizontal "split point" the user has selected -->
+  <text id="splitFromHere" v="Vanaf hier splitsen" />
+
+  <!-- Single-character abbreviations for "[L]eft Hand" and "[R]ight Hand" -->
+  <text id="leftSingle" v="L" />
+  <text id="rightSingle" v="R" />
+
+
+
+
+  <!-- Help popup messages -->
+  <text id="percussionT" v="Percussie kan niet worden veranderd" />
+  <text id="percussion1" v="Een instrument kan normaliter worden veranderd, maar percussie kan enkel percussion blijven." />
+
+  <text id="importSongsT" v="Voeg uw favoriete MIDI muziek toe" />
+  <text id="importSongs1" v="Met de geregisteerde Synthesia hoeft u enkel een MIDI bestand van uw favoriete muziek te zoeken.  Probeer deze te openen in Safari en kies Synthesia in de lijst van opties." />
+  <text id="importSongs2" v="Als u reeds MIDI bestanden op uw computer heeft, dan kunt ook iTunes File Sharing gebruiken om deze aan Synthesia toe te voegen.  Klik op de knop hieronder om Apple's instructie te lezen." />
+  <text id="importSongsB" v="Toon mij hoe iTunes File Sharing werkt" />
+
+  <text id="addFoldersT" v="Vertel Synthesia waar het uw MIDI bestanden kan vinden" />
+  <text id="addFolders1" v="Synthesia doorzoekt uw mappen naar MIDI bestanden.  U kunt uw mappen instellen met de Muziek optie in de Instellingen menu." />
+  <text id="addFolders2" v="Zodra u weet waar Synthesia zoekt, kunt u daar een volgende keer eenvoudig nieuwe MIDI bestanden plaatsen. Synthesia pakt deze direct op bij het opnieuw starten." />
+  <text id="addFoldersB" v="Ga naar Instellingen menu!" />
+
+  <text id="resetIconT" v="Sleep de schicht om te resetten" />
+  <text id="resetIcon1" v="Sleep deze schicht naar een instrument om diens instellingen te resetten.  Deze kan ook naar de knop &quot;Alle onderdelen&quot; gesleept worden, aan de bovenkant, om alle instellingen van alle instrumenten te resetten." />
+
+  <text id="songPointsT" v="Uitleg over muziek punten" />
+  <text id="songPoints1" v="Het grote nummer dat naast de titel staat zijn de algemene punten (van de 100) dat u met al uw pogingen heeft verdiend. Dit wordt bepaald met de drie beste pogingen voor elke hand van elke modus: melodie, ritme en voordracht." />
+  <text id="songPoints2" v="Bekijk uw voortgang om vast te stellen hoe u meer punten kunt verdienen." />
+
+  <text id="readOnlySongT" v="Muziek kan niet verwijderd worden" />
+  <text id="readOnlySong1" v="Het geselecteerde bestand heeft een &quot;Alleen lezen&quot; instelling.  Als u deze uit de lijst wilt verwijderen, verwijder de regel waar de muziek aan toebehoort in het Muziek optie in de Instellingen menu." />
+
+  <text id="unlockErrorDeactivatedT" v="Unlock Key gedeactiveerd" />
+  <text id="unlockErrorDeactivated1" v="De unlock key was gedeactiveerd vanwege een betaalprobleem." />
+  <text id="unlockErrorDeactivated2" v="Contacteer support@synthesiagame.com en wij zullen de oorzaak achterhalen om vervolgens samen een oplossing te zoeken." />
+
+  <text id="unlockErrorNoInternetT" v="Kan uw korte code niet valideren" />
+
+  <text id="unlockErrorTooManyT" v="Te veel opvragingen" />
+  <text id="unlockErrorTooMany1" v="Deze korte code is te vaak gebruikt.  Vraag om assistentie via support@synthesiagame.com." />
+
+  <text id="deviceLost" v="Connectie met het apparaat onverwachts verbroken!  Controleer uw kabels a.u.b.!" />
+
+  <text id="songProgressLossT" v="Voortgang zal verloren gaan!" />
+  <text id="songProgressLoss1" v="Nu afsluiten zal uw huidige voortgang voor deze muziek te niet doen." />
+  <text id="songProgressLossB" v="Verlaat muziek en vergeet voortgang!" />
+
+
+
+
+  <!-- Play screen -->
+  <text id="time:" v="Tijd:" />
+  <text id="measure:" v="Maat:" /> <!-- This refers to a musical "measure" or "bar".  (Not a measurement.) -->
+  <text id="notes:" v="Noten:" />
+  <text id="errors:" v="Fouten:" />
+  <text id="points:" v="Punten:" />
+
+  <text id="paused" v="Liedje Gepauzeerd" />
+
+  <text id="bookmarkInstructions" v="Zet bladwijzers in de linker marge." /> <!-- "bookmark" here means a placeholder in a song -->
+  <text id="bookmarkMidiMarkers" v="MIDI Markers" /> <!-- Refers to the bookmarks stored directly inside the song file (these have a special name: "Markers" instead of "Bookmarks") -->
+
+  <!-- "bookmark" here means a placeholder in a song -->
+  <text id="bookmarkUserBookmarks" v="Mijn Bladwijzers" /> <!-- Refers to bookmarks created by the user -->
+  <text id="bookmarkMetadataBookmarks" v="Metadata Bladwijzers" /> <!-- Refers to a list of bookmarks loaded from an external file -->
+  <text id="bookmarkKeySignatures" v="Toonsoorten" /> <!-- A list of bookmarks automatically generated, one per key signature change in the song -->
+  <text id="clearBookmarks" v="Schoon gebruiker bladwijzers" />
+
+  <text id="loopInstructions" v="Veeg in de tijdlijn om een lus te maken.  Verfijn hieronder." />
+  <text id="loopStart" v="Begin van de lus" />
+  <text id="entireLoop" v="Gehele lus" />
+  <text id="loopEnd" v="Einde van de lus" />
+
+  <!-- Describes how much preparation time should be inserted each time a section of the song is repeated.  This is the label for a slider control that adjusts the amount of delay. -->
+  <text id="loopDelay" v="Pauze tussen de lussen" />
+
+  <text id="fingerHintInstructions" v="Maak vinger hints door de noten te slepen naar de juiste vinger." />
+
+  <text id="pinchKeyboard" v="Knijp horizontaal in het vallende noten deel om de klaviergrootte aan te passen.  Of kies een instelling hieronder." />
+  <text id="dragKeyboard" v="Veeg in het vallende noten deel om het toetsenbord te verplaatsen.  Verander de Zoom hieronder." />
+
+  <text id="praise0" v="Perfect!" />
+  <text id="praise1" v="Prima!" />
+  <text id="praise2" v="Goed!" />
+  <text id="praise3" v="OK!" />
+  <text id="praise4" v="Bijna!" />
+
+  <text id="combo" v="%1% Noot Combo!" /> <!-- 1: number of successive notes user has played successfully -->
+
+  <!-- These are options to select which text labels are shown on the music notes -->
+  <text id="labelsNone" v="Geen labels" />
+  <text id="labelsHints" v="Vinger Hintnummers" />
+  <text id="labelsVirtual" v="Virtuele Piano Indeling" />
+  <text id="labelsEnglish" v="Engelse Nootnamen" /> <!-- C, C#, D... -->
+  <text id="labelsFixed" v="Vaste-DoReMi Nootnamen" /> <!-- Do, Re, Mi... -->
+  <text id="labelsMovable" v="Beweegbare-DoReMi Nootnamen" /> <!-- Do, Re, Mi... -->
+  <text id="labelsScale" v="Toonladder" /> <!-- 1, 2, 3... This "scale" refers to a musical scale -->
+  <text id="labelsOctave" v="Octaven" /> <!-- C1, C2, C3... on each C piano key, for every octave -->
+  <text id="labelsSimple" v="Eenvoudige namen" /> <!-- C, D, E... on white keys only -->
+
+  <!-- An option that selects whether labels should be shown on every note ("Show All") or only on notes that belong to the song's current key signature ("Use Song's Key") -->
+  <text id="labelsFewer" v="Toon alleen labels voor door mij gespeelde noten" />
+  <text id="labelsShowAll" v="Toon Alles" />
+  <text id="labelsPartial" v="Gebruik de toets van het liedje" />
+
+  <!-- 12-note phonetic (solfege/solfeggio/solfeo) note names for your country, with appropriate accents.
+  Correct for Si/Ti, So/Sol, etc.  There must be 12 and they must be separated by a single space, each. -->
+  <text id="solfege" v="Do Di Re Ri Mi Fa Fi Sol Si La Li Ti" />
+
+  <text id="zoom18" v="18 Toetsen" /> <!-- piano keys -->
+  <text id="zoom25" v="25 Toetsen" />
+  <text id="zoom88" v="All 88" />
+  <text id="zoomMyNotes" v="Mijn Noten" />
+  <text id="zoomMyKeys" v="Mijn Toetsenbord" />
+  <text id="zoomSong" v="Enkel Muziek" />
+
+  <text id="metVolume" v="Metronoom Volume" />
+  <text id="metStartOnly" v="Enkel voordat de muziek start" />
+  <text id="metAlways" v="Gehele tijd" />
+  <text id="met1x" v="1x: Normale snelheid" />
+  <text id="met2x" v="2x: Dubbele snelheid" />
+  <text id="metFirst" v="Benadruk de eerste tel" />
+  <text id="metEach" v="Uniforme tellen" />
+
+  <text id="loopBestMelody" v="Beste" />
+  <text id="loopBestRhythm" v="Beste:" />
+  <text id="loopCount" v="Lus %1%" /> <!-- 1: number of times the section has looped -->
+  <text id="current" v="Huidig" /> <!-- Heading above statistics for the current loop iteration -->
+
+  <text id="songComposer" v="Componist" />
+  <text id="songArranger" v="Arrangeur" />
+  <text id="songCopyright" v="Auteursrecht" />
+  <text id="songMadeFamousBy" v="Bekend door" />
+
+
+
+
+  <!-- Help screen -->
+  <text id="visitShortcuts" v="Breng mij naar het Sneltoetsen menu van de Instellingen voor alle toetsenbord mogelijkheden." />
+  <text id="doubleTap" v="Dubbel-tap" /> <!-- Tapping like the finger gesture on a touch-screen -->
+
+  <text id="iconPlay" v="Speel/Pauze" />
+  <text id="iconZoom" v="Zoom" />
+  <text id="iconLabels" v="Noot Labels" />
+  <text id="iconLoops" v="Lus" />
+
+
+
+
+  <!-- Each of these are columns in a table giving statistics about past performances of a song -->
+  <text id="columnPoints" v="Punten" /> <!-- Points earned like in a video game -->
+  <text id="columnNotesHit" v="Juiste Noten" />
+  <text id="columnErrors" v="Fouten" />
+  <text id="columnActualSpeed" v="Ware Snelh." />
+  <text id="columnAvgSpeed" v="Gem. Snelh." />
+  <text id="columnTimeSpent" v="Duur" />
+  <text id="columnDateEarned" v="Datum verdiend" /> <!-- On which date a particular score/points/result/performance was earned -->
+
+  <text id="recital" v="Voordracht" /> <!-- Indicates a song was played in Recital mode -->
+
+
+
+
+  <!-- Settings (shared) -->
+  <text id="gameplay" v="Speelwijze" />
+  <text id="shortcuts" v="Sneltoetsen" /> <!-- Keyboard shortcuts like "Ctrl + C" -->
+  <text id="aboutLegal" v="Bekijk het Readme-bestand en de Juridische Informatie" />
+
+
+
+
+  <!-- Text used on a utility benchmarking (speed testing) screen -->
+  <text id="benchmark" v="Benchmark" />
+  <text id="saveToDesktop" v="Opslaan naar bureaublad" />
+  <text id="saved" v="Opgeslaan!" />
+  <text id="timePerFrame" v="Gemiddelde tijd per frame" />
+  <text id="timeSpentDrawing" v="Gemiddelde tijd besteed aan tekenen" />
+  <text id="timeSpentUpdating" v="Gemiddelde tijd besteed aan updaten" />
+  <text id="headingOverall" v="Algemeen" />
+  <text id="headingDraw" v="Tekenen" />
+  <text id="headingUpdate" v="Updaten" />
+
+
+  
+
+  <!-- Settings: Music Devices -->
+  <text id="musicDevices" v="Muziek apparaten" />
+  <text id="noDevice" v="(Geen)" />
+
+  <text id="musicInput" v="Muziek Ingang" />
+  <text id="musicOutput" v="Muziek Uitgang" />
+  <text id="helpConnecting" v="Heeft u hulp nodig bij het aansluiten van een muziek apparaat?" />
+  <text id="keyboardTrouble" v="Toetsenbord reageert niet?" />
+
+  <text id="bluetooth" v="Bluetooth Instellingen" /> <!-- The Bluetooth folks say that "Bluetooth" is only allowed to be translated as any of the following: Bluetooth, 藍牙, 蓝牙, ブルートゥース, or 블루투스 -->
+
+  <text id="virtualPianoHelp" v="De virtuele piano wordt bestuurd middels uw toetsenbord van de computer." />
+
+  <text id="inputIgnore" v="Negeer de ingang van dit apparaat" />
+  <text id="deviceUse" v="Gebruik dit apparaat" />
+  <text id="inputDeviceSettings" v="Instellingen van het apparaat (Ingang)" />
+
+  <text id="inputScaleHelp" v="Deze schaal heeft effect op alle noten van dit apparaat.  100% laat noten onveranderd." /> <!-- This "scale" refers to volume/loudness scaling -->
+  <text id="resetNoteRange" v="Reset het notenbereik" />
+  <text id="noteRangeHelp" v="Speel zowel de allerlaagste en hoogste noten op uw apparaat, om het bereik te bepalen." />
+
+  <text id="outputDeviceUses" v="Gebruik dit apparaat voor:" />
+  <text id="outputNotes" v="Noten" />
+  <text id="outputBackground" v="Achtergrond Instrumenten" />
+  <text id="outputPercussion" v="Percussie" />
+  <text id="outputEverything" v="Alles" />
+
+  <text id="outputScaleHelp" v="Deze schaal heeft effect op alle af te spelen noten, percussie en metronoom tellen.  100% laat alles onveranderd." /> <!-- This "scale" refers to volume/loudness scaling -->
+
+  <!-- "Local" here is a technical MIDI term.  It's a keyboard setting that can be turned on or off.  -->
+  <text id="outputLocalOff" v="Local Uit" />
+  <text id="manageLocal" v="Voorkom &quot;local&quot; noten" />
+  <text id="localCaution" v="Niet alle keyboards staan controle toe over &quot;local&quot; noten.  Als uw apparaat dit wel kan zal dit tijdelijk het geluid uitschakelen.  Dit is handig als u een ander apparaat wenst.  Noten zullen allen vanaf dat apparaat gespeeld worden en een Echo wordt voorkomen." />
+
+  <text id="outputIgnore" v="Stuur geen noten naar dit apparaat" />
+  <text id="outputShortMyNotes" v="Mijn" /> <!-- Short text shown in a list of which types of notes are sent out to the speakers: the user's notes and/or background notes -->
+
+  <text id="outputChannel" v="MIDI Kanaal" />
+  <text id="outputChannelHelp" v="Sommige apparaten ondersteunen maar 1 MIDI kanaal.  Hierdoor zal elk muziek onderdeel dezelfde instrument gebruiken." />
+
+  <text id="outputSoundSet" v="Geluidenset:" /> <!-- Which sounds (or "SoundFont" or "set of sounds") should the music synthesizer use? -->
+  <text id="outputReverb" v="Nagalm" /> <!-- How much reverb effect should be applied to the sounds coming out of the speakers -->
+
+  <!-- This is a technical MIDI term meaning "all channels", "omni-channel output", or "omnidirectional output" -->
+  <text id="outputOmni" v="Omni (Alle Kanalen)" />
+
+  <text id="testHelp" v="De test stuurt noten naar alle uitgangsapparaten." />
+  <text id="test" v="Test" />
+  <text id="stop" v="Stop" />
+
+  <text id="keyRange" v="%1% Toetsen" /> <!-- 1: the number of keys this keyboard has, usually something like 49, 61, 76, or 88 -->
+  <text id="unknown" v="Onbekend" />
+
+  <text id="volumeScale" v="Volume Schaal" /> <!-- This "scale" refers to volume/loudness scaling -->
+  <text id="noteRange" v="Notenbereik" />
+
+  <!-- Some digital piano models have LED lights built into the keys -->
+  <text id="keyLightsHeading" v="Toetslichten" />
+  <text id="keyLights" v="Kan.%1% Lichten" /> <!-- 1: the MIDI channel number that this keyboard uses for light signals, between 1 and 16.  The "Ch." is an abbreviation for "Channel", like a television or radio "channel".  This is used in a very small location in the application, so it has to be short. -->
+  <text id="keyChannel" v="Kanaal %1%" /> <!-- 1: same as above -->
+  <text id="keyChannelMulti" v="Vinger-hint kanaal" /> <!-- Some devices can show a different color light depending on which finger the note corresponds to -->
+  <text id="keyChannelProprietary" v="Beschermd %1%" /> <!-- 1: A simple number (1, 2, 3, etc.).  Some devices use their own proprietary scheme for key lights.  We simply number these. -->
+
+
+
+
+  <!-- Settings: Songs -->
+  <text id="folders" v="Mappen" />
+
+  <text id="folderComputer" v="Computer" />
+  <text id="folderHome" v="Home" />
+  <text id="folderDesktop" v="Bureaublad" />
+  <text id="folderDocuments" v="Documenten" />
+  <text id="folderMusic" v="Muziek" />
+
+  <!-- Android-specific folder names -->
+  <text id="folderDevice" v="Apparaat" />
+  <text id="folderStorage" v="Interne Opslag" />
+  <text id="folderRoot" v="Hoofd Directory" />
+
+  <text id="folderSongCount" v="%1% bestanden gevonden om deze map" />
+  <text id="folderTrouble" v="Problemen tijdens lezen in deze map!" />
+  <text id="folderMissing" v="Map ontbreekt!" />
+  <text id="topLevelRecursive" v="Synthesia kan niet de gehele computer doorzoeken." />
+
+  <text id="searchLocations" v="De volgende locaties zijn doorzocht" />
+
+  <text id="folderBuiltIn" v="Ingebouwde Muziek" />
+  <text id="folderItunes" v="iTunes File-Sharing" />
+  <text id="itunesHelp" v="Voeg muziek toe middels de File Sharing sectie bij de Apps wanneer uw iPad verbonden is met iTunes." />
+
+  <text id="searchFolderOnly" v="Doorzoek enkel deze map" />
+  <text id="searchSubfolders" v="Doorzoek deze map en elke map daarin" />
+
+  <text id="showResults" v="Voeg deze muziek toe aan de volledige lijst" />
+  <text id="hideResults" v="Verberg deze" />
+  <text id="resultsHidden" v="Resultaten verborgen" />
+
+  <text id="stopSearching" v="Stop met zoeken naar muziek in deze map" />
+
+
+
+
+  <!-- Settings: Color Themes -->
+  <text id="colorTheme" v="Kleuren Thema" />
+  <text id="crystalBlue" v="Crystal Blue" />
+
+
+
+
+  <!-- Settings: Keyboard Shortcuts ("key" usually refers to a typing keyboard in this section but could also mean a piano key) -->
+  <text id="resetToDefault" v="Reset alles" />
+  <text id="bindKey" v="Gebruik elke mogelijke toets of knop op elk mogelijk apparaat" />
+  <text id="deleteShortcut" v="Verwijder sneltoets" />
+  <text id="axisInfo" v="Deze sneltoets werkt met een as, zoals een Pitch-Bend wiel, of een muis-scroll wiel." />
+
+  <text id="noBinding" v="(geen)" />
+  <text id="keyComma" v="Komma" />
+  <text id="keyPeriod" v="Punt" />
+  <text id="keySpacebar" v="Spatie" />
+
+  <text id="shortcutHeaderMenu" v="Navigatie Menu" />
+  <text id="shortcutHeaderSong" v="Muziek Navigatie" />
+  <text id="shortcutHeaderPlay" v="Afspeel Controls" />
+  <text id="shortcutHeaderLoops" v="Lussen" />
+  <text id="shortcutHeaderAdvanced" v="Geavanceerd" />
+
+  <text id="shortcutHelp" v="Toon Spel Hulp" />
+
+  <text id="menuProceed" v="Menu Ga Door" />
+  <text id="menuBack" v="Menu Ga Terug" />
+  <text id="selectNext" v="Menu Selecteer Volgend Object" />
+  <text id="selectPrevious" v="Menu Selecteer Vorig Object" />
+  <text id="nextPage" v="Menu Volgende Pagina" />
+  <text id="previousPage" v="Menu Vorige Pagina" />
+
+  <text id="parentGroup" v="Navigeer een muziekgroep terug" />
+
+  <text id="speedUp" v="Snelheid omhoog" />
+  <text id="speedDown" v="Snelheid omlaag" />
+  <text id="speedUpSmall" v="Snelheid omhoog (kleine stap)" />
+  <text id="speedDownSmall" v="Snelheid omlaag (kleine stap)" />
+  <text id="speedVariable" v="Snelheid (variabel)" />
+
+  <text id="songStepBack" v="Stap Vooruit" />
+  <text id="songStepForward" v="Stap Achteruit" />
+  <text id="songJog" v="Song Position Jog" />
+  <text id="songAbsoluteJog" v="Exacte Muziek Positie" />
+
+  <text id="prevBookmark" v="Vorige Bladwijzer" />
+  <text id="nextBookmark" v="Volgende Bladwijzer" />
+  
+  <text id="shortcutJumpBeginning" v="Spring naar het begin" />
+  <text id="shortcutJumpB1" v="Spring naar Bladwijzer 1" />
+  <text id="shortcutJumpB2" v="Spring naar Bladwijzer 2" />
+  <text id="shortcutJumpB3" v="Spring naar Bladwijzer 3" />
+  <text id="shortcutJumpB4" v="Spring naar Bladwijzer 4" />
+  <text id="shortcutJumpB5" v="Spring naar Bladwijzer 5" />
+  <text id="shortcutJumpB6" v="Spring naar Bladwijzer 6" />
+  <text id="shortcutJumpB7" v="Spring naar Bladwijzer 7" />
+  <text id="shortcutJumpB8" v="Spring naar Bladwijzer 8" />
+  <text id="shortcutJumpB9" v="Spring naar Bladwijzer 9" />
+
+  <text id="stretchNotes" v="Verruim het Vallende Noten deel" />
+  <text id="compressNotes" v="Versmal het Vallende Noten deel" />
+  <text id="resetNoteScale" v="Reset het Vallende Noten deel" /> <!-- This "scale" refers to stretching/squishing a visual element on the screen -->
+
+  <text id="octaveUp" v="Verschuif de Ingangs Octaaf Omhoog" />
+  <text id="octaveDown" v="Verschuif de Ingangs Octaaf Omlaag" />
+
+  <text id="pauseStandard" v="Pauze/Doorgaan" />
+  <text id="pauseBookmark" v="Toggle Bladwijzer Modus" />
+  <text id="pauseLoop" v="Toggle Lussen Modus" />
+  <text id="pauseFingerHint" v="Toggle Vinger-Hint Modus" />
+
+  <text id="walkLoopForward" v="Speel volledige lus voorwaards" />
+  <text id="walkLoopBackward" v="Speel volledige lus terugwaards" />
+  <text id="extendLoopForward" v="Verleng einde van de lus voorwaards" />
+  <text id="extendLoopBackward" v="Verleng begin van de lus terugwaards" />
+  <text id="toggleLoop" v="Toggle de Lus" /> <!-- Enables or disables the current loop -->
+
+  <text id="hintL1" v="Toggle Links 1e Vinger Hint" />
+  <text id="hintL2" v="Toggle Links 2e Vinger Hint" />
+  <text id="hintL3" v="Toggle Links 3e Vinger Hint" />
+  <text id="hintL4" v="Toggle Links 4e Vinger Hint" />
+  <text id="hintL5" v="Toggle Links 5e Vinger Hint" />
+  <text id="hintR1" v="Toggle Rechts 1e Vinger Hint" />
+  <text id="hintR2" v="Toggle Rechts 2e Vinger Hint" />
+  <text id="hintR3" v="Toggle Rechts 3e Vinger Hint" />
+  <text id="hintR4" v="Toggle Rechts 4e Vinger Hint" />
+  <text id="hintR5" v="Toggle Rechts 5e Vinger Hint" />
+  <text id="hintRemove" v="Verwijder de Vinger Hint" />
+
+  <text id="cycleNotationSize" v="Doorloop notatie grootte" />
+
+  <!-- Name of an option that lets the user override (by cycling through) which MIDI channel is used
+       when sending their notes to a digital keyboard.  "MIDI" and "Channel" are technical terms -->
+  <text id="cycleOutputMidiChannel" v="Cyclusoutput MIDI-kanaal" />
+
+  <text id="advancedFps" v="Toggle FPS Scherm" />
+  <text id="advancedMeasures" v="Toggle Vallende Maat lijnen" /> <!-- This refers to a musical "measure" or "bar".  (Not a measurement.) -->
+  <text id="advancedVerboseLogging" v="Toggle Tonen Loggingteksten" />
+  <text id="advancedHiddenNotes" v="Toggle Verberg Alle Noten" />
+  <text id="advancedReloadUi" v="Herlaad de Gebruikers Interface omschrijving" />
+  <text id="advancedResizeUi" v="Gebruikers Interface User Interface Grootte Test" />
+
+
+
+
+  <!-- Settings: User Profiles -->
+  <text id="userProfiles" v="Profielen" />
+  <text id="anonymousUser" v="Anonieme gebruiker" />
+
+  <text id="deleteUser" v="Verwijder profiel!" />
+  <text id="deleteUserHelp" v="Profiel wordt enkel uit de lijst verwijderd. Statistieken blijven." />
+
+  <text id="newProfile" v="Nieuw Profiel" />
+  <text id="accept" v="Ga Akkoord" />
+
+  <text id="cannotBeBlank" v="Naam mag niet leeg zijn." />
+  <text id="profileAlreadyExists" v="Een profiel met die naam bestaat al." />
+
+  <text id="statFirstSong" v="Eerste Stuk" />
+  <text id="statTotalSongs" v="Aantal stukken gespeeld" />
+  <text id="statMelody" v="Melodie Oefeningen gespeeld" />
+  <text id="statRhythm" v="Ritme Oefeningen gespeeld" />
+  <text id="statRecital" v="Voordrachten gespeeld" />
+  <text id="statTotalNotes" v="Aantal Correcte Noten" />
+  <text id="statNotesHeld" v="Noten Cumulatief vastgehouden" /> <!-- The sum total of all the time a user has held down notes in their entire career using this application.  Value is something like "3.4 days" -->
+
+  <text id="calculating" v="Uitrekenen..." />
+  <text id="never" v="Nooit" /> <!-- Referring to a date/time that never occurred -->
+  <text id="songCount" v="%1% stukken" />
+  <text id="songCountAllFolders" v="%1% stukken in alle mappen" />
+  <text id="playCount" v="%1%x gespeeld" /> <!-- Number of times a song has been played -->
+  <text id="noteCount" v="%1% noten" />
+
+  <text id="secondCount" v="%1% seconden" />
+  <text id="minuteCount" v="%1% minuten" />
+  <text id="hourCount" v="%1% uren" />
+  <text id="dayCount" v="%1% dagen" />
+
+
+
+
+  <!-- Settings: Gameplay/Advanced -->
+  <text id="midiData" v="MIDI Data" />
+
+  <text id="menuBarT" v="Menubalk" /> <!-- This is the heading for an option that will allow you to show or hide the top menu bar of the app -->
+  
+  <text id="yourNotesT" v="Uw Noten" />
+  <text id="yourNotes1" v="Speel alles" />
+  <text id="yourNotes2" v="Speel enkel de correct gelijkende" />
+
+  <text id="noteVolumeT" v="Noten Geluidsterkte" />
+  <text id="noteVolume1" v="Aanpassen aan de Ingang" />
+  <text id="noteVolume2" v="Gebruik geluidsterkte vanuit de muziek" />
+
+  <text id="keyLabelsT" v="Toetslabels" /> <!-- Refers to labels shown on the piano keys -->
+
+  <text id="melodyContinueT" v="Ga door wanneer" />
+  <text id="melodyContinue1" v="alle noten tegelijk worden gespeeld" /> <!-- "Continue when ... all notes are held at once." -->
+  <text id="melodyContinue2" v="elke noot afzonderlijk gespeeld is" /> <!-- "Continue when ... each note has been pressed." -->
+
+  <text id="bestOctaveT" v="Keyboardoctaaf" />
+  <text id="bestOctave1" v="Pas Automatisch Aan" /> <!-- "Keyboard octave ... [should be] adjusted automatically." -->
+  <text id="bestOctave2" v="Alleen Handmatig" /> <!-- "Keyboard octave ... [can only be changed] manually." -->
+  <text id="bestOctaveD" v="Als u een kleiner keyboard met minder toetsen hebt, helpt dit u om meer noten te bereiken." />
+
+  <text id="melodyMistakeT" v="Foutieve noten" />
+  <text id="melodyMistake1" v="de muziek stoppen" /> <!-- "Incorrect notes ... [should] stop the song" -->
+  <text id="melodyMistake2" v="worden genegeerd" /> <!-- "Incorrect notes ... [should be] ignored" -->
+
+  <text id="melodyDotsT" v="Volgende-Noot Helper" />
+  <text id="melodyDots1" v="Toon op de Keyboard" />
+
+  <text id="particlesT" v="Particle Effecten" />
+  <text id="particlesD" v="Verbergen van dit effect kan de performance ten goede komen." />
+
+  <text id="messageBankSelectT" v="Bank Select berichten" />
+  <text id="messageBankSelectD" v="Het toestaan van Bank Select berichten kan zorgdragen dat sommige muziek apparaten stilvallen." />
+  <text id="messagePedalT" v="Pedaal berichten" />
+  <text id="messagePedalD" v="Kan problem oplossen bij sommige muziek stukken welke stilvallen bij gebuik van QuickTime synth." />
+  <text id="messageSysExT" v="SysEx berichten" />
+  <text id="messageSysExD" v="Sommige SysEx berichten kunnen problemen veroorzaken bij bepaalde muziek apparaten." />
+  <text id="messagePrChT" v="Instrument verandering berichten" />
+  <text id="messagePrChD" v="Verander deze instelling wanneer u zelf de controle over instrumenten wenst." />
+
+  <text id="choiceOff" v="Uit" />
+  <text id="choiceAllow" v="Toestaan" />
+  <text id="choiceFilter" v="Uitgezet" />
+  <text id="choiceHidden" v="Verborgen" />
+  <text id="choiceAlwaysShown" v="Altijd weergegeven" />
+  <text id="choiceEnabled" v="Ingeschakeld" />
+  <text id="choiceDisabled" v="Uitgeschakeld" />
+  <text id="choiceDefault" v="(origineel)" />
+  <text id="choiceMuted" v="Gedempt" />
+  <text id="choiceSounded" v="Hoorbaar" /> <!-- Makes a sound -->
+
+  <text id="midiChannelsT" v="MIDI Track Kanalen" />
+  <text id="midiChannelsD" v="Het forceren van individuele tracks om een uniek kanaal te gebruiken kan het veranderen van instrumenten vergemakkelijken." />
+  <text id="midiChannels1" v="Forceer Uniek" />
+  <text id="midiChannels2" v="Gebruik originele" />
+
+
+
+
+  <!-- Online Service Wait Prompt -->
+  <text id="contactingServer" v="Verbinding maken met de server..." />
+  <text id="serviceThrottled" v="Te veel foutieve pogingen.  Probeer over een uur opnieuw." />
+  <text id="serviceUnknownErr" v="De server gaf een onbekende fout terug." />
+  <text id="serviceCannotConnect" v="Kon geen verbinding met de server maken.  Controleer uw Internet verbinding en probeer opnieuw." />
+
+</UiDescription>

@@ -1,0 +1,780 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UiDescription>
+
+  <!-- General -->
+  <text id="synthesia" v="Synthesia" /> <!-- Our product name.  Probably the same in all languages. -->
+
+  <text id="continue" v="繼續" />
+  <text id="back" v="返回" />
+  <text id="cancel" v="取消" />
+  <text id="save" v="保存" />
+  <text id="help" v="幫助" />
+  <text id="add" v="添加" />
+  <text id="name" v="名稱" />
+  <text id="clear" v="清除" /> <!-- to remove, to wipe clean -->
+
+  <text id="textboxHintSearch" v="搜索..." />
+
+  <text id="metronome" v="節拍器" />
+  <text id="bookmarks" v="書籤" />
+  <text id="fingerHints" v="手指提示" /> <!-- Hints about which finger to use on each piano key -->
+  <text id="sheetMusic" v="活頁樂譜" />
+
+
+
+
+  <!-- Title screen -->
+  <text id="playSong" v="演奏歌曲" />
+  <text id="freePlay" v="自由演奏" /> <!-- This leads to an area where you are free to play any notes you want.  So "free" as in freedom.  Not "free" as in "zero cost". -->
+  <text id="tutorial" v="教程" />
+  <text id="settings" v="設置" />
+  <text id="exit" v="退出" /> <!-- Button that ends/quits/exits the program -->
+
+  <text id="whatsNew" v="更新說明" /> <!-- Heading above a list of news entries -->
+  <text id="recentlyPlayed" v="最近演奏" /> <!-- Heading for a list of songs that the user recently played -->
+
+  <text id="feedback1" v="享用Synthesia？" />
+  <text id="feedback2" v="爲應用評分" />
+  <text id="feedback3" v="遇到問題？" />
+  <text id="feedback4" v="聯絡我們" />
+
+  <!-- All of the following refer to the relative amount of time that has passed since an event.  The %1% is always a whole number between 2 and 60. -->
+  <text id="justNow" v="剛剛" />
+  <text id="aMinuteAgo" v="一分鐘前" />
+  <text id="minutesAgo" v="%1%分鐘前" />
+  <text id="anHourAgo" v="一小時前" />
+  <text id="hoursAgo" v="%1%小時前" />
+  <text id="aDayAgo" v="一天前" />
+  <text id="daysAgo" v="%1%天前" />
+  <text id="aWeekAgo" v="一週前" />
+  <text id="weeksAgo" v="%1%週前" />
+  <text id="aMonthAgo" v="一個月前" />
+  <text id="monthsAgo" v="%1%個月前" />
+  <text id="aYearAgo" v="一年前" />
+  <text id="longAgo" v="很久以前" />
+
+  <text id="titleInput" v="輸入： %1%" /> <!-- 1: list of music input device names -->
+  <text id="titleOutput" v="輸出： %1%" /> <!-- 1: list of music output device names -->
+
+  <text id="noProfile" v="無資料文件" />
+  <text id="noProfileDescription" v="無資料文件，匿名" />
+  <text id="manageProfiles" v="管理資料文件" />
+
+
+
+
+  <!-- Tutorial screen -->
+  <text id="skipTutorial" v="跳過教程" />
+
+  <text id="tutA1" v="歡迎使用 Synthesia！" />
+  <text id="tutA2" v="這是 58 秒中的教程。" />
+
+  <text id="tutB1" v="在低音區拖動移動鍵盤視角。" />
+  <text id="tutC1" v="現在試試在低音區進行捏合操作縮放鍵盤。" /> <!-- We're using Apple's definition of "pinch" which can go in either direction (bigger or small), so this can be a zoom-in or zoom-out -->
+
+  <text id="tutD1" v="現在你來試試！  歌曲將等待，直到你敲擊每個音符。" />
+  <text id="tutD2" v="提示： 數字顯示要使用哪個手指。  大拇指是 1，小指頭是 5。" />
+
+  <text id="tutE1" v="不錯！" />
+
+  <text id="tutF1" v="就是這樣！  慢慢地你將學到其他的內容。" />
+  <text id="tutF2" v="快樂使用 Synthesia！" />
+
+
+
+
+  <!-- Unlock screen -->
+  <text id="demoUnlockT" v="Synthesia演示版" />
+  <text id="demoUnlock1" v="本免費演示版為您提供了一個測試鍵盤連線和試彈幾首曲目的機會。解鎖完整版來使用全部Synthesia功能，彈奏您可以找到或您自己創作的任何曲目！" />
+
+  <text id="unlock" v="解鎖Synthesia" />
+  <text id="unlockButton" v="訪問 Synthesia 網站，立即購買！" />
+  <text id="unlockButton_a" v="或者，從我們的網站購買解鎖金鑰" />
+
+  <text id="lostKey1" v="密碼丟失？" /> <!-- This "key" refers to a software unlock code that enables all the features in the software (not a piano key).  These lines refer to a feature that helps a user recover a key they no longer have. -->
+  <text id="lostKey2" v="獲取密碼" />
+
+  <text id="shortCode1" v="在此輸入短碼：" />
+  <text id="shortCode2" v="確定" />
+
+  <text id="shortCodeValidate" v="正在驗證解鎖金鑰……" />
+
+  <text id="shortCodeFailureT" v="無法找到解鎖鍵" />
+  <text id="shortCodeFailure" v="此短碼與我們的任何記錄都不匹配。  請重試。" />
+
+  <text id="unlockOwner" v="授權給" />
+  <text id="unlockType" v="授權類型" />
+
+  <text id="unlockPersonal" v="個人家庭使用" />
+  <text id="unlockEducation" v="%1% 個幷發許可" /> <!-- 1: the number of licenses allowed (at the same time) by this unlock key -->
+
+  <text id="unlockDuration" v="免費更新" /> <!-- Heading in front of either "Until [Date]" or "Forever" -->
+  <text id="unlockDurationUnlimited" v="永久" />
+
+  <text id="inAppDesc" v="獲取其它包含曲目的存取權限並匯入您自己的MIDI曲目。" />
+  <text id="inAppDesc_i" v="訪問所包含的其他歌曲并使用 iTunes 文件共享或從其他應用導入自己的歌曲。" />
+  <text id="inAppButton" v="立即解鎖！" />
+  <text id="inAppButtonPrice" v="立即解鎖，只需 %1%" /> <!-- 1: a price in a localized currency like $4.99 or ¥499 -->
+  <text id="inAppMoreInfo_a" v="如果您過去已經購買了應用程式內解鎖，請仔細檢查是否使用與最初購買時相同的帳戶登入Google Play。（有時重新啟動您的裝置將有助於使之前的購買再次出現）" />
+
+  <!-- Question in front of a button that will restore the user's purchase without charging them additional money -->
+  <text id="restore1" v="已解鎖？" />
+  <text id="restore2" v="恢復購買" />
+
+  <text id="feature1" v="演奏包含的曲目" /> <!-- Heading that describes a feature that becomes available after unlocking: being able to play all of the included songs instead of just a few -->
+  <text id="feature2" v="Synthesia 包含 150 多首很棒的歌曲。  解鎖之後就可以訪問所有歌曲了。  每首歌曲都配有手指提示且每只手分離，這樣可以分別練習雙手。" />
+  <text id="feature3" v="添加您自己的曲目" />
+  <text id="feature4" v="Synthesia可以演奏任何您在網際網路上找到的MIDI歌曲，甚至是您的自創曲目，查看Synthesia網站上的音樂商店以獲取高品質曲目。" />
+  <text id="feature4_i" v="Synthesia 可以演奏你在互聯網上找到的數百萬售 MIDI 歌曲，甚至是你自己創作的歌曲！  解鎖之後，你就可以演奏使用 iTunes 文件共享或使用其他應用（如 Safari 或 Mail）中的“在 Synthesia 中打開”選項導入的歌曲。" />
+  <text id="feature6" v="體驗樂器，學習和絃，並以完全自由的形式演奏您喜歡的東西。打開背景類型和單獨耳機。" />
+
+  <text id="communicateWithStore_i" v="正在與 App Store 通信..." />
+  <text id="communicateWithStore_a" v="正在與Google Play通訊……" />
+  <text id="unlocking" v="正在解鎖..." />
+  <text id="unlockCongrats" v="恭喜你，全部都解鎖了！" />
+
+  <!-- An in-app purchase entitles the user to a discount on our other platforms -->
+  <text id="claimLabel" v="對PC或Mac版Synthesia感興趣嗎？" />
+  <text id="claimButton" v="取回你的優惠" />
+
+  <text id="unlockRestricted1" v="購買在此平板電腦上不可用。" />
+  <text id="unlockRestricted2_i" v="（查看“設置”應用中的“一般 &gt; 限制”項。）" />
+
+  <text id="unlockFailed" v="購買或恢復出問題。" />
+  <text id="leaveAndReturn" v="（離開此屏幕，再回來重試。）" />
+
+  <text id="connectionFailed1" v="聯絡商店時出現問題。" />
+  <text id="connectionFailed2" v="（再次檢查已經連接了互聯網。）" />
+
+
+
+
+  <!-- Song Library -->
+  <text id="emptyStillScanning" v="正在掃描歌曲，請等待..." />
+  <text id="emptyWithFilter" v="找不到歌曲。  嘗試清除搜索。" />
+  <text id="emptyScannerIdle" v="本組中找不到歌曲。  在上面選擇其他。" />
+  <text id="emptyIdleTopLevel" v="找不到歌曲。  轉至“設置”的“歌曲”區域添加歌曲。" />
+
+  <text id="columnTitle" v="標題" />
+  <text id="columnFolder" v="文件夾" />
+  <text id="columnDifficulty" v="難度" />
+  <text id="columnRating" v="評級" />
+  <text id="columnPlayCount" v="演奏計數" />
+  <text id="columnLastPlayed" v="上次演奏的" />
+
+  <text id="libraryMoreSongs" v="獲得更多歌曲" />
+
+  <text id="deleteSongT" v="確定要永久刪除這首歌嗎？" />
+  <text id="deleteSongB" v="刪除歌曲！" />
+  <text id="deleteSongT_w" v="確定要將這首歌送到回收站嗎？" /> <!-- "Recycle Bin" is Windows-specific terminology -->
+  <text id="deleteSongB_w" v="送到回收站！" />
+  <text id="deleteSongT_m" v="確定要將這首歌移至垃圾箱嗎？" /> <!-- "Trash" is Mac-specific terminology -->
+  <text id="deleteSongB_m" v="移至垃圾箱！" />
+
+  <text id="songLoading" v="正在加載歌曲..." />
+  <text id="loadingError" v="加載歌曲出錯！" />
+
+  <text id="all" v="所有" /> <!-- Short for "All Songs" -->
+  <text id="allOneList" v="所有歌曲（一個大列表）" />
+  <text id="allGrouped" v="所有歌曲（按文件夾分組）" />
+
+
+
+
+  <!-- Song View -->
+  <text id="songs" v="歌曲" /> <!-- Button leading to a list of songs -->
+
+  <text id="watchAndListen" v="僅觀看和聽" />
+
+  <text id="modeMelody1" v="旋律練習" />
+  <text id="modeMelody2" v="歌曲等待你" />
+
+  <text id="modeRhythm1" v="節奏練習" />
+  <text id="modeRhythm2" v="恒速" />
+
+  <text id="modeRecital1" v="歌曲獨奏" />
+  <text id="modeRecital2" v="全速嘗試一次" />
+
+  <text id="modeHelp2" v="在“僅觀看和聽”模式中不得分。" />
+  <text id="modeHelp3" v="此模式還沒有任何統計數據。 嘗試演奏歌曲！" />
+
+  <text id="leftHand" v="左手" />
+  <text id="rightHand" v="右手" />
+  <text id="bothHands" v="雙手" />
+
+  <text id="left" v="左" />
+  <text id="right" v="右" />
+  <text id="both" v="雙" />
+
+  <text id="melodyPractice" v="旋律練習" />
+  <text id="rhythmPractice" v="節奏練習" />
+
+  <text id="watch1" v="Synthesia 自動完整地演奏整首歌曲。" />
+  <text id="watch2" v="坐下來聽聽。" />
+  <text id="watch3" v="嘗試感受一下雙手要如何移動。" />
+  <text id="watch4" v="注意突然的旋律和節奏變化。" />
+  <text id="watch5" v="這是學習喜愛的歌曲，或是在演奏之前加深熟悉度的有趣方法。" />
+
+  <text id="rhythm1" v="調節速度，直至可以正確演奏。" />
+  <text id="rhythm2" v="按自己適合的速度演奏。" />
+  <text id="rhythm3" v="慢慢達到 100% 速度。" />
+  <text id="rhythm4" v="先練習旋律，這樣會更容易。" />
+  <text id="rhythm5" v="避免出錯非常關鍵。  速度不宜設置太快，免得自己慌張失措。" />
+
+  <text id="melody1" v="歌曲會停下來直至你敲擊了正確的音符。" />
+  <text id="melody2" v="慢慢來。  慢慢演奏不會有人罰你的。" />
+  <text id="melody3" v="最要緊的是不要出錯。" />
+  <text id="melody4" v="保持音符的完整音長也很重要。" />
+  <text id="melody5" v="如果不仔細，你的肌肉記憶中就會帶有錯誤！" />
+
+  <text id="recital1" v="在學了旋律和節奏之後的最後一步。" />
+  <text id="recital2" v="歌曲速度固定在 100%，你不能跳來跳去。  在嘗試這樣演奏之前，應使用其他模式練習。" />
+
+  <text id="pointsAveraged" v="分數是你最佳的三次嘗試的平均分。  “雙手”還會計算每個手的分數！" />
+  <text id="date" v="日期" /> <!-- Calendar date column heading in a table -->
+
+  <text id="criteriaAvoidMistakes" v="敲擊每個音符，避免出錯" />
+  <text id="criteriaFullDuration" v="按住音符保證完整音長" />
+  <text id="criteriaFullSpeed" v="儘量接近 100% 速度演奏" />
+
+  <text id="tabInstructions" v="說明" />
+  <text id="tabProgress" v="進度分解" />
+  <text id="tabChart" v="曲綫圖" />
+  <text id="tabTable" v="得分" />
+
+
+
+
+  <!-- Hands, Colors, and Instruments -->
+  <text id="reset" v="重試" />
+
+  <!-- Notes that will be played automatically in the background -->
+  <text id="background" v="背景" />
+
+  <!-- Text on a button that will customize a selection -->
+  <text id="custom" v="自訂" />
+
+  <text id="dragToCopy" v="通過拖動將任何設置複製到其他樂器。" />
+  <text id="allParts" v="所有部件" />
+
+  <!-- A button that will automatically assign colors to each instrument based on song settings -->
+  <text id="autoColor" v="自動顏色" />
+
+  <text id="colorBlue" v="藍色" />
+  <text id="colorGreen" v="綠色" />
+  <text id="colorOrange" v="橙色" />
+  <text id="colorYellow" v="黃色" />
+  <text id="colorPurple" v="紫色" />
+  <text id="colorRed" v="紅色" />
+
+  <text id="instrumentsAndHands" v="手、顏色和樂器" />
+  <text id="assignHands" v="將手分配個一個或多個樂器" />
+  <text id="noInput" v="打開一個輸入裝置，您自己演奏這首曲目。" />
+
+
+
+
+  <!-- Track splitting screen -->
+
+  <!-- A button that begins a "hand splitting" operation, where every note in the song from the selected time
+  forward, is assigned to the left or right hand based on a horizontal "split point" the user has selected -->
+  <text id="splitFromHere" v="從這裡拆分" />
+
+  <!-- Single-character abbreviations for "[L]eft Hand" and "[R]ight Hand" -->
+  <text id="leftSingle" v="左" />
+  <text id="rightSingle" v="右" />
+
+
+
+
+  <!-- Help popup messages -->
+  <text id="percussionT" v="打擊樂器不能更改。" />
+  <text id="percussion1" v="選擇樂器只能更改樂器，但打擊樂器只能是打擊樂器。" />
+
+  <text id="importSongsT" v="添加喜愛的 MIDI 歌曲" />
+  <text id="importSongs1" v="解鎖Synthesia後，您僅需要尋找您喜愛曲目的MIDI版本。嘗試在Safari中打開一個MIDI檔並在出現的清單中選擇Synthesia。" />
+  <text id="importSongs2" v="如果計算機上已經有了 MIDI 歌曲，也可以使用 iTunes 文件共享將其添加入 Synthesia 的庫中。  輕觸以下按鈕查看 Apple 的指南。" />
+  <text id="importSongsB" v="讓我看看  iTunes 文件共享的工作方法" />
+
+  <text id="addFoldersT" v="告訴 Synthesia 在哪裡找到你的 MIDI 歌曲" />
+  <text id="addFolders1" v="Synthesia 掃描文件夾尋找 MIDI 歌曲。  可以在“設置”的“歌曲”區域選擇要掃描的文件夾。" />
+  <text id="addFolders2" v="在知道 Synthesia 掃描的文件夾位置之後，只需將 MIDI 歌曲放入這其中一個文件夾中，下次運行 Synthesia 時，歌曲就會在歌曲庫中出現了。" />
+  <text id="addFoldersB" v="轉至“設置”！" />
+
+  <text id="resetIconT" v="拖動閃電球來重設" />
+  <text id="resetIcon1" v="拖動閃電球到樂器，重設其所有設置。  也可以將它拖動到屏幕上方的“所有部件”，重設每個樂器的所有設置。" />
+
+  <text id="songPointsT" v="關於歌曲分數" />
+  <text id="songPoints1" v="歌曲名稱旁邊顯示的大大數字是你所有嘗試中得到的總分（總 100 分）。  這是由在每個模式中每只手最好的三次嘗試決定的：旋律、節奏和獨奏。" />
+  <text id="songPoints2" v="在簡單視圖中查看進度分解，瞭解更多得到情況。" />
+
+  <text id="readOnlySongT" v="不能刪除歌曲" />
+  <text id="readOnlySong1" v="選擇的歌曲只讀，不可刪除。  如有要將其從歌曲庫中移除，可在“設置”屏幕的“歌曲”部份將其所屬的條目移除。" />
+
+  <text id="unlockErrorDeactivatedT" v="解鎖密鈅取消激活" />
+  <text id="unlockErrorDeactivated1" v="由於付款問題此解鎖密鈅已經被取消激活。" />
+  <text id="unlockErrorDeactivated2" v="聯繫 support@synthesiagame.com，我們將跟蹤問題，并協助解決。" />
+
+  <text id="unlockErrorNoInternetT" v="無法驗證短碼" />
+
+  <text id="unlockErrorTooManyT" v="太多次重獲" />
+  <text id="unlockErrorTooMany1" v="此短碼最近使用太多次了。  者通過 support@synthesiagame.com 聯繫我們尋求幫助。" />
+
+  <text id="deviceLost" v="意外的設備連接丟失！  檢查你的線纜！" />
+
+  <text id="songProgressLossT" v="進度將丟失！" />
+  <text id="songProgressLoss1" v="現在離開將導致你這首歌當前的進度丟失。" />
+  <text id="songProgressLossB" v="退出歌曲，丟失進度！" />
+
+
+
+
+  <!-- Play screen -->
+  <text id="time:" v="時間：" />
+  <text id="measure:" v="小節：" /> <!-- This refers to a musical "measure" or "bar".  (Not a measurement.) -->
+  <text id="notes:" v="備註：" />
+  <text id="errors:" v="錯誤：" />
+  <text id="points:" v="分數：" />
+
+  <text id="paused" v="歌曲暫停" />
+
+  <text id="bookmarkInstructions" v="在左端設置書籤。" /> <!-- "bookmark" here means a placeholder in a song -->
+  <text id="bookmarkMidiMarkers" v="MIDI 標記" /> <!-- Refers to the bookmarks stored directly inside the song file (these have a special name: "Markers" instead of "Bookmarks") -->
+
+  <!-- "bookmark" here means a placeholder in a song -->
+  <text id="bookmarkUserBookmarks" v="我的書簽" /> <!-- Refers to bookmarks created by the user -->
+  <text id="bookmarkMetadataBookmarks" v="中繼資料書簽" /> <!-- Refers to a list of bookmarks loaded from an external file -->
+  <text id="bookmarkKeySignatures" v="調號" /> <!-- A list of bookmarks automatically generated, one per key signature change in the song -->
+  <text id="clearBookmarks" v="清空使用者書簽" />
+
+  <text id="loopInstructions" v="在時間線中拖動創建循環。  在下方微調。" />
+  <text id="loopStart" v="循環啟動" />
+  <text id="entireLoop" v="整個循環" />
+  <text id="loopEnd" v="循環結束" />
+
+  <!-- Describes how much preparation time should be inserted each time a section of the song is repeated.  This is the label for a slider control that adjusts the amount of delay. -->
+  <text id="loopDelay" v="迴圈間延遲" />
+
+  <text id="fingerHintInstructions" v="通過從音頻拖動到手指圖，添加手指提示。" />
+
+  <text id="pinchKeyboard" v="在低音區水平捏合，調節鍵盤尺寸。  或者選擇以下預調設置。" />
+  <text id="dragKeyboard" v="在低音區拖動移動鍵盤視角。  在下方調整縮放。" />
+
+  <text id="praise0" v="棒極了！" />
+  <text id="praise1" v="很棒！" />
+  <text id="praise2" v="好！" />
+  <text id="praise3" v="不錯！" />
+  <text id="praise4" v="還可以！" />
+
+  <text id="combo" v="%1% 音符組合！" /> <!-- 1: number of successive notes user has played successfully -->
+
+  <!-- These are options to select which text labels are shown on the music notes -->
+  <text id="labelsNone" v="無標籤" />
+  <text id="labelsHints" v="手指提示編號" />
+  <text id="labelsVirtual" v="虛擬鋼琴映射" />
+  <text id="labelsEnglish" v="英文音符名稱" /> <!-- C, C#, D... -->
+  <text id="labelsFixed" v="固定唱名法音符名稱" /> <!-- Do, Re, Mi... -->
+  <text id="labelsMovable" v="音調唱名法音符名稱" /> <!-- Do, Re, Mi... -->
+  <text id="labelsScale" v="音階編號" /> <!-- 1, 2, 3... This "scale" refers to a musical scale -->
+  <text id="labelsOctave" v="八度" /> <!-- C1, C2, C3... on each C piano key, for every octave -->
+  <text id="labelsSimple" v="簡單名稱" /> <!-- C, D, E... on white keys only -->
+
+  <!-- An option that selects whether labels should be shown on every note ("Show All") or only on notes that belong to the song's current key signature ("Use Song's Key") -->
+  <text id="labelsFewer" v="僅在我自己的備注上顯示標簽" />
+  <text id="labelsShowAll" v="顯示所有" />
+  <text id="labelsPartial" v="使用曲目的調號" />
+
+  <!-- 12-note phonetic (solfege/solfeggio/solfeo) note names for your country, with appropriate accents.
+  Correct for Si/Ti, So/Sol, etc.  There must be 12 and they must be separated by a single space, each. -->
+  <text id="solfege" v="Do Di Re Ri Mi Fa Fi Sol Si La Li Ti" />
+
+  <text id="zoom18" v="18 鍵" /> <!-- piano keys -->
+  <text id="zoom25" v="25 鍵" />
+  <text id="zoom88" v="所有 88" />
+  <text id="zoomMyNotes" v="我的音符" />
+  <text id="zoomMyKeys" v="我的鍵盤" />
+  <text id="zoomSong" v="僅歌曲" />
+
+  <text id="metVolume" v="節拍器音量" />
+  <text id="metStartOnly" v="僅在歌曲開始之前運行" />
+  <text id="metAlways" v="始終運行" />
+  <text id="met1x" v="1x: 常速" />
+  <text id="met2x" v="2x: 雙倍速" />
+  <text id="metFirst" v="強調第一拍" />
+  <text id="metEach" v="均衡節拍" />
+
+  <text id="loopBestMelody" v="最佳" />
+  <text id="loopBestRhythm" v="最佳：" />
+  <text id="loopCount" v="循環 %1%" /> <!-- 1: number of times the section has looped -->
+  <text id="current" v="當前" /> <!-- Heading above statistics for the current loop iteration -->
+
+  <text id="songComposer" v="作曲家" />
+  <text id="songArranger" v="編曲家" />
+  <text id="songCopyright" v="版權" />
+  <text id="songMadeFamousBy" v="一舉成名" />
+
+
+
+
+  <!-- Help screen -->
+  <text id="visitShortcuts" v="轉至“設置”的“快捷方式”區域，使用鍵盤控制所有項。" />
+  <text id="doubleTap" v="雙觸摸" /> <!-- Tapping like the finger gesture on a touch-screen -->
+
+  <text id="iconPlay" v="演奏/暫停" />
+  <text id="iconZoom" v="縮放" />
+  <text id="iconLabels" v="音符標籤" />
+  <text id="iconLoops" v="循環" />
+
+
+
+
+  <!-- Each of these are columns in a table giving statistics about past performances of a song -->
+  <text id="columnPoints" v="得分" /> <!-- Points earned like in a video game -->
+  <text id="columnNotesHit" v="音符提示" />
+  <text id="columnErrors" v="錯誤" />
+  <text id="columnActualSpeed" v="實際速度" />
+  <text id="columnAvgSpeed" v="平均速度" />
+  <text id="columnTimeSpent" v="花費的時間" />
+  <text id="columnDateEarned" v="贏分的日期" /> <!-- On which date a particular score/points/result/performance was earned -->
+
+  <text id="recital" v="獨奏" /> <!-- Indicates a song was played in Recital mode -->
+
+
+
+
+  <!-- Settings (shared) -->
+  <text id="gameplay" v="遊戲玩法" />
+  <text id="shortcuts" v="快捷方式" /> <!-- Keyboard shortcuts like "Ctrl + C" -->
+  <text id="aboutLegal" v="檢視讀我檔案和法律資訊" />
+
+
+
+
+  <!-- Text used on a utility benchmarking (speed testing) screen -->
+  <text id="benchmark" v="基準" />
+  <text id="saveToDesktop" v="儲存到桌面" />
+  <text id="saved" v="已儲存！" />
+  <text id="timePerFrame" v="每幀平均時長" />
+  <text id="timeSpentDrawing" v="繪製時用去的平均時間" />
+  <text id="timeSpentUpdating" v="更新時用去的平均時間" />
+  <text id="headingOverall" v="總計" />
+  <text id="headingDraw" v="繪製" />
+  <text id="headingUpdate" v="更新" />
+
+
+  
+
+  <!-- Settings: Music Devices -->
+  <text id="musicDevices" v="音樂設備" />
+  <text id="noDevice" v="（無）" />
+
+  <text id="musicInput" v="音樂輸入" />
+  <text id="musicOutput" v="音樂輸出" />
+  <text id="helpConnecting" v="需要幫助連接鍵盤？" />
+  <text id="keyboardTrouble" v="鍵盤無反應？" />
+
+  <text id="bluetooth" v="藍牙設定" /> <!-- The Bluetooth folks say that "Bluetooth" is only allowed to be translated as any of the following: Bluetooth, 藍牙, 蓝牙, ブルートゥース, or 블루투스 -->
+
+  <text id="virtualPianoHelp" v="虛擬鋼琴由你的計算機敲擊鍵盤控制。" />
+
+  <text id="inputIgnore" v="忽略此設備的輸入" />
+  <text id="deviceUse" v="使用此設備" />
+  <text id="inputDeviceSettings" v="輸入設備設置" />
+
+  <text id="inputScaleHelp" v="音階影響從此設備讀取的所有音符。  100% 讓音符不變。" /> <!-- This "scale" refers to volume/loudness scaling -->
+  <text id="resetNoteRange" v="重試音域" />
+  <text id="noteRangeHelp" v="在此設備上演奏最低和最高因設置音域。" />
+
+  <text id="outputDeviceUses" v="使用此設備用於：" />
+  <text id="outputNotes" v="音符" />
+  <text id="outputBackground" v="背景樂器" />
+  <text id="outputPercussion" v="打擊樂器" />
+  <text id="outputEverything" v="所有" />
+
+  <text id="outputScaleHelp" v="音階影響發送到此設備的音符、打擊樂器和節拍器節拍。  100% 保持所有不變。" /> <!-- This "scale" refers to volume/loudness scaling -->
+
+  <!-- "Local" here is a technical MIDI term.  It's a keyboard setting that can be turned on or off.  -->
+  <text id="outputLocalOff" v="本機關" />
+  <text id="manageLocal" v="避免「本機」音符" />
+  <text id="localCaution" v="並非所有鍵盤允許透過「本機」音符控制。如您是這樣做的，這將暫時禁用您的鍵盤音。這在您使用不同輸出裝置時非常方便。音符將僅在該裝置上演奏，不會從您的鍵盤上迴響重覆的音符。" />
+
+  <text id="outputIgnore" v="不要將輸出送至此裝置" />
+  <text id="outputShortMyNotes" v="Mine" /> <!-- Short text shown in a list of which types of notes are sent out to the speakers: the user's notes and/or background notes -->
+
+  <text id="outputChannel" v="MIDI通道" />
+  <text id="outputChannelHelp" v="一些老鍵盤僅允許單通道MIDI。 這將迫使在每個曲目中的每個音節都使用相同的樂器。" />
+
+  <text id="outputSoundSet" v="音色設定：" /> <!-- Which sounds (or "SoundFont" or "set of sounds") should the music synthesizer use? -->
+  <text id="outputReverb" v="混響" /> <!-- How much reverb effect should be applied to the sounds coming out of the speakers -->
+
+  <!-- This is a technical MIDI term meaning "all channels", "omni-channel output", or "omnidirectional output" -->
+  <text id="outputOmni" v="全通道（所有通道）" />
+
+  <text id="testHelp" v="此測試將音符發送至所有輸出設備。" />
+  <text id="test" v="測試" />
+  <text id="stop" v="停止" />
+
+  <text id="keyRange" v="%1% 鍵" /> <!-- 1: the number of keys this keyboard has, usually something like 49, 61, 76, or 88 -->
+  <text id="unknown" v="位置" />
+
+  <text id="volumeScale" v="音量比例" /> <!-- This "scale" refers to volume/loudness scaling -->
+  <text id="noteRange" v="音域" />
+
+  <!-- Some digital piano models have LED lights built into the keys -->
+  <text id="keyLightsHeading" v="鍵燈" />
+  <text id="keyLights" v="聲道 %1% 燈" /> <!-- 1: the MIDI channel number that this keyboard uses for light signals, between 1 and 16.  The "Ch." is an abbreviation for "Channel", like a television or radio "channel".  This is used in a very small location in the application, so it has to be short. -->
+  <text id="keyChannel" v="聲道 %1%" /> <!-- 1: same as above -->
+  <text id="keyChannelMulti" v="基於指法的通道" /> <!-- Some devices can show a different color light depending on which finger the note corresponds to -->
+  <text id="keyChannelProprietary" v="專用%1%" /> <!-- 1: A simple number (1, 2, 3, etc.).  Some devices use their own proprietary scheme for key lights.  We simply number these. -->
+
+
+
+
+  <!-- Settings: Songs -->
+  <text id="folders" v="文件夾" />
+
+  <text id="folderComputer" v="計算機" />
+  <text id="folderHome" v="主頁" />
+  <text id="folderDesktop" v="桌面" />
+  <text id="folderDocuments" v="文檔" />
+  <text id="folderMusic" v="音樂" />
+
+  <!-- Android-specific folder names -->
+  <text id="folderDevice" v="裝置" />
+  <text id="folderStorage" v="內部儲存" />
+  <text id="folderRoot" v="根目錄" />
+
+  <text id="folderSongCount" v="本文件夾中找到 %1% 首歌曲。" />
+  <text id="folderTrouble" v="從文件夾中閱讀出問題！" />
+  <text id="folderMissing" v="文件夾缺失！" />
+  <text id="topLevelRecursive" v="Synthesia 無法在整個計算機上掃描歌曲。" />
+
+  <text id="searchLocations" v="已經在這些位置上搜索歌曲。" />
+
+  <text id="folderBuiltIn" v="內置歌曲" />
+  <text id="folderItunes" v="iTunes 文件共享" />
+  <text id="itunesHelp" v="在 iPad 連接 iTunes 時，使用 Apps 下的 File Sharing 區域添加歌曲。" />
+
+  <text id="searchFolderOnly" v="僅搜索此文件夾的內容" />
+  <text id="searchSubfolders" v="搜索此文件夾及其所有的子文件夾" />
+
+  <text id="showResults" v="在歌曲庫中包含這些歌曲" />
+  <text id="hideResults" v="隱藏它們" />
+  <text id="resultsHidden" v="結果隱藏" />
+
+  <text id="stopSearching" v="停止在本文件夾中搜索歌曲" />
+
+
+
+
+  <!-- Settings: Color Themes -->
+  <text id="colorTheme" v="顏色主題" />
+  <text id="crystalBlue" v="水晶藍" />
+
+
+
+
+  <!-- Settings: Keyboard Shortcuts ("key" usually refers to a typing keyboard in this section but could also mean a piano key) -->
+  <text id="resetToDefault" v="重試為缺省" />
+  <text id="bindKey" v="敲擊任何設備上的任何控件" />
+  <text id="deleteShortcut" v="刪除快捷方式" />
+  <text id="axisInfo" v="此快捷方式配合軸使用，如彎音輪、控制旋鈕或鼠標滾輪。" />
+
+  <text id="noBinding" v="（無）" />
+  <text id="keyComma" v="逗號" />
+  <text id="keyPeriod" v="句號" />
+  <text id="keySpacebar" v="間隔" />
+
+  <text id="shortcutHeaderMenu" v="菜單導航" />
+  <text id="shortcutHeaderSong" v="歌曲導航" />
+  <text id="shortcutHeaderPlay" v="演奏控制" />
+  <text id="shortcutHeaderLoops" v="循環" />
+  <text id="shortcutHeaderAdvanced" v="高級" />
+
+  <text id="shortcutHelp" v="顯示遊戲幫助" />
+
+  <text id="menuProceed" v="菜單繼續" />
+  <text id="menuBack" v="菜單返回" />
+  <text id="selectNext" v="菜單選擇下一個項目" />
+  <text id="selectPrevious" v="菜單選擇上一個項目" />
+  <text id="nextPage" v="菜單下一頁" />
+  <text id="previousPage" v="菜單上一頁" />
+
+  <text id="parentGroup" v="上移一個歌曲組" />
+
+  <text id="speedUp" v="加速" />
+  <text id="speedDown" v="減速" />
+  <text id="speedUpSmall" v="加速（小步）" />
+  <text id="speedDownSmall" v="減速（小步）" />
+  <text id="speedVariable" v="速度（可變）" />
+
+  <text id="songStepBack" v="後退" />
+  <text id="songStepForward" v="前進" />
+  <text id="songJog" v="歌曲位置緩進" />
+  <text id="songAbsoluteJog" v="絕對歌曲位置" />
+
+  <text id="prevBookmark" v="上一個書籤" />
+  <text id="nextBookmark" v="下一個書籤" />
+  
+  <text id="shortcutJumpBeginning" v="跳至歌曲開頭" />
+  <text id="shortcutJumpB1" v="跳至書籤 1" />
+  <text id="shortcutJumpB2" v="跳至書籤 2" />
+  <text id="shortcutJumpB3" v="跳至書籤 3" />
+  <text id="shortcutJumpB4" v="跳至書籤 4" />
+  <text id="shortcutJumpB5" v="跳至書籤 5" />
+  <text id="shortcutJumpB6" v="跳至書籤 6" />
+  <text id="shortcutJumpB7" v="跳至書籤 7" />
+  <text id="shortcutJumpB8" v="跳至書籤 8" />
+  <text id="shortcutJumpB9" v="跳至書籤 9" />
+
+  <text id="stretchNotes" v="伸展低音顯示" />
+  <text id="compressNotes" v="壓縮低音顯示" />
+  <text id="resetNoteScale" v="重設低音音階" /> <!-- This "scale" refers to stretching/squishing a visual element on the screen -->
+
+  <text id="octaveUp" v="上移輸入八度音階" />
+  <text id="octaveDown" v="下移輸入八度音階" />
+
+  <text id="pauseStandard" v="暫停/恢復" />
+  <text id="pauseBookmark" v="開關書籤編輯模式" />
+  <text id="pauseLoop" v="開關循環編輯模式" />
+  <text id="pauseFingerHint" v="開關手指提示編輯模式" />
+
+  <text id="walkLoopForward" v="向前移動整個循環" />
+  <text id="walkLoopBackward" v="向后移動整個循環" />
+  <text id="extendLoopForward" v="向前伸展循環結尾" />
+  <text id="extendLoopBackward" v="向后伸展循環開頭" />
+  <text id="toggleLoop" v="切換迴圈" /> <!-- Enables or disables the current loop -->
+
+  <text id="hintL1" v="開關左邊第一手指提示" />
+  <text id="hintL2" v="開關左邊第二手指提示" />
+  <text id="hintL3" v="開關左邊第三手指提示" />
+  <text id="hintL4" v="開關左邊第四手指提示" />
+  <text id="hintL5" v="開關左邊第五手指提示" />
+  <text id="hintR1" v="開關右邊第一手指提示" />
+  <text id="hintR2" v="開關右邊第二手指提示" />
+  <text id="hintR3" v="開關右邊第三手指提示" />
+  <text id="hintR4" v="開關右邊第四手指提示" />
+  <text id="hintR5" v="開關右邊第無手指提示" />
+  <text id="hintRemove" v="移除手指提示" />
+
+  <text id="cycleNotationSize" v="循環樂譜尺寸" />
+
+  <!-- Name of an option that lets the user override (by cycling through) which MIDI channel is used
+       when sending their notes to a digital keyboard.  "MIDI" and "Channel" are technical terms -->
+  <text id="cycleOutputMidiChannel" v="循环输出MIDI频道" />
+
+  <text id="advancedFps" v="開關 FPS 顯示" />
+  <text id="advancedMeasures" v="開關降音小節線" /> <!-- This refers to a musical "measure" or "bar".  (Not a measurement.) -->
+  <text id="advancedVerboseLogging" v="開關繁瑣記錄" />
+  <text id="advancedHiddenNotes" v="開關所有音符隱藏" />
+  <text id="advancedReloadUi" v="重載用戶介面說明" />
+  <text id="advancedResizeUi" v="用戶介面重設測試" />
+
+
+
+
+  <!-- Settings: User Profiles -->
+  <text id="userProfiles" v="用戶資料文件" />
+  <text id="anonymousUser" v="匿名用戶" />
+
+  <text id="deleteUser" v="刪除用戶！" />
+  <text id="deleteUserHelp" v="用戶僅從列表上移除。  不丟失統計。" />
+
+  <text id="newProfile" v="新建資料文件" />
+  <text id="accept" v="接受" />
+
+  <text id="cannotBeBlank" v="名稱不能為空。" />
+  <text id="profileAlreadyExists" v="已經存在含該名稱的資料文件。" />
+
+  <text id="statFirstSong" v="第一首歌曲" />
+  <text id="statTotalSongs" v="演奏的所有歌曲" />
+  <text id="statMelody" v="演奏的旋律練習" />
+  <text id="statRhythm" v="演奏的節奏練習" />
+  <text id="statRecital" v="演奏的獨奏" />
+  <text id="statTotalNotes" v="合計正確音符" />
+  <text id="statNotesHeld" v="累計按下音符" /> <!-- The sum total of all the time a user has held down notes in their entire career using this application.  Value is something like "3.4 days" -->
+
+  <text id="calculating" v="正在計算..." />
+  <text id="never" v="從不" /> <!-- Referring to a date/time that never occurred -->
+  <text id="songCount" v="%1% 首歌曲" />
+  <text id="songCountAllFolders" v="所有文件夾中的 %1% 首歌曲" />
+  <text id="playCount" v="%1% 次演奏" /> <!-- Number of times a song has been played -->
+  <text id="noteCount" v="%1% 個音符" />
+
+  <text id="secondCount" v="%1% 秒" />
+  <text id="minuteCount" v="%1% 分鐘" />
+  <text id="hourCount" v="%1% 小時" />
+  <text id="dayCount" v="%1% 天" />
+
+
+
+
+  <!-- Settings: Gameplay/Advanced -->
+  <text id="midiData" v="MIDI 數據" />
+
+  <text id="menuBarT" v="功能表欄" /> <!-- This is the heading for an option that will allow you to show or hide the top menu bar of the app -->
+  
+  <text id="yourNotesT" v="你的音符" />
+  <text id="yourNotes1" v="演奏所有" />
+  <text id="yourNotes2" v="僅演奏正確匹配的" />
+
+  <text id="noteVolumeT" v="音符響度" />
+  <text id="noteVolume1" v="匹配你的輸入" />
+  <text id="noteVolume2" v="獲取歌曲響度" />
+
+  <text id="keyLabelsT" v="鍵標籤" /> <!-- Refers to labels shown on the piano keys -->
+
+  <text id="melodyContinueT" v="以下情況繼續" />
+  <text id="melodyContinue1" v="所有音符同時按下" /> <!-- "Continue when ... all notes are held at once." -->
+  <text id="melodyContinue2" v="各個音符被按下" /> <!-- "Continue when ... each note has been pressed." -->
+
+  <text id="bestOctaveT" v="八度音鍵盤" />
+  <text id="bestOctave1" v="自動調整" /> <!-- "Keyboard octave ... [should be] adjusted automatically." -->
+  <text id="bestOctave2" v="僅手動" /> <!-- "Keyboard octave ... [can only be changed] manually." -->
+  <text id="bestOctaveD" v="如果你有一個鍵數更少的小鍵盤，它可以幫助你彈​​出更多的音符。" />
+
+  <text id="melodyMistakeT" v="不正確音符" />
+  <text id="melodyMistake1" v="停止歌曲" /> <!-- "Incorrect notes ... [should] stop the song" -->
+  <text id="melodyMistake2" v="被忽略" /> <!-- "Incorrect notes ... [should be] ignored" -->
+
+  <text id="melodyDotsT" v="下個音符助手加點" />
+  <text id="melodyDots1" v="鍵盤上顯示" />
+
+  <text id="particlesT" v="微粒效果" />
+  <text id="particlesD" v="隱藏微粒可增強性能。" />
+
+  <text id="messageBankSelectT" v="莊選擇消息" />
+  <text id="messageBankSelectD" v="允許莊選擇消息可能導致一些音樂設備靜音。" />
+  <text id="messagePedalT" v="踏板消息" />
+  <text id="messagePedalD" v="在使用 QuickTime 合成器時可修復靜音的歌曲。" />
+  <text id="messageSysExT" v="SysEx 消息" />
+  <text id="messageSysExD" v="某些 SysEx 消息可能導致某些音樂設備出問題。" />
+  <text id="messagePrChT" v="樂器更改消息" />
+  <text id="messagePrChD" v="如果更喜歡自己控制樂器則更改此項。" />
+
+  <text id="choiceOff" v="關閉" />
+  <text id="choiceAllow" v="允許" />
+  <text id="choiceFilter" v="過濾掉" />
+  <text id="choiceHidden" v="隱藏" />
+  <text id="choiceAlwaysShown" v="始終顯示" />
+  <text id="choiceEnabled" v="啟用" />
+  <text id="choiceDisabled" v="禁用" />
+  <text id="choiceDefault" v="（默認）" />
+  <text id="choiceMuted" v="靜音" />
+  <text id="choiceSounded" v="有聲" /> <!-- Makes a sound -->
+
+  <text id="midiChannelsT" v="MIDI 音軌聲道" />
+  <text id="midiChannelsD" v="強制每個音軌使用獨一無二的聲道，可幫助改進樂器更改。" />
+  <text id="midiChannels1" v="強制唯一" />
+  <text id="midiChannels2" v="使用源" />
+
+
+
+
+  <!-- Online Service Wait Prompt -->
+  <text id="contactingServer" v="正在聯繫伺服器..." />
+  <text id="serviceThrottled" v="失敗的嘗試太多次。  一小時后重試。" />
+  <text id="serviceUnknownErr" v="伺服器返回未知錯誤。" />
+  <text id="serviceCannotConnect" v="無法聯繫伺服器。  檢查你的互聯網連接并重試。" />
+
+</UiDescription>

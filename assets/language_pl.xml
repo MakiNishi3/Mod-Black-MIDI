@@ -1,0 +1,780 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UiDescription>
+
+  <!-- General -->
+  <text id="synthesia" v="Synthesia" /> <!-- Our product name.  Probably the same in all languages. -->
+
+  <text id="continue" v="Kontynuuj" />
+  <text id="back" v="Wstecz" />
+  <text id="cancel" v="Anuluj" />
+  <text id="save" v="Zapisz" />
+  <text id="help" v="Pomoc" />
+  <text id="add" v="Dodaj" />
+  <text id="name" v="Nazwa" />
+  <text id="clear" v="Wyczyść" /> <!-- to remove, to wipe clean -->
+
+  <text id="textboxHintSearch" v="Szukaj..." />
+
+  <text id="metronome" v="Metronom" />
+  <text id="bookmarks" v="Zakładki" />
+  <text id="fingerHints" v="Podpowiedzi palców" /> <!-- Hints about which finger to use on each piano key -->
+  <text id="sheetMusic" v="Zapis nutowy" />
+
+
+
+
+  <!-- Title screen -->
+  <text id="playSong" v="Zagraj utwór" />
+  <text id="freePlay" v="Swobodne granie" /> <!-- This leads to an area where you are free to play any notes you want.  So "free" as in freedom.  Not "free" as in "zero cost". -->
+  <text id="tutorial" v="Samouczek" />
+  <text id="settings" v="Ustawienia" />
+  <text id="exit" v="Zakończ" /> <!-- Button that ends/quits/exits the program -->
+
+  <text id="whatsNew" v="Co nowego" /> <!-- Heading above a list of news entries -->
+  <text id="recentlyPlayed" v="Ostatnio odtwarzane" /> <!-- Heading for a list of songs that the user recently played -->
+
+  <text id="feedback1" v="Czy korzystasz z Synthesii?" />
+  <text id="feedback2" v="Oceń aplikację" />
+  <text id="feedback3" v="Czy wystąpiły problemy?" />
+  <text id="feedback4" v="Skontaktuj się z nami" />
+
+  <!-- All of the following refer to the relative amount of time that has passed since an event.  The %1% is always a whole number between 2 and 60. -->
+  <text id="justNow" v="Teraz" />
+  <text id="aMinuteAgo" v="Minuta temu" />
+  <text id="minutesAgo" v="%1% minut temu" />
+  <text id="anHourAgo" v="Godzina temu" />
+  <text id="hoursAgo" v="%1% godzin temu" />
+  <text id="aDayAgo" v="Wczoraj" />
+  <text id="daysAgo" v="%1% dni temu" />
+  <text id="aWeekAgo" v="Ostatni tydzień" />
+  <text id="weeksAgo" v="%1% tygodni temu" />
+  <text id="aMonthAgo" v="Ostatni miesiąc" />
+  <text id="monthsAgo" v="%1% miesięcy temu" />
+  <text id="aYearAgo" v="Ostatni rok" />
+  <text id="longAgo" v="Dawno temu" />
+
+  <text id="titleInput" v="Wejście: %1%" /> <!-- 1: list of music input device names -->
+  <text id="titleOutput" v="Wyjście: %1%" /> <!-- 1: list of music output device names -->
+
+  <text id="noProfile" v="Brak profilu" />
+  <text id="noProfileDescription" v="Brak profilu, anonimowo" />
+  <text id="manageProfiles" v="Zarządzaj profilami" />
+
+
+
+
+  <!-- Tutorial screen -->
+  <text id="skipTutorial" v="Pomiń samouczek" />
+
+  <text id="tutA1" v="Witamy w Synthesia!" />
+  <text id="tutA2" v="Znajdziesz tu podstawy w 58 sekundach." />
+
+  <text id="tutB1" v="Przeciągnij obszar nadchodzących nut, aby ustawić go wzdłuż klawiatury." />
+  <text id="tutC1" v="Zsuń lub rozsuń obszar nadchodzących nut, aby dopasować powiększenie klawiatury." /> <!-- We're using Apple's definition of "pinch" which can go in either direction (bigger or small), so this can be a zoom-in or zoom-out -->
+
+  <text id="tutD1" v="Teraz Twój ruch! Utwór będzie czekał dopóki nie trafisz każdej nuty." />
+  <text id="tutD2" v="Porada: Liczby pokazują, których palców powinieneś używać. Kciuk to 1, mały palec to 5." />
+
+  <text id="tutE1" v="Dobra robota!" />
+
+  <text id="tutF1" v="To wszystko! Reszty nauczysz podczas zabawy z aplikacją." />
+  <text id="tutF2" v="Rozpocznij zabawę z Synthesią!" />
+
+
+
+
+  <!-- Unlock screen -->
+  <text id="demoUnlockT" v="Synthesia Demo" />
+  <text id="demoUnlock1" v="To darmowe demo daje Ci możliwość przetestowania połączenia z Twoją klawiaturą i wypróbowania kilku utworów. Odblokuj pełną wersję aby używać wszystkich funkcji Synthesi z dowolnymi znalezionymi lub utworzonymi przez Ciebie utworami!" />
+
+  <text id="unlock" v="Odblokuj Synthesię" />
+  <text id="unlockButton" v="Odwiedź stronę Synthesii, aby ją zakupić!" />
+  <text id="unlockButton_a" v="Lub zakup klucz odblokowujący na naszej stronie internetowej" />
+
+  <text id="lostKey1" v="Zagubiłeś klucz odblokowujący?" /> <!-- This "key" refers to a software unlock code that enables all the features in the software (not a piano key).  These lines refer to a feature that helps a user recover a key they no longer have. -->
+  <text id="lostKey2" v="Odbierz go" />
+
+  <text id="shortCode1" v="Wprowadź tutaj Twój krótki kod:" />
+  <text id="shortCode2" v="OK" />
+
+  <text id="shortCodeValidate" v="Sprawdzanie klucza odblokowującego..." />
+
+  <text id="shortCodeFailureT" v="Nie można znaleźć klucza odblokowującego" />
+  <text id="shortCodeFailure" v="Ten krótki kod nie zgadza się z żadnym w naszej bazie danych. Spróbuj ponownie." />
+
+  <text id="unlockOwner" v="Licencja dla" />
+  <text id="unlockType" v="Typ licencji" />
+
+  <text id="unlockPersonal" v="Personal Home Use" />
+  <text id="unlockEducation" v="%1% równoległych licencji" /> <!-- 1: the number of licenses allowed (at the same time) by this unlock key -->
+
+  <text id="unlockDuration" v="Darmowe aktualizacje" /> <!-- Heading in front of either "Until [Date]" or "Forever" -->
+  <text id="unlockDurationUnlimited" v="Na zawsze" />
+
+  <text id="inAppDesc" v="Uzyskaj dostęp do reszty dołączonych utworów oraz importu swoich własnych utworów MIDI." />
+  <text id="inAppDesc_i" v="Uzyskaj dostęp do reszty dołączonych utworów oraz importu swoich własnych z pomocą udostępniania plików w iTunes lub innych aplikacji." />
+  <text id="inAppButton" v="Odblokuj teraz!" />
+  <text id="inAppButtonPrice" v="Odblokuj teraz tylko za %1%" /> <!-- 1: a price in a localized currency like $4.99 or ¥499 -->
+  <text id="inAppMoreInfo_a" v="Jeśli w przeszłości kupiłeś już odblokowanie w aplikacji, sprawdź dokładnie, czy jesteś zalogowany do Google Play przy użyciu tego samego konta, z którego dokonano pierwotnego zakupu. (Czasami ponowne uruchomienie Twojego urządzenia pomoże Ci w ponownym pojawieniu się poprzedniego zakupu.)" />
+
+  <!-- Question in front of a button that will restore the user's purchase without charging them additional money -->
+  <text id="restore1" v="Już odblokowana?" />
+  <text id="restore2" v="Przywróć zakup" />
+
+  <text id="feature1" v="Odtwarzanie dołączonych utworów" /> <!-- Heading that describes a feature that becomes available after unlocking: being able to play all of the included songs instead of just a few -->
+  <text id="feature2" v="Synthesia zawiera ponad 150 utworów. Odblokowanie daje Ci dostęp do nich wszystkich. W każdym utworze są skonfigurowane podpowiedzi palców i podziały na ręce, więc te mogą być ćwiczone oddzielnie." />
+  <text id="feature3" v="Dodawanie własnych utworów" />
+  <text id="feature4" v="Synthesia może odtwarzać dowolny utwór MIDI znaleziony w Internecie, a nawet Twoje własne utwory. Sprawdź sklep muzyczny na stronie Synthesii gdzie możesz znaleźć najwyższej jakości utwory." />
+  <text id="feature4_i" v="Synthesia może odtwarzać dowolny utwór MIDI znaleziony w Internecie, a nawet Twoje własne utwory! Odblokowanie pozwoli Ci grać utwory zaimportowane z pomocą udostępniania plików przez iTunes lub opcji &quot;Otwórz Synthesii&quot; w innych aplikacjach takich jak Safari lub Mail." />
+  <text id="feature6" v="Eksperymentuj z instrumentów, ucz się na temat akordów, graj cokolwiek chcesz. Włącz styl w tle i jamuj z nim." />
+
+  <text id="communicateWithStore_i" v="Komunikowanie się z App Store..." />
+  <text id="communicateWithStore_a" v="Komunikowanie się z Google Play..." />
+  <text id="unlocking" v="Odblokowywanie..." />
+  <text id="unlockCongrats" v="Gratulacje, wszystko zostało odblokowane!" />
+
+  <!-- An in-app purchase entitles the user to a discount on our other platforms -->
+  <text id="claimLabel" v="Czy jesteś zainteresowany Synthesią na PC lub Mac?" />
+  <text id="claimButton" v="Skorzystaj z rabatu" />
+
+  <text id="unlockRestricted1" v="Zakup nie jest dostępny na tym tablecie." />
+  <text id="unlockRestricted2_i" v="(Sprawdź w ustawieniach Ogólne &gt; Ograniczenia)" />
+
+  <text id="unlockFailed" v="Wystąpił problem z zakupem lub przywróceniem licencji." />
+  <text id="leaveAndReturn" v="(Pozostaw ten ekran i wróć później, aby spróbować ponownie)" />
+
+  <text id="connectionFailed1" v="Wystąpił problem z komunikacją ze sklepem." />
+  <text id="connectionFailed2" v="(Sprawdź czy jesteś podłączony do Internetu)" />
+
+
+
+
+  <!-- Song Library -->
+  <text id="emptyStillScanning" v="Skanowanie utworów, czekaj..." />
+  <text id="emptyWithFilter" v="Nie znaleziono żadnych utworów. Spróbuj wyczyścić wyszukiwanie." />
+  <text id="emptyScannerIdle" v="Nie znaleziono żadnych utworów w tej grupie. Wybierz coś innego powyżej." />
+  <text id="emptyIdleTopLevel" v="Nie znaleziono żadnych utworów. Przejdź do sekcji Utwory w ustawieniach, aby je dodać." />
+
+  <text id="columnTitle" v="Tytuł" />
+  <text id="columnFolder" v="Folder" />
+  <text id="columnDifficulty" v="Trudność" />
+  <text id="columnRating" v="Ocena" />
+  <text id="columnPlayCount" v="Liczba odtworzeń" />
+  <text id="columnLastPlayed" v="Ostatnio odtwarzane" />
+
+  <text id="libraryMoreSongs" v="Zdobądź więcej utworów" />
+
+  <text id="deleteSongT" v="Czy na pewno chcesz TRWALE usunąć ten utwór?" />
+  <text id="deleteSongB" v="Usuń utwór!" />
+  <text id="deleteSongT_w" v="Czy na pewno chcesz usunąć ten utwór do kosza?" /> <!-- "Recycle Bin" is Windows-specific terminology -->
+  <text id="deleteSongB_w" v="Wyślij do kosza!" />
+  <text id="deleteSongT_m" v="Czy chcesz przenieść ten utwór do kosza?" /> <!-- "Trash" is Mac-specific terminology -->
+  <text id="deleteSongB_m" v="Przenieś do kosza!" />
+
+  <text id="songLoading" v="Wczytywanie utworu..." />
+  <text id="loadingError" v="Wystąpił błąd podczas wczytywania utworu!" />
+
+  <text id="all" v="Wszystko" /> <!-- Short for "All Songs" -->
+  <text id="allOneList" v="Wszystkie utwory (jedna, długa lista)" />
+  <text id="allGrouped" v="Wszystkie utwory (pogrupowane w folderach)" />
+
+
+
+
+  <!-- Song View -->
+  <text id="songs" v="Utwory" /> <!-- Button leading to a list of songs -->
+
+  <text id="watchAndListen" v="Obserwuj i słuchaj" />
+
+  <text id="modeMelody1" v="Ćwiczenia z melodii" />
+  <text id="modeMelody2" v="Utwór czeka na Ciebie" />
+
+  <text id="modeRhythm1" v="Ćwiczenia z rytmu" />
+  <text id="modeRhythm2" v="Stała szybkość" />
+
+  <text id="modeRecital1" v="Reczital" />
+  <text id="modeRecital2" v="Spróbuj przy pełnej szybkości" />
+
+  <text id="modeHelp2" v="Nie możesz zdobywać punktów w trybie &quot;Obserwuj i słuchaj&quot;." />
+  <text id="modeHelp3" v="Nie ma jeszcze statystyk dla tego trybu. Spróbuj zagrać utwór!" />
+
+  <text id="leftHand" v="Lewa ręka" />
+  <text id="rightHand" v="Prawa ręka" />
+  <text id="bothHands" v="Obydwie ręce" />
+
+  <text id="left" v="Lewa" />
+  <text id="right" v="Prawa" />
+  <text id="both" v="Obydwie" />
+
+  <text id="melodyPractice" v="Ćwiczenia z melodii" />
+  <text id="rhythmPractice" v="Ćwiczenia z rytmu" />
+
+  <text id="watch1" v="Synthesia w pełni automatycznie odtwarza utwór." />
+  <text id="watch2" v="Usiądź wygodnie i zrelaksuj się." />
+  <text id="watch3" v="Spróbuj poczuć jak Twoje ręce powinny się poruszać." />
+  <text id="watch4" v="Zwróć uwagę na nagłe zmiany melodii i rytmu." />
+  <text id="watch5" v="Jest to przyjemny sposób posłuchaniu utworu który lubisz i pozwala zaznajomić się z nim przed próbą zagrania go." />
+
+  <text id="rhythm1" v="Dopasuj prędkość, do momentu aż przestaniesz popełnić błędy." />
+  <text id="rhythm2" v="Graj tak szybko jak Ci najwygodniej." />
+  <text id="rhythm3" v="Pracując w ten sposób dojdziesz do 100% szybkości." />
+  <text id="rhythm4" v="Aby uprościć to sobie, najpierw przećwicz melodię." />
+  <text id="rhythm5" v="Unikanie błędów ma pierwszorzędne znaczenie. Nigdy nie ustawiaj szybkości przy której zaczniesz panikować i tracić kontrolę." />
+
+  <text id="melody1" v="Utwór będzie czekał na naciśnięte, poprawne nuty." />
+  <text id="melody2" v="Nie spiesz się. Nie ma żadnych sankcji za powolne granie." />
+  <text id="melody3" v="Przede wszystkim uważaj, aby nie popełniać błędów." />
+  <text id="melody4" v="Ważne jest także przytrzymywanie nut zgodnie z ich długością." />
+  <text id="melody5" v="Jeżeli nie będziesz uważny, to możesz zapełnić swój umysł błędami!" />
+
+  <text id="recital1" v="Jest to finalny prok po nauczeniu się melodii i rytmu." />
+  <text id="recital2" v="Szybkość utworu jest ustalona na 100% i nic nie może zostać pominięte. Powinieneś ćwiczyć korzystając z innych trybów, zanim spróbujesz tego." />
+
+  <text id="pointsAveraged" v="Punkty są średnią wyników z Twoich trzech najlepszych prób. &quot;Obydwie ręce&quot; są naliczane dla każdej ręki!" />
+  <text id="date" v="Data" /> <!-- Calendar date column heading in a table -->
+
+  <text id="criteriaAvoidMistakes" v="Trafiaj w każdą nutę i unikaj błędów" />
+  <text id="criteriaFullDuration" v="Trzymaj nuty do ich pełnej długości" />
+  <text id="criteriaFullSpeed" v="Jeżeli potrafisz to graj z szybkością najbliższą 100%" />
+
+  <text id="tabInstructions" v="Instrukcje" />
+  <text id="tabProgress" v="Analiza postępów" />
+  <text id="tabChart" v="Wykres" />
+  <text id="tabTable" v="Zdobyte punkty" />
+
+
+
+
+  <!-- Hands, Colors, and Instruments -->
+  <text id="reset" v="Resetuj" />
+
+  <!-- Notes that will be played automatically in the background -->
+  <text id="background" v="Tło" />
+
+  <!-- Text on a button that will customize a selection -->
+  <text id="custom" v="Własne" />
+
+  <text id="dragToCopy" v="Skopiuj ustawienie przeciągając je na inny instrument." />
+  <text id="allParts" v="Wszystkie partie" />
+
+  <!-- A button that will automatically assign colors to each instrument based on song settings -->
+  <text id="autoColor" v="Auto-kolor" />
+
+  <text id="colorBlue" v="Niebieski" />
+  <text id="colorGreen" v="Zielony" />
+  <text id="colorOrange" v="Pomarańczowy" />
+  <text id="colorYellow" v="Żółty" />
+  <text id="colorPurple" v="Purpurowy" />
+  <text id="colorRed" v="Czerwony" />
+
+  <text id="instrumentsAndHands" v="Ręce, kolory i instrumenty" />
+  <text id="assignHands" v="Przypisz ręce do instrumentów." />
+  <text id="noInput" v="Włącz urządzenie wejściowe, aby zagrać utwór." />
+
+
+
+
+  <!-- Track splitting screen -->
+
+  <!-- A button that begins a "hand splitting" operation, where every note in the song from the selected time
+  forward, is assigned to the left or right hand based on a horizontal "split point" the user has selected -->
+  <text id="splitFromHere" v="Podziel tutaj" />
+
+  <!-- Single-character abbreviations for "[L]eft Hand" and "[R]ight Hand" -->
+  <text id="leftSingle" v="L" />
+  <text id="rightSingle" v="R" />
+
+
+
+
+  <!-- Help popup messages -->
+  <text id="percussionT" v="Perkusja nie może zostać zmieniona" />
+  <text id="percussion1" v="Wybraniu instrumentu normalnie pozwala na jego zmianę, ale perkusja może być tylko perkusją." />
+
+  <text id="importSongsT" v="Dodaj Twoje ulubione utwory MIDI" />
+  <text id="importSongs1" v="Po odblokowaniu Synthesii, po prostu znajdź wersje MIDI Twoich ulubionych utworów. Spróbuj otworzyć plik MIDI w Safari i wybierz Synthesię na liście, która się pojawi." />
+  <text id="importSongs2" v="Jeżeli już masz utwory MIDI na swoim komputerze, możesz użyć funkcji udostępniania plików w iTunes, aby dodać je do biblioteki Synthesii. Stuknij przycisk poniżej, aby zobaczyć przewodnik Apple." />
+  <text id="importSongsB" v="Pokaż jak działa udostępnianie plików w iTunes" />
+
+  <text id="addFoldersT" v="Powiedz Synthesii gdzie może znaleźć Twoje utwory MIDI" />
+  <text id="addFolders1" v="Synthesia skanuje foldery w poszukiwaniu utworów MIDI. Możesz wskazać foldery, które mają być skanowane w sekcji Utwory ustawień." />
+  <text id="addFolders2" v="Jeżeli już wiesz gdzie Synthesia szuka utworów, po prostu przeciągnij utwory MIDI do jednego z tych folderów, a przy następnym uruchomieniu Synthesii utwór pojawi się w bibliotece utworów." />
+  <text id="addFoldersB" v="Zabierz mnie do ustawień!" />
+
+  <text id="resetIconT" v="Przeciągnij błyskawicę, aby zresetować" />
+  <text id="resetIcon1" v="Przeciągnij błyskawicę na instrument, aby zresetować wszystkie jego ustawienia. Można ją również przeciągnąć na &quot;Wszystkie partie&quot; u góry ekranu aby zresetować WSZYSTKIE ustawienia KAŻDEGO instrumentu." />
+
+  <text id="songPointsT" v="O punktach za utwór" />
+  <text id="songPoints1" v="Duża liczba widoczna obok nazwy utworu wskazuje całkowitą liczbę punktów (poza 100), które zdobyłeś we wszystkich Twoich próbach. Jest to określane przez Twoje trzy najlepsze próby dla każdej ręki w każdym trybie: melodii, rytmu i reczitalu." />
+  <text id="songPoints2" v="Sprawdź sekcję analizy postępów, aby dowiedzieć się jak zdobyć więcej punktów." />
+
+  <text id="readOnlySongT" v="Utwór nie może zostać usunięty" />
+  <text id="readOnlySong1" v="Zaznaczony utwór jest tylko do odczytu. Jeżeli chcesz go usunąć z biblioteki utworów, usuń jego wpis w sekcji Utwory ustawień." />
+
+  <text id="unlockErrorDeactivatedT" v="Klucz odblokowujący został wyłączony" />
+  <text id="unlockErrorDeactivated1" v="Ten klucz odblokowujący został wyłączony z powodu problemów płatniczych." />
+  <text id="unlockErrorDeactivated2" v="Skontaktuj się przez support@synthesiagame.com, a my sprawdzimy co si stało i razem spróbujemy znaleźć rozwiązanie." />
+
+  <text id="unlockErrorNoInternetT" v="Nie można zweryfikować krótkiego kodu" />
+
+  <text id="unlockErrorTooManyT" v="Zbyt częste użycie" />
+  <text id="unlockErrorTooMany1" v="Ten krótki kod był ostatnio zbyt często używany. Skontaktować się poprzez support@synthesiagame.com w celu uzyskania pomocy." />
+
+  <text id="deviceLost" v="Niespodziewane utracenie połączenia z urządzeniem! Sprawdź kable!" />
+
+  <text id="songProgressLossT" v="Postępy zostaną Utracone!" />
+  <text id="songProgressLoss1" v="Wyjście spowoduje utratę bieżącego postępu dla tego utworu." />
+  <text id="songProgressLossB" v="Wyjdź z utworu i porzuć postępy!" />
+
+
+
+
+  <!-- Play screen -->
+  <text id="time:" v="Czas:" />
+  <text id="measure:" v="Takty:" /> <!-- This refers to a musical "measure" or "bar".  (Not a measurement.) -->
+  <text id="notes:" v="Nuty:" />
+  <text id="errors:" v="Błędy:" />
+  <text id="points:" v="Punkty:" />
+
+  <text id="paused" v="Utwór jest wstrzymany" />
+
+  <text id="bookmarkInstructions" v="Ustaw zakładki na lewym marginesie." /> <!-- "bookmark" here means a placeholder in a song -->
+  <text id="bookmarkMidiMarkers" v="Markery MIDI" /> <!-- Refers to the bookmarks stored directly inside the song file (these have a special name: "Markers" instead of "Bookmarks") -->
+
+  <!-- "bookmark" here means a placeholder in a song -->
+  <text id="bookmarkUserBookmarks" v="Moje zakładki" /> <!-- Refers to bookmarks created by the user -->
+  <text id="bookmarkMetadataBookmarks" v="Zakładki metadanych" /> <!-- Refers to a list of bookmarks loaded from an external file -->
+  <text id="bookmarkKeySignatures" v="Znaki przykluczowe" /> <!-- A list of bookmarks automatically generated, one per key signature change in the song -->
+  <text id="clearBookmarks" v="Wyczyść zakładki użytkownika" />
+
+  <text id="loopInstructions" v="Przeciągnij wskaźnik po osi czasu, aby utworzyć pętlę. Dopasuj ją poniżej." />
+  <text id="loopStart" v="Początek pętli" />
+  <text id="entireLoop" v="Zawartość pętli" />
+  <text id="loopEnd" v="Koniec pętli" />
+
+  <!-- Describes how much preparation time should be inserted each time a section of the song is repeated.  This is the label for a slider control that adjusts the amount of delay. -->
+  <text id="loopDelay" v="Opóźnienie między pętlami" />
+
+  <text id="fingerHintInstructions" v="Dodaj podpowiedzi przeciągając nuty do obrazu palca." />
+
+  <text id="pinchKeyboard" v="Zsuń lub rozsuń w poziomie obszar nadchodzących nut, aby dopasować rozmiar klawiatury, alby wybierz zestaw poniżej." />
+  <text id="dragKeyboard" v="Przeciągnij obszar nadchodzących nut, aby ustawić go wzdłuż klawiatury. Poniżej, dopasuj powiększenie." />
+
+  <text id="praise0" v="Perfekcyjnie!" />
+  <text id="praise1" v="Świetnie!" />
+  <text id="praise2" v="Dobrze!" />
+  <text id="praise3" v="OK!" />
+  <text id="praise4" v="Słabo!" />
+
+  <text id="combo" v="%1% poprawnych nut!" /> <!-- 1: number of successive notes user has played successfully -->
+
+  <!-- These are options to select which text labels are shown on the music notes -->
+  <text id="labelsNone" v="Bez etykiet" />
+  <text id="labelsHints" v="Podpowiedzi palców z numerami" />
+  <text id="labelsVirtual" v="Mapowanie Virtual Piano" />
+  <text id="labelsEnglish" v="Angielskie nazwy nut" /> <!-- C, C#, D... -->
+  <text id="labelsFixed" v="Stałe nazwy nut (Fixed-Do)" /> <!-- Do, Re, Mi... -->
+  <text id="labelsMovable" v="Zmienne nazwy nut (Movable-Do)" /> <!-- Do, Re, Mi... -->
+  <text id="labelsScale" v="Numer skali" /> <!-- 1, 2, 3... This "scale" refers to a musical scale -->
+  <text id="labelsOctave" v="Oktawy" /> <!-- C1, C2, C3... on each C piano key, for every octave -->
+  <text id="labelsSimple" v="Proste nazwy" /> <!-- C, D, E... on white keys only -->
+
+  <!-- An option that selects whether labels should be shown on every note ("Show All") or only on notes that belong to the song's current key signature ("Use Song's Key") -->
+  <text id="labelsFewer" v="Pokaż etykiety tylko na moich nutach" />
+  <text id="labelsShowAll" v="Pokaż wszystko" />
+  <text id="labelsPartial" v="Użyj klucza utworu" />
+
+  <!-- 12-note phonetic (solfege/solfeggio/solfeo) note names for your country, with appropriate accents.
+  Correct for Si/Ti, So/Sol, etc.  There must be 12 and they must be separated by a single space, each. -->
+  <text id="solfege" v="Do Di Re Ri Mi Fa Fi Sol Si La Li Ti" />
+
+  <text id="zoom18" v="18 klawiszy" /> <!-- piano keys -->
+  <text id="zoom25" v="25 klawiszy" />
+  <text id="zoom88" v="Wszystkie 88" />
+  <text id="zoomMyNotes" v="Moje nuty" />
+  <text id="zoomMyKeys" v="Moja klawiatura" />
+  <text id="zoomSong" v="Tylko utwór" />
+
+  <text id="metVolume" v="Głośność metronomu" />
+  <text id="metStartOnly" v="Tylko przed początkiem utworu" />
+  <text id="metAlways" v="Zawsze" />
+  <text id="met1x" v="1x: Normalna szybkość" />
+  <text id="met2x" v="2x: Podwójna szybkość" />
+  <text id="metFirst" v="Podkreśl pierwszy bit" />
+  <text id="metEach" v="Wszystkie bity tak samo" />
+
+  <text id="loopBestMelody" v="Najlepsze" />
+  <text id="loopBestRhythm" v="Najlepsze:" />
+  <text id="loopCount" v="Pętla %1%" /> <!-- 1: number of times the section has looped -->
+  <text id="current" v="Bieżący" /> <!-- Heading above statistics for the current loop iteration -->
+
+  <text id="songComposer" v="Kompozytor" />
+  <text id="songArranger" v="Aranżer" />
+  <text id="songCopyright" v="Prawa autorskie" />
+  <text id="songMadeFamousBy" v="Rozsławione przez" />
+
+
+
+
+  <!-- Help screen -->
+  <text id="visitShortcuts" v="Przejdź do sekcji Skróty ustawień, aby poddać wszystko pełnej kontroli z klawiatury." />
+  <text id="doubleTap" v="Stuknij dwa razy" /> <!-- Tapping like the finger gesture on a touch-screen -->
+
+  <text id="iconPlay" v="Odtwarzaj/Pauza" />
+  <text id="iconZoom" v="Powiększenie" />
+  <text id="iconLabels" v="Etykiety nut" />
+  <text id="iconLoops" v="Zapętlenie" />
+
+
+
+
+  <!-- Each of these are columns in a table giving statistics about past performances of a song -->
+  <text id="columnPoints" v="Punkty" /> <!-- Points earned like in a video game -->
+  <text id="columnNotesHit" v="Trafienia nut" />
+  <text id="columnErrors" v="Błędy" />
+  <text id="columnActualSpeed" v="Bieżąca szybkość" />
+  <text id="columnAvgSpeed" v="Średnia szybkość" />
+  <text id="columnTimeSpent" v="Spędzony czas" />
+  <text id="columnDateEarned" v="Data" /> <!-- On which date a particular score/points/result/performance was earned -->
+
+  <text id="recital" v="Reczital" /> <!-- Indicates a song was played in Recital mode -->
+
+
+
+
+  <!-- Settings (shared) -->
+  <text id="gameplay" v="Gra" />
+  <text id="shortcuts" v="Skróty" /> <!-- Keyboard shortcuts like "Ctrl + C" -->
+  <text id="aboutLegal" v="Zobacz Readme i informacje prawne" />
+
+
+
+
+  <!-- Text used on a utility benchmarking (speed testing) screen -->
+  <text id="benchmark" v="Test porównawczy" />
+  <text id="saveToDesktop" v="Zapisz na pulpicie" />
+  <text id="saved" v="Zapisano!" />
+  <text id="timePerFrame" v="Średni czas na ramkę" />
+  <text id="timeSpentDrawing" v="Średni czas spędzony na rysowaniu" />
+  <text id="timeSpentUpdating" v="Średni czas spędzony na aktualizowaniu" />
+  <text id="headingOverall" v="Ogółem" />
+  <text id="headingDraw" v="Rysuj" />
+  <text id="headingUpdate" v="Aktualizuj" />
+
+
+  
+
+  <!-- Settings: Music Devices -->
+  <text id="musicDevices" v="Urządzenia muzyczne" />
+  <text id="noDevice" v="(Brak)" />
+
+  <text id="musicInput" v="Wejście muzyki" />
+  <text id="musicOutput" v="Wyjście muzyki" />
+  <text id="helpConnecting" v="Potrzebna Ci pomoc przy podłączaniu klawiatury?" />
+  <text id="keyboardTrouble" v="Czy klawiatura nie odpowiada?" />
+
+  <text id="bluetooth" v="Ustawienia Bluetooth" /> <!-- The Bluetooth folks say that "Bluetooth" is only allowed to be translated as any of the following: Bluetooth, 藍牙, 蓝牙, ブルートゥース, or 블루투스 -->
+
+  <text id="virtualPianoHelp" v="Wirtualny fortepian jest kontrolowany przez Twoją klawiaturę komputerową." />
+
+  <text id="inputIgnore" v="Ignoruj wejścia z tego urządzenia" />
+  <text id="deviceUse" v="Użyj tego urządzenia" />
+  <text id="inputDeviceSettings" v="Ustawienia urządzenia wejściowego" />
+
+  <text id="inputScaleHelp" v="Skala wpływa na nuty odczytywane z tego urządzenia. 100% pozostawia niezmienione nuty." /> <!-- This "scale" refers to volume/loudness scaling -->
+  <text id="resetNoteRange" v="Resetuj zakres nut" />
+  <text id="noteRangeHelp" v="Zagraj nutę o najniższej i najwyższej wysokości na tyn urządzeniu, aby ustawić zakres." />
+
+  <text id="outputDeviceUses" v="Użyj tego urządzenia do:" />
+  <text id="outputNotes" v="Nuty" />
+  <text id="outputBackground" v="Instrumenty w tle" />
+  <text id="outputPercussion" v="Perkusja" />
+  <text id="outputEverything" v="Wszystko" />
+
+  <text id="outputScaleHelp" v="Skala wpływa na nuty, perkusję i dźwięki metronomu wysyłane do tego urządzenia. 100% pozostawia wszystko niezmienione." /> <!-- This "scale" refers to volume/loudness scaling -->
+
+  <!-- "Local" here is a technical MIDI term.  It's a keyboard setting that can be turned on or off.  -->
+  <text id="outputLocalOff" v="Local Off" />
+  <text id="manageLocal" v="Zapobiegaj &quot;lokalnym&quot; (local) nutom" />
+  <text id="localCaution" v="Nie wszystkie keyboardy zezwalają na kontrolę &quot;lokalnych&quot; (local) nut. Jeżeli Twój to potrafi, to wyłączy to tymczasowo brzmienia keyboarda. Jest to przydatne, jeżeli preferujesz brzmienia z innego urządzenia wyjściowego. Nuty będą tylko grane z tego urządzenia bez powielania ich na keyboardzie." />
+
+  <text id="outputIgnore" v="Nie wysyłaj danych wyjściowych do tego urządzenia" />
+  <text id="outputShortMyNotes" v="Moje" /> <!-- Short text shown in a list of which types of notes are sent out to the speakers: the user's notes and/or background notes -->
+
+  <text id="outputChannel" v="Kanał MIDI" />
+  <text id="outputChannelHelp" v="Niektóre stare klawiatury akceptują tylko pojedynczy kanał MIDI. Ta opcja zmusza wszystkie partie utworu do używania tego samego instrumentu." />
+
+  <text id="outputSoundSet" v="Zestaw dźwięków:" /> <!-- Which sounds (or "SoundFont" or "set of sounds") should the music synthesizer use? -->
+  <text id="outputReverb" v="Pogłos" /> <!-- How much reverb effect should be applied to the sounds coming out of the speakers -->
+
+  <!-- This is a technical MIDI term meaning "all channels", "omni-channel output", or "omnidirectional output" -->
+  <text id="outputOmni" v="Omni (wszystkie kanały)" />
+
+  <text id="testHelp" v="Test wysyła nuty do wszystkich urządzeń wyjściowych." />
+  <text id="test" v="Test" />
+  <text id="stop" v="Stop" />
+
+  <text id="keyRange" v="%1% klawiszy" /> <!-- 1: the number of keys this keyboard has, usually something like 49, 61, 76, or 88 -->
+  <text id="unknown" v="Nieznany" />
+
+  <text id="volumeScale" v="Skala głośności" /> <!-- This "scale" refers to volume/loudness scaling -->
+  <text id="noteRange" v="Zakres nut" />
+
+  <!-- Some digital piano models have LED lights built into the keys -->
+  <text id="keyLightsHeading" v="Podświetlane klawisze" />
+  <text id="keyLights" v="Podświetlenie - kanał %1%" /> <!-- 1: the MIDI channel number that this keyboard uses for light signals, between 1 and 16.  The "Ch." is an abbreviation for "Channel", like a television or radio "channel".  This is used in a very small location in the application, so it has to be short. -->
+  <text id="keyChannel" v="Kanał %1%" /> <!-- 1: same as above -->
+  <text id="keyChannelMulti" v="Przenośne nazwy nut (Movable-Do)" /> <!-- Some devices can show a different color light depending on which finger the note corresponds to -->
+  <text id="keyChannelProprietary" v="Proprietary %1%" /> <!-- 1: A simple number (1, 2, 3, etc.).  Some devices use their own proprietary scheme for key lights.  We simply number these. -->
+
+
+
+
+  <!-- Settings: Songs -->
+  <text id="folders" v="Foldery" />
+
+  <text id="folderComputer" v="Komputer" />
+  <text id="folderHome" v="Folder użytkownika" />
+  <text id="folderDesktop" v="Pulpit" />
+  <text id="folderDocuments" v="Dokumenty" />
+  <text id="folderMusic" v="Muzyka" />
+
+  <!-- Android-specific folder names -->
+  <text id="folderDevice" v="Urządzenie" />
+  <text id="folderStorage" v="Magazyn wewnętrzny" />
+  <text id="folderRoot" v="Katalog główny" />
+
+  <text id="folderSongCount" v="Znaleziono %1% utworów w tym folderze" />
+  <text id="folderTrouble" v="Wystąpił problem podczas odczytu folderu!" />
+  <text id="folderMissing" v="Brakujący folder!" />
+  <text id="topLevelRecursive" v="Synthesia nie może przeskanować zawartości komputera." />
+
+  <text id="searchLocations" v="W tych lokalizacjach będą wyszukiwane utwory" />
+
+  <text id="folderBuiltIn" v="Wbudowane utwory" />
+  <text id="folderItunes" v="Udostępnianie plików w iTunes" />
+  <text id="itunesHelp" v="Dodaj utwory z pomocą sekcji udostępniania plików gdy iPad jest połączony z iTunes." />
+
+  <text id="searchFolderOnly" v="Przeszukaj tylko zawartość tego folderu" />
+  <text id="searchSubfolders" v="Przeszukaj ten folder i wszystkie foldery wewnątrz niego" />
+
+  <text id="showResults" v="Dołącz te utwory do biblioteki" />
+  <text id="hideResults" v="Ukryj je" />
+  <text id="resultsHidden" v="Ukryte wyniki" />
+
+  <text id="stopSearching" v="Zatrzymaj wyszukiwanie utworów w tym folderze" />
+
+
+
+
+  <!-- Settings: Color Themes -->
+  <text id="colorTheme" v="Schemat kolorów" />
+  <text id="crystalBlue" v="Crystal Blue" />
+
+
+
+
+  <!-- Settings: Keyboard Shortcuts ("key" usually refers to a typing keyboard in this section but could also mean a piano key) -->
+  <text id="resetToDefault" v="Przywróć domyślne" />
+  <text id="bindKey" v="Naciśnij kontrolkę na urządzeniu" />
+  <text id="deleteShortcut" v="Usuń skrót" />
+  <text id="axisInfo" v="Ten skrót działa z kontrolkami obrotowymi takimi jak kółko pitch bend, gałki lub kółko przewijania myszki." />
+
+  <text id="noBinding" v="(brak)" />
+  <text id="keyComma" v="Przecinek" />
+  <text id="keyPeriod" v="Kropka" />
+  <text id="keySpacebar" v="Spacja" />
+
+  <text id="shortcutHeaderMenu" v="Nawigacja w menu" />
+  <text id="shortcutHeaderSong" v="Nawigacja w utworze" />
+  <text id="shortcutHeaderPlay" v="Kontrolki odtwarzania" />
+  <text id="shortcutHeaderLoops" v="Pętle" />
+  <text id="shortcutHeaderAdvanced" v="Zaawansowane" />
+
+  <text id="shortcutHelp" v="Pokaż pomoc w graniu" />
+
+  <text id="menuProceed" v="Kontynuuj" />
+  <text id="menuBack" v="Wstecz" />
+  <text id="selectNext" v="Wybierz następny element menu" />
+  <text id="selectPrevious" v="Wybierz poprzedni element menu" />
+  <text id="nextPage" v="Następna strona menu" />
+  <text id="previousPage" v="Poprzednia strona menu" />
+
+  <text id="parentGroup" v="W górę grupy utworów" />
+
+  <text id="speedUp" v="Przyspiesz" />
+  <text id="speedDown" v="Zwolnij" />
+  <text id="speedUpSmall" v="Przyspiesz (mały krok)" />
+  <text id="speedDownSmall" v="Zwolnij (mały krok)" />
+  <text id="speedVariable" v="Szybkość (zmienna)" />
+
+  <text id="songStepBack" v="Krok do tyłu" />
+  <text id="songStepForward" v="Krok do przodu" />
+  <text id="songJog" v="Gałka pozycji utworu" />
+  <text id="songAbsoluteJog" v="Absolutna pozycja utworu" />
+
+  <text id="prevBookmark" v="Poprzednia zakładka" />
+  <text id="nextBookmark" v="Następna zakładka" />
+  
+  <text id="shortcutJumpBeginning" v="Skocz na początek utworu" />
+  <text id="shortcutJumpB1" v="Skocz do 1 zakładki" />
+  <text id="shortcutJumpB2" v="Skocz do 2 zakładki" />
+  <text id="shortcutJumpB3" v="Skocz do 3 zakładki" />
+  <text id="shortcutJumpB4" v="Skocz do 4 zakładki" />
+  <text id="shortcutJumpB5" v="Skocz do 5 zakładki" />
+  <text id="shortcutJumpB6" v="Skocz do 6 zakładki" />
+  <text id="shortcutJumpB7" v="Skocz do 7 zakładki" />
+  <text id="shortcutJumpB8" v="Skocz do 8 zakładki" />
+  <text id="shortcutJumpB9" v="Skocz do 9 zakładki" />
+
+  <text id="stretchNotes" v="Poszerz panel wyświetlania nadchodzących nut" />
+  <text id="compressNotes" v="Zmniejsz panel wyświetlania nadchodzących nut" />
+  <text id="resetNoteScale" v="Resetuj skalę nadchodzących nut" /> <!-- This "scale" refers to stretching/squishing a visual element on the screen -->
+
+  <text id="octaveUp" v="Przenieś wejście o oktawę wyżej" />
+  <text id="octaveDown" v="Przenieś wejście o oktawę niżej" />
+
+  <text id="pauseStandard" v="Wstrzymaj/Wznów" />
+  <text id="pauseBookmark" v="Włącz/wyłącz tryb edycji zakładek" />
+  <text id="pauseLoop" v="Włącz/wyłącz tryb edycji pętli" />
+  <text id="pauseFingerHint" v="Włącz/wyłącz tryb edycji podpowiedzi palców" />
+
+  <text id="walkLoopForward" v="Przejdź do przodu przez zawartość pętli" />
+  <text id="walkLoopBackward" v="Przejdź do tyłu przez zawartość pętli" />
+  <text id="extendLoopForward" v="Poszerz pętlę na jej końcu" />
+  <text id="extendLoopBackward" v="Poszerz pętlę na jej początku" />
+  <text id="toggleLoop" v="Włącz/wyłącz pętlę" /> <!-- Enables or disables the current loop -->
+
+  <text id="hintL1" v="Włącz/wyłącz podpowiedź 1 palca lewej ręki" />
+  <text id="hintL2" v="Włącz/wyłącz podpowiedź 2 palca lewej ręki" />
+  <text id="hintL3" v="Włącz/wyłącz podpowiedź 3 palca lewej ręki" />
+  <text id="hintL4" v="Włącz/wyłącz podpowiedź 4 palca lewej ręki" />
+  <text id="hintL5" v="Włącz/wyłącz podpowiedź 5 palca lewej ręki" />
+  <text id="hintR1" v="Włącz/wyłącz podpowiedź 1 palca prawej ręki" />
+  <text id="hintR2" v="Włącz/wyłącz podpowiedź 2 palca prawej ręki" />
+  <text id="hintR3" v="Włącz/wyłącz podpowiedź 3 palca prawej ręki" />
+  <text id="hintR4" v="Włącz/wyłącz podpowiedź 4 palca prawej ręki" />
+  <text id="hintR5" v="Włącz/wyłącz podpowiedź 5 palca prawej ręki" />
+  <text id="hintRemove" v="Usuń podpowiedzi palców" />
+
+  <text id="cycleNotationSize" v="Kolejny rozmiar notacji" />
+
+  <!-- Name of an option that lets the user override (by cycling through) which MIDI channel is used
+       when sending their notes to a digital keyboard.  "MIDI" and "Channel" are technical terms -->
+  <text id="cycleOutputMidiChannel" v="Kolejny kanał wyjściowy MIDI" />
+
+  <text id="advancedFps" v="Włącz/wyłącz wyświetlanie FPS" />
+  <text id="advancedMeasures" v="Pokaż/ukryj linie nadchodzących taktów" /> <!-- This refers to a musical "measure" or "bar".  (Not a measurement.) -->
+  <text id="advancedVerboseLogging" v="Włącz/wyłącz zapisywanie logu" />
+  <text id="advancedHiddenNotes" v="Pokaż/ukryj wszystkie nuty" />
+  <text id="advancedReloadUi" v="Przeładuj interfejs użytkownika" />
+  <text id="advancedResizeUi" v="Test zmiany rozmiaru interfejsu" />
+
+
+
+
+  <!-- Settings: User Profiles -->
+  <text id="userProfiles" v="Profile użytkowników" />
+  <text id="anonymousUser" v="Anonimowy użytkownik" />
+
+  <text id="deleteUser" v="Usuń użytkownika!" />
+  <text id="deleteUserHelp" v="Użytkownik zostanie tylko usunięty z listy. Jego statystyki nie zostaną utracone." />
+
+  <text id="newProfile" v="Nowy profil" />
+  <text id="accept" v="Akceptuj" />
+
+  <text id="cannotBeBlank" v="Nazwa nie może być pusta." />
+  <text id="profileAlreadyExists" v="Profil o takiej nazwie już istnieje." />
+
+  <text id="statFirstSong" v="Pierwszy utwór" />
+  <text id="statTotalSongs" v="Łącznie zagranych utworów" />
+  <text id="statMelody" v="Zagranych ćwiczeń melodycznych" />
+  <text id="statRhythm" v="Zagranych ćwiczeń rytmicznych" />
+  <text id="statRecital" v="Zagranych reczitali" />
+  <text id="statTotalNotes" v="Łącznie poprawnych nut" />
+  <text id="statNotesHeld" v="Łączny czas zagranych nut" /> <!-- The sum total of all the time a user has held down notes in their entire career using this application.  Value is something like "3.4 days" -->
+
+  <text id="calculating" v="Obliczanie..." />
+  <text id="never" v="Nigdy" /> <!-- Referring to a date/time that never occurred -->
+  <text id="songCount" v="%1% utworów" />
+  <text id="songCountAllFolders" v="%1% utworów we wszystkich folderach" />
+  <text id="playCount" v="%1% odtworzeń" /> <!-- Number of times a song has been played -->
+  <text id="noteCount" v="%1% nut" />
+
+  <text id="secondCount" v="%1% sekund" />
+  <text id="minuteCount" v="%1% minut" />
+  <text id="hourCount" v="%1% godzin" />
+  <text id="dayCount" v="%1% dni" />
+
+
+
+
+  <!-- Settings: Gameplay/Advanced -->
+  <text id="midiData" v="Dane MIDI" />
+
+  <text id="menuBarT" v="Pasek menu" /> <!-- This is the heading for an option that will allow you to show or hide the top menu bar of the app -->
+  
+  <text id="yourNotesT" v="Twoje nuty" />
+  <text id="yourNotes1" v="Zagraj wszystkie" />
+  <text id="yourNotes2" v="Odtwarzaj tylko zgodne" />
+
+  <text id="noteVolumeT" v="Głośność nut" />
+  <text id="noteVolume1" v="Zgodna z wejściem" />
+  <text id="noteVolume2" v="Używaj głośności utworu" />
+
+  <text id="keyLabelsT" v="Etykiety klawiszy" /> <!-- Refers to labels shown on the piano keys -->
+
+  <text id="melodyContinueT" v="Kontynuuj gdy" />
+  <text id="melodyContinue1" v="Wszystkie nuty zostały naciśnięte jednocześnie" /> <!-- "Continue when ... all notes are held at once." -->
+  <text id="melodyContinue2" v="Każda nuta została naciśnięta" /> <!-- "Continue when ... each note has been pressed." -->
+
+  <text id="bestOctaveT" v="Zakres oktaw klawiatury" />
+  <text id="bestOctave1" v="Dopasuj automatycznie" /> <!-- "Keyboard octave ... [should be] adjusted automatically." -->
+  <text id="bestOctave2" v="Tylko manualnie" /> <!-- "Keyboard octave ... [can only be changed] manually." -->
+  <text id="bestOctaveD" v="Jeżeli masz mniejszą klawiaturę z kilkoma klawiszami, to pomoże Ci to zagrać więcej nut." />
+
+  <text id="melodyMistakeT" v="Nieprawidłowe nuty" />
+  <text id="melodyMistake1" v="Zatrzymaj utwór" /> <!-- "Incorrect notes ... [should] stop the song" -->
+  <text id="melodyMistake2" v="Ignoruj" /> <!-- "Incorrect notes ... [should be] ignored" -->
+
+  <text id="melodyDotsT" v="Kropki wskazujące następne nuty" />
+  <text id="melodyDots1" v="Pokaż na klawiaturze" />
+
+  <text id="particlesT" v="Efekty cząstek" />
+  <text id="particlesD" v="Ukrycie cząstek może poprawić wydajność." />
+
+  <text id="messageBankSelectT" v="Komunikaty Bank Select" />
+  <text id="messageBankSelectD" v="Komunikaty te mogą wyciszyć niektóre urządzenia muzyczne." />
+  <text id="messagePedalT" v="Komunikaty przełącznika nożnego" />
+  <text id="messagePedalD" v="Można rozwiązać problem z wyciszonymi utworami używając syntezatora QuickTime." />
+  <text id="messageSysExT" v="Komunikaty SysEx" />
+  <text id="messageSysExD" v="Niektóre komunikaty SysEx mogą generować problemy z pewnymi urządzeniami muzycznymi." />
+  <text id="messagePrChT" v="Komunikaty Instrument Change" />
+  <text id="messagePrChD" v="Zmień to, jeżeli chcesz wolisz sam kontrolować instrumenty." />
+
+  <text id="choiceOff" v="Wyłączone" />
+  <text id="choiceAllow" v="Zezwalaj" />
+  <text id="choiceFilter" v="Filtruj" />
+  <text id="choiceHidden" v="Ukryte" />
+  <text id="choiceAlwaysShown" v="Zawsze pokazany" />
+  <text id="choiceEnabled" v="Włączone" />
+  <text id="choiceDisabled" v="Wyłączone" />
+  <text id="choiceDefault" v="domyślne" />
+  <text id="choiceMuted" v="Wyciszone" />
+  <text id="choiceSounded" v="Odtwarzane" /> <!-- Makes a sound -->
+
+  <text id="midiChannelsT" v="Kanały ścieżek MIDI" />
+  <text id="midiChannelsD" v="Wymusza używanie osobnego kanału przez każdą ścieżkę, co może pomóc poprawić zminę instrumentów." />
+  <text id="midiChannels1" v="Wymuś uniklane" />
+  <text id="midiChannels2" v="Oryginalne" />
+
+
+
+
+  <!-- Online Service Wait Prompt -->
+  <text id="contactingServer" v="Łączenie z serwerem..." />
+  <text id="serviceThrottled" v="Za dużo nieudanych prób. Spróbuj za godzinę." />
+  <text id="serviceUnknownErr" v="Serwer zwrócił nieznany błąd." />
+  <text id="serviceCannotConnect" v="Nie można połączyć się z serwerem. Sprawdź połączenie internetowe i spróbuj ponownie." />
+
+</UiDescription>

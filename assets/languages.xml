@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageList version="1">
+  <language version="1" suffix="" code="en-US" display="English" />
+  <language version="1" suffix="es" code="es-ES" display="español" />
+  <language version="1" suffix="fr" code="fr-FR" display="français" />
+  <language version="1" suffix="de" code="de" display="Deutsch" />
+  <language version="1" suffix="ru" code="ru" display="Русский язык" />
+  <language version="1" suffix="pt" code="pt-BR" display="português do Brasil" />
+  <language version="1" suffix="pl" code="pl" display="Polski" />
+  <language version="1" suffix="zh" code="zh-TW" display="普通話" />
+  <language version="1" suffix="it" code="it" display="italiano" />
+  <language version="1" suffix="nl" code="nl" display="Nederlands" />
+  <language version="1" suffix="sl" code="sl" display="Slovenščina" />
+  <language version="1" suffix="th" code="th" display="ภาษาไทย" />
+</LanguageList>

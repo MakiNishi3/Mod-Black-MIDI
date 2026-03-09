@@ -1,0 +1,780 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UiDescription>
+
+  <!-- General -->
+  <text id="synthesia" v="Synthesia" /> <!-- Our product name.  Probably the same in all languages. -->
+
+  <text id="continue" v="Naprej" />
+  <text id="back" v="Nazaj" />
+  <text id="cancel" v="Prekliči" />
+  <text id="save" v="Shrani" />
+  <text id="help" v="Pomoč" />
+  <text id="add" v="Dodaj" />
+  <text id="name" v="Ime" />
+  <text id="clear" v="Počisti" /> <!-- to remove, to wipe clean -->
+
+  <text id="textboxHintSearch" v="Išči..." />
+
+  <text id="metronome" v="Metronom" />
+  <text id="bookmarks" v="Zaznamki" />
+  <text id="fingerHints" v="Prstni red" /> <!-- Hints about which finger to use on each piano key -->
+  <text id="sheetMusic" v="Notni zapis" />
+
+
+
+
+  <!-- Title screen -->
+  <text id="playSong" v="Igraj" />
+  <text id="freePlay" v="Prosto igranje" /> <!-- This leads to an area where you are free to play any notes you want.  So "free" as in freedom.  Not "free" as in "zero cost". -->
+  <text id="tutorial" v="Vodič" />
+  <text id="settings" v="Nastavitve" />
+  <text id="exit" v="Izhod" /> <!-- Button that ends/quits/exits the program -->
+
+  <text id="whatsNew" v="Nove skladbe na voljo v naši spletni trgovini" /> <!-- Heading above a list of news entries -->
+  <text id="recentlyPlayed" v="Nedavno igrano" /> <!-- Heading for a list of songs that the user recently played -->
+
+  <text id="feedback1" v="Vam je Synthesia všeč?" />
+  <text id="feedback2" v="Ocenite aplikacijo" />
+  <text id="feedback3" v="Imate težave?" />
+  <text id="feedback4" v="Pišite nam" />
+
+  <!-- All of the following refer to the relative amount of time that has passed since an event.  The %1% is always a whole number between 2 and 60. -->
+  <text id="justNow" v="Pravkar" />
+  <text id="aMinuteAgo" v="Pred minuto" />
+  <text id="minutesAgo" v="%1% minut nazaj" />
+  <text id="anHourAgo" v="Eno uro nazaj" />
+  <text id="hoursAgo" v="%1% ur nazaj" />
+  <text id="aDayAgo" v="Včeraj" />
+  <text id="daysAgo" v="%1% dni nazaj" />
+  <text id="aWeekAgo" v="Prejšnji teden" />
+  <text id="weeksAgo" v="%1% tednov nazaj" />
+  <text id="aMonthAgo" v="Prejšnji mesec" />
+  <text id="monthsAgo" v="%1% mesecev nazaj" />
+  <text id="aYearAgo" v="Lansko leto" />
+  <text id="longAgo" v="Dolgo nazaj" />
+
+  <text id="titleInput" v="Vhodne naprave: %1%" /> <!-- 1: list of music input device names -->
+  <text id="titleOutput" v="Izhodne naprave: %1%" /> <!-- 1: list of music output device names -->
+
+  <text id="noProfile" v="Brez profila" />
+  <text id="noProfileDescription" v="Brez profila, anonimno" />
+  <text id="manageProfiles" v="Uredi profile" />
+
+
+
+
+  <!-- Tutorial screen -->
+  <text id="skipTutorial" v="Preskoči vodič" />
+
+  <text id="tutA1" v="Dobrodošel/la v programu Synthesia!" />
+  <text id="tutA2" v="Nekaj osnovnih navodil v 58 sekundah." />
+
+  <text id="tutB1" v="Za razširitev tipkovice klavirja povleci območje padajočih not." />
+  <text id="tutC1" v="Z dotikom dveh prstov in razširjanjem v območju padajočih not poskusi povečati tipkovnico." /> <!-- We're using Apple's definition of "pinch" which can go in either direction (bigger or small), so this can be a zoom-in or zoom-out -->
+
+  <text id="tutD1" v="Zdaj si ti na vrsti! Skladba se bo ustavila, dokler ne pritisneš prave note." />
+  <text id="tutD2" v="Namig: Številke nakazujejo, kateri prst moraš uporabiti.  Palec nosi oznako 1, mezinec 5." />
+
+  <text id="tutE1" v="Dobro opravljeno!" />
+
+  <text id="tutF1" v="Odlično! Vaja dela mojstra." />
+  <text id="tutF2" v="Uživaj v programu Synthesia!" />
+
+
+
+
+  <!-- Unlock screen -->
+  <text id="demoUnlockT" v="Synthesia preizkusna različica" />
+  <text id="demoUnlock1" v="Ta brezplačna verzija ti omogoča preizkus povezave s klavirjem in preizkus nekaj pesmi. Da bi uporabil/a vse prednosti programa Synthesia, s katerokoli skladbo, ki jo najdeš ali sam/a ustvariš, opravi nakup in odkleni polno verzijo." />
+
+  <text id="unlock" v="Odkleni polno verzijo" />
+  <text id="unlockButton" v="Za nakup obišči spletno stran Synthesie!" />
+  <text id="unlockButton_a" v="Ali kupi ključ za odklepanje z naše spletne strani" />
+
+  <text id="lostKey1" v="Si izgubil/a svoj ključ za odklepanje?" /> <!-- This "key" refers to a software unlock code that enables all the features in the software (not a piano key).  These lines refer to a feature that helps a user recover a key they no longer have. -->
+  <text id="lostKey2" v="Zahteva za ponovno pridobitev" />
+
+  <text id="shortCode1" v="Sem vpiši svojo kodo:" />
+  <text id="shortCode2" v="V redu" />
+
+  <text id="shortCodeValidate" v="Preverjanje ključa..." />
+
+  <text id="shortCodeFailureT" v="ni mogoče najti tipke za odklepanje" />
+  <text id="shortCodeFailure" v="Ta koda se ne ujema s podatki iz naše baze. Prosimo poskusi znova." />
+
+  <text id="unlockOwner" v="Lastnik licence" />
+  <text id="unlockType" v="Tip licence" />
+
+  <text id="unlockPersonal" v="Domača uporaba" />
+  <text id="unlockEducation" v="%1% dovoljenih licenc" /> <!-- 1: the number of licenses allowed (at the same time) by this unlock key -->
+
+  <text id="unlockDuration" v="Brezplačna nadgradnja" /> <!-- Heading in front of either "Until [Date]" or "Forever" -->
+  <text id="unlockDurationUnlimited" v="Za vedno" />
+
+  <text id="inAppDesc" v="Pridobi dostop do ostalih priloženih skladb in uvozi svoje lastne MIDI skladbe." />
+  <text id="inAppDesc_i" v="Pridobi dostop do ostalih priloženih skladb in uvozi svoje lastne preko servisa iTunes File Sharing ali ostalih aplikacij." />
+  <text id="inAppButton" v="Odkleni!" />
+  <text id="inAppButtonPrice" v="Odkleni za le %1%" /> <!-- 1: a price in a localized currency like $4.99 or ¥499 -->
+  <text id="inAppMoreInfo_a" v="Če ste predhodno že kupili odklenitev aplikacije, dobro preverite, da ste pri prijavi v Google Play uporabili isti račun, s katerim ste opravili nakup.  (Včasih pomaga, če napravo ponovno zaženete, da se ponovno prikaže vaš nakup.)" />
+
+  <!-- Question in front of a button that will restore the user's purchase without charging them additional money -->
+  <text id="restore1" v="Si že odklenil/a program?" />
+  <text id="restore2" v="Obnovi nakup" />
+
+  <text id="feature1" v="Igraj priložene skladbe" /> <!-- Heading that describes a feature that becomes available after unlocking: being able to play all of the included songs instead of just a few -->
+  <text id="feature2" v="Synthesia vključuje več kot 150 skladb. Z nakupom odkleneš dostop do vseh.  Vsaka priložena skladba že vsebuje prstne namige in omogoča ločeno vadbo za vsako roko posebej." />
+  <text id="feature3" v="Dodaj svoje lastne skladbe" />
+  <text id="feature4" v="Synthesia lahko zaigra katerokoli MIDI skladbo, ki jo lahko najdeš na internetu, prav tako pa skladbe, ki jih ustvariš sam/a. Za odlične skladbe obišči našo trgovino na naši spletni strani." />
+  <text id="feature4_i" v="Synthesia lahko zaigra katerokoli od milijonov MIDI skladb, ki jo lahko najdeš na internetu prav tako pa skladbe, ki jih ustvariš sam!  Z nakupom ključa za odklepanje boš lahko uvozil/a skladbe preko servisa iTunes File Sharing ali tistih , ki omogočajo &quot;Open in Synthesia&quot; možnost kot naprimer Safari ali Mail." />
+  <text id="feature6" v="Preizkušaj različne inštrumente, nauči se akorde in igraj karkoli želiš.  Vključi stil igranja v ozadju in igraj po svoje." />
+
+  <text id="communicateWithStore_i" v="Vzpostavljam povezavo z App Store..." />
+  <text id="communicateWithStore_a" v="Vzpostavljam povezavo z Google Play..." />
+  <text id="unlocking" v="Odklepam..." />
+  <text id="unlockCongrats" v="Čestitamo, vse je odklenjeno!" />
+
+  <!-- An in-app purchase entitles the user to a discount on our other platforms -->
+  <text id="claimLabel" v="Te zanima Synthesia za osebni računalnik ali Mac-a?" />
+  <text id="claimButton" v="Zahtevaj svoj popust" />
+
+  <text id="unlockRestricted1" v="Na tej tablici nakupi niso omogočeni." />
+  <text id="unlockRestricted2_i" v="(Preveri na Splošno &gt; Omejitve v programu Nastavitve.)" />
+
+  <text id="unlockFailed" v="Med nakupom/obnovitvijo nakupa je prišlo do težav." />
+  <text id="leaveAndReturn" v="(Zapri to okno in poskusi ponovno." />
+
+  <text id="connectionFailed1" v="Med vzpostavljanjem povezave je prišlo do težav." />
+  <text id="connectionFailed2" v="(Ponovno preveri povezavo z internetom.)" />
+
+
+
+
+  <!-- Song Library -->
+  <text id="emptyStillScanning" v="Iščem skladbe, prosim počakaj..." />
+  <text id="emptyWithFilter" v="Ni iskanih skladb. Poskusi počistiti polje Iskanje." />
+  <text id="emptyScannerIdle" v="V tej skupini ni iskanih skladb. Zgoraj izberi drugo skupino." />
+  <text id="emptyIdleTopLevel" v="Ni skladb. Poglej v Nastavitve/Skladbe in jih dodaj." />
+
+  <text id="columnTitle" v="Naslov" />
+  <text id="columnFolder" v="Mapa" />
+  <text id="columnDifficulty" v="Težavnost" />
+  <text id="columnRating" v="Ocena" />
+  <text id="columnPlayCount" v="Igrano" />
+  <text id="columnLastPlayed" v="Nazadnje igrano" />
+
+  <text id="libraryMoreSongs" v="Poišči več skladb" />
+
+  <text id="deleteSongT" v="Si prepričan/a, da želiš DOKONČNO izbrisati to skladbo?" />
+  <text id="deleteSongB" v="Izbriši skladbo!" />
+  <text id="deleteSongT_w" v="Si prepričan/a, da želiš to skladbo premakniti v koš?" /> <!-- "Recycle Bin" is Windows-specific terminology -->
+  <text id="deleteSongB_w" v="Premakni v koš!" />
+  <text id="deleteSongT_m" v="Si prepričan/a, da želiš to skladbo izbrisati?" /> <!-- "Trash" is Mac-specific terminology -->
+  <text id="deleteSongB_m" v="Premakni v smeti!" />
+
+  <text id="songLoading" v="Nalaganje skladbe..." />
+  <text id="loadingError" v="Napaka pri nalaganju skladbe!" />
+
+  <text id="all" v="All" /> <!-- Short for "All Songs" -->
+  <text id="allOneList" v="Vse skladbe (en velik seznam)" />
+  <text id="allGrouped" v="Vse skladbe (združene v mapah)" />
+
+
+
+
+  <!-- Song View -->
+  <text id="songs" v="Skladbe" /> <!-- Button leading to a list of songs -->
+
+  <text id="watchAndListen" v="Glej in poslušaj" />
+
+  <text id="modeMelody1" v="Melodija" />
+  <text id="modeMelody2" v="Skladba čaka na pravo noto" />
+
+  <text id="modeRhythm1" v="Ritem" />
+  <text id="modeRhythm2" v="Konstantna hitrost" />
+
+  <text id="modeRecital1" v="Recital skladbe" />
+  <text id="modeRecital2" v="En poskus pri polni hitrosti" />
+
+  <text id="modeHelp2" v="V načinu &quot;Glej in poslušaj&quot; ne moreš osvojiti točk." />
+  <text id="modeHelp3" v="Za ta način igranja ni statistike napredka. Poskusi zaigrati skladbo!" />
+
+  <text id="leftHand" v="Leva roka" />
+  <text id="rightHand" v="Desna roka" />
+  <text id="bothHands" v="Obe roki" />
+
+  <text id="left" v="Leva" />
+  <text id="right" v="Desna" />
+  <text id="both" v="Obe" />
+
+  <text id="melodyPractice" v="Melodična vaja" />
+  <text id="rhythmPractice" v="Ritmična vaja" />
+
+  <text id="watch1" v="Synthesia zaigra celotno skaldbo povsem avtomatsko." />
+  <text id="watch2" v="Usedi se nazaj in uživaj." />
+  <text id="watch3" v="Poskusi si predstavljati, kako se bodo tvoje roke in prsti premikali." />
+  <text id="watch4" v="Bodi pozoren/a na nenadne melodične in ritmične spremembe." />
+  <text id="watch5" v="To je zabaven način poslušanja skladbe, ki ti je všeč ali način spoznavanja z njo preden jo sam/a poizkusiš." />
+
+  <text id="rhythm1" v="Prilagodi hitrost igranja dokler skladbe ne zaigraš brez napak." />
+  <text id="rhythm2" v="Igraj tako hitro, kot ti najbolj ustreza." />
+  <text id="rhythm3" v="Postopoma napreduj na 100% hitrost." />
+  <text id="rhythm4" v="Najprej vadi melodijo, da bo šlo lažje." />
+  <text id="rhythm5" v="Izogibanje napakam je zelo pomembno. Nikoli ne nastavi hitrosti igranja tako visoko, da boš izgubil/a občutek, kje si." />
+
+  <text id="melody1" v="Skladba bo počakala dokler ne boš zadel prave note na klavirju." />
+  <text id="melody2" v="Vzemi si čas.  Za počasno igranje ni nikakršne kazni." />
+  <text id="melody3" v="Največ pozornosti nameni izogibanju napakam." />
+  <text id="melody4" v="Držanje not do njihovega zapisanega trajanja je prav tako pomembno." />
+  <text id="melody5" v="Če ne boš pozoren/na, lahko razviješ napačen mišični spomin z vsemi napakami vred!" />
+
+  <text id="recital1" v="Zadnji korak, potem ko si se naučil/a melodije in ritma skladbe." />
+  <text id="recital2" v="Hitrost skladbe je določena na 100% in je ne moreš prilagajati. Pred tem načinom igranja, najprej vadi melodijo in ritem." />
+
+  <text id="pointsAveraged" v="Točke prikazujejo povprečje najboljših treh recitalov.  &quot;Obe roki&quot; štejeta tudi pri točkovanju vsake posamezne roke!" />
+  <text id="date" v="Datum" /> <!-- Calendar date column heading in a table -->
+
+  <text id="criteriaAvoidMistakes" v="Zadeni vsako noto in se izogibaj napakam." />
+  <text id="criteriaFullDuration" v="Drži noto tako dolgo, kot mora trajati." />
+  <text id="criteriaFullSpeed" v="Igraj čim bližje 100% hitrosti" />
+
+  <text id="tabInstructions" v="Navodila" />
+  <text id="tabProgress" v="Statistika napredka" />
+  <text id="tabChart" v="Graf napredka" />
+  <text id="tabTable" v="Dosežene točke" />
+
+
+
+
+  <!-- Hands, Colors, and Instruments -->
+  <text id="reset" v="Ponastavi" />
+
+  <!-- Notes that will be played automatically in the background -->
+  <text id="background" v="V ozadju" />
+
+  <!-- Text on a button that will customize a selection -->
+  <text id="custom" v="Po meri" />
+
+  <text id="dragToCopy" v="Kopiraj katerokoli nastavitev tako, da jo povlečeš na drug inštrument." />
+  <text id="allParts" v="Vse nastavitve" />
+
+  <!-- A button that will automatically assign colors to each instrument based on song settings -->
+  <text id="autoColor" v="Samodejna barva" />
+
+  <text id="colorBlue" v="Modra" />
+  <text id="colorGreen" v="Zelena" />
+  <text id="colorOrange" v="Oranžna" />
+  <text id="colorYellow" v="Rumena" />
+  <text id="colorPurple" v="Vijolična" />
+  <text id="colorRed" v="Rdeča" />
+
+  <text id="instrumentsAndHands" v="Roke, barve in inštrumenti" />
+  <text id="assignHands" v="Določi roke enemu ali večim inštrumentom" />
+  <text id="noInput" v="Vklopite napravo za  vnos, da bi pesem igrali sami." />
+
+
+
+
+  <!-- Track splitting screen -->
+
+  <!-- A button that begins a "hand splitting" operation, where every note in the song from the selected time
+  forward, is assigned to the left or right hand based on a horizontal "split point" the user has selected -->
+  <text id="splitFromHere" v="Razdeli od tukaj" />
+
+  <!-- Single-character abbreviations for "[L]eft Hand" and "[R]ight Hand" -->
+  <text id="leftSingle" v="L" />
+  <text id="rightSingle" v="D" />
+
+
+
+
+  <!-- Help popup messages -->
+  <text id="percussionT" v="Zvoka tolkal ni mogoče spremeniti" />
+  <text id="percussion1" v="Izbira inštrumenta je ponavadi možna, zvok tolkal pa je lahko samo zvok tolkal." />
+
+  <text id="importSongsT" v="Dodaj svoje najljubše MIDI skladbe" />
+  <text id="importSongs1" v="Z odklenjenim programom Synthesia je potrebno samo poiskati MIDI datoteke tvojih najljubših skladb.  Poskusi odpreti MIDI datoteko v brskalniku Safari in izberi Odpri v Synthesii s seznama, ki se pojavi." />
+  <text id="importSongs2" v="Če že imaš MIDI skladbe na svojem računalniku, lahko uporabiš tudi servis iTunes File Sharing in jih dodaš v knjižnico skladb programa Synthesia.  Pritisni spodnji gumb in si oglej navodila, kako jih dodati v Apple-ov računalnik." />
+  <text id="importSongsB" v="Pokaži mi, kako deluje servis iTunes File Sharing" />
+
+  <text id="addFoldersT" v="Povej programu Synthesia kje naj išče tvoje MIDI skladbe" />
+  <text id="addFolders1" v="Synthesia preišče mapo, kjer so MIDI skladbe.  Za določanje katere mape naj preišče izberi Nastavitve/Skladbe." />
+  <text id="addFolders2" v="Ko določiš, v katerih mapah Synthesia išče, samo skopiraj MIDI skladbe v eno od teh map in naslednjič, ko boš zagnal/a program, se bo skladba prikazala v knjižnici skladb." />
+  <text id="addFoldersB" v="Odpelji me v Nastavitve!" />
+
+  <text id="resetIconT" v="Za ponastavitev pritisni na gumb strela spodaj levo" />
+  <text id="resetIcon1" v="Za ponastavitev vseh nastavitev zgrabi in povleci znak s strelo na inštrument.  Prav tako ga lahko povlečeš na gumb &quot;Vsi deli&quot; na vrhu okna in tako ponastaviš VSE nastavitve za VSAK inštrument." />
+
+  <text id="songPointsT" v="O točkovanju skladb" />
+  <text id="songPoints1" v="Večja številka zraven imena skladbe prikazuje vse doseženo točke (od stotih), ki si si jih prislužil/a preko vseh poskusov igranja.  Določajo jo najboljši trije poizkusi igranja za vsako roko v vseh načinih igranja: Vaja melodije, ritma in recitala." />
+  <text id="songPoints2" v="Preveri Statistiko napredka, kako lahko dosežeš več točk." />
+
+  <text id="readOnlySongT" v="Skladbe se ne da izbrisati" />
+  <text id="readOnlySong1" v="Izbrana skladba je samo za branje in je ni mogoče izbrisati.  Če jo želiš odstraniti s seznama v knjižnici skladb, odstrani zapis v Nastavitve/Skladbe." />
+
+  <text id="unlockErrorDeactivatedT" v="Ključ za odklepanje ni  več aktiven" />
+  <text id="unlockErrorDeactivated1" v="Ta ključ za odklepanje je bil onemogočen zaradi težav pri plačilu." />
+  <text id="unlockErrorDeactivated2" v="Kontaktiraj support@synthesiagame.com. Poskusili bomo odkriti kaj se je zgodilo." />
+
+  <text id="unlockErrorNoInternetT" v="Ne morem verificirati kode" />
+
+  <text id="unlockErrorTooManyT" v="Preveč poskusov" />
+  <text id="unlockErrorTooMany1" v="Ta koda je bila v zadnjem času večkrat uporabljena.  Pišite nam na support@synthesiagame.com za pomoč." />
+
+  <text id="deviceLost" v="Nepričakovana izguba povezave s klavirjem!  Prosim, preveri če je kabelska povezava v redu in če je klavir prižgan (samodejno ugašanje)!" />
+
+  <text id="songProgressLossT" v="Napredek bo izgubljen!" />
+  <text id="songProgressLoss1" v="Če zdaj nehaš z igranjem, bo trenutni napredek in točke izgubljen." />
+  <text id="songProgressLossB" v="Prenehaj z igranjem!" />
+
+
+
+
+  <!-- Play screen -->
+  <text id="time:" v="Čas:" />
+  <text id="measure:" v="Takt:" /> <!-- This refers to a musical "measure" or "bar".  (Not a measurement.) -->
+  <text id="notes:" v="Note:" />
+  <text id="errors:" v="Napake:" />
+  <text id="points:" v="Točke:" />
+
+  <text id="paused" v="Skladba zaustavljena" />
+
+  <text id="bookmarkInstructions" v="Določi zaznamke na levem robu okna." /> <!-- "bookmark" here means a placeholder in a song -->
+  <text id="bookmarkMidiMarkers" v="MIDI oznake" /> <!-- Refers to the bookmarks stored directly inside the song file (these have a special name: "Markers" instead of "Bookmarks") -->
+
+  <!-- "bookmark" here means a placeholder in a song -->
+  <text id="bookmarkUserBookmarks" v="Moji zaznamki" /> <!-- Refers to bookmarks created by the user -->
+  <text id="bookmarkMetadataBookmarks" v="Metadata zaznamki" /> <!-- Refers to a list of bookmarks loaded from an external file -->
+  <text id="bookmarkKeySignatures" v="Zaznamek ključa" /> <!-- A list of bookmarks automatically generated, one per key signature change in the song -->
+  <text id="clearBookmarks" v="Počisti uporabnikove zaznamke" />
+
+  <text id="loopInstructions" v="Povleci po časovnici in ustvari ponavljanje.  Za fine nastavitve uporabi spodnje ukaze." />
+  <text id="loopStart" v="Začetek" />
+  <text id="entireLoop" v="Premakni" />
+  <text id="loopEnd" v="Konec" />
+
+  <!-- Describes how much preparation time should be inserted each time a section of the song is repeated.  This is the label for a slider control that adjusts the amount of delay. -->
+  <text id="loopDelay" v="Časovni zamik med ponavljanji" />
+
+  <text id="fingerHintInstructions" v="Dodaj prstne namige tako, da zagrabiš padajočo noto in jo povlečeš na pravi prst na roki." />
+
+  <text id="pinchKeyboard" v="Vodoravno razširi velikost tipkovnice na klavirju tako, da z dvemi prsti raztegneš območje padajočih not. Spodaj lahko uporabiš prednastavljeno velikost." />
+  <text id="dragKeyboard" v="Za povečanje pogleda tipkovnice z dvemi prsti raztegni območje padajočih not.  Pogled prilagodi spodaj." />
+
+  <text id="praise0" v="Brezhibno!" />
+  <text id="praise1" v="Odlično!" />
+  <text id="praise2" v="Dobro!" />
+  <text id="praise3" v="V redu!" />
+  <text id="praise4" v="Skoraj!" />
+
+  <text id="combo" v="%1% pravilnih not zapovrstjo!" /> <!-- 1: number of successive notes user has played successfully -->
+
+  <!-- These are options to select which text labels are shown on the music notes -->
+  <text id="labelsNone" v="Brez oznake" />
+  <text id="labelsHints" v="Številke prstnih namigov" />
+  <text id="labelsVirtual" v="Virtualni klavirski zemljevid(rač.tipkovnica)" />
+  <text id="labelsEnglish" v="Angleška imena not" /> <!-- C, C#, D... -->
+  <text id="labelsFixed" v="Fixed-Do imena zlogov" /> <!-- Do, Re, Mi... -->
+  <text id="labelsMovable" v="Movable-Do imena zlogov" /> <!-- Do, Re, Mi... -->
+  <text id="labelsScale" v="Lestvična števila" /> <!-- 1, 2, 3... This "scale" refers to a musical scale -->
+  <text id="labelsOctave" v="Oktave" /> <!-- C1, C2, C3... on each C piano key, for every octave -->
+  <text id="labelsSimple" v="Preprosta imena" /> <!-- C, D, E... on white keys only -->
+
+  <!-- An option that selects whether labels should be shown on every note ("Show All") or only on notes that belong to the song's current key signature ("Use Song's Key") -->
+  <text id="labelsFewer" v="Pokaži le oznake na mojih zaznamkih" />
+  <text id="labelsShowAll" v="Pokaži vse" />
+  <text id="labelsPartial" v="Uporabite ključ pesmi" />
+
+  <!-- 12-note phonetic (solfege/solfeggio/solfeo) note names for your country, with appropriate accents.
+  Correct for Si/Ti, So/Sol, etc.  There must be 12 and they must be separated by a single space, each. -->
+  <text id="solfege" v="Do Di Re Ri Mi Fa Fi Sol Si La Li Ti" />
+
+  <text id="zoom18" v="18 tipk" /> <!-- piano keys -->
+  <text id="zoom25" v="25 tipk" />
+  <text id="zoom88" v="Vseh 88" />
+  <text id="zoomMyNotes" v="Moje note" />
+  <text id="zoomMyKeys" v="Moja tipkovnica" />
+  <text id="zoomSong" v="Samo note v skladbi" />
+
+  <text id="metVolume" v="Glasnost metronoma" />
+  <text id="metStartOnly" v="Igraj samo do začetka skladbe" />
+  <text id="metAlways" v="Igraj vedno" />
+  <text id="met1x" v="1x: normalna hitrost" />
+  <text id="met2x" v="2x: dvojna hitrost" />
+  <text id="metFirst" v="Poudari prvi udarec" />
+  <text id="metEach" v="Enaki udarci" />
+
+  <text id="loopBestMelody" v="Najboljša" />
+  <text id="loopBestRhythm" v="Najboljša:" />
+  <text id="loopCount" v="Ponovitev št. %1%" /> <!-- 1: number of times the section has looped -->
+  <text id="current" v="Trenutna" /> <!-- Heading above statistics for the current loop iteration -->
+
+  <text id="songComposer" v="Skladatelj" />
+  <text id="songArranger" v="Aranžer" />
+  <text id="songCopyright" v="Copyright" />
+  <text id="songMadeFamousBy" v="Izvedba" />
+
+
+
+
+  <!-- Help screen -->
+  <text id="visitShortcuts" v="Poglej pod sekcijo Nastavitve/Bližnjice in kontroliraj vse z računalniško tipkovnico." />
+  <text id="doubleTap" v="Dvojni klik" /> <!-- Tapping like the finger gesture on a touch-screen -->
+
+  <text id="iconPlay" v="Igraj/Pavza" />
+  <text id="iconZoom" v="Pogled" />
+  <text id="iconLabels" v="Oznake not" />
+  <text id="iconLoops" v="Ponavljanje" />
+
+
+
+
+  <!-- Each of these are columns in a table giving statistics about past performances of a song -->
+  <text id="columnPoints" v="Točke" /> <!-- Points earned like in a video game -->
+  <text id="columnNotesHit" v="Zadetek not" />
+  <text id="columnErrors" v="Napake" />
+  <text id="columnActualSpeed" v="Aktualna hitrost" />
+  <text id="columnAvgSpeed" v="Povprečna hitrost" />
+  <text id="columnTimeSpent" v="Čas igranja" />
+  <text id="columnDateEarned" v="Datum" /> <!-- On which date a particular score/points/result/performance was earned -->
+
+  <text id="recital" v="Recital" /> <!-- Indicates a song was played in Recital mode -->
+
+
+
+
+  <!-- Settings (shared) -->
+  <text id="gameplay" v="Igranje igre" />
+  <text id="shortcuts" v="Bližnjice" /> <!-- Keyboard shortcuts like "Ctrl + C" -->
+  <text id="aboutLegal" v="Poglej Preberi me datoteko in splošne pogoje" />
+
+
+
+
+  <!-- Text used on a utility benchmarking (speed testing) screen -->
+  <text id="benchmark" v="Merilo" />
+  <text id="saveToDesktop" v="Shrani na namizje" />
+  <text id="saved" v="Shranjeno!" />
+  <text id="timePerFrame" v="Povprečen čas za okvir" />
+  <text id="timeSpentDrawing" v="Povprečen čas, porabljen za risanje" />
+  <text id="timeSpentUpdating" v="Povprečen čas, porabljen za posodabljanje" />
+  <text id="headingOverall" v="Celotno" />
+  <text id="headingDraw" v="Nariši" />
+  <text id="headingUpdate" v="Posodobi" />
+
+
+  
+
+  <!-- Settings: Music Devices -->
+  <text id="musicDevices" v="Zvočne naprave" />
+  <text id="noDevice" v="(nobena)" />
+
+  <text id="musicInput" v="Vhodna naprava" />
+  <text id="musicOutput" v="Izhodna naprava" />
+  <text id="helpConnecting" v="Potrebuješ pomoč pri vzpostavitvi povezave s klavirjem?" />
+  <text id="keyboardTrouble" v="Tipkovnica se ne odziva?" />
+
+  <text id="bluetooth" v="Nastavitve Bluetooth" /> <!-- The Bluetooth folks say that "Bluetooth" is only allowed to be translated as any of the following: Bluetooth, 藍牙, 蓝牙, ブルートゥース, or 블루투스 -->
+
+  <text id="virtualPianoHelp" v="Virtualni klavir predstavlja tvoja računalniška tipkovnica." />
+
+  <text id="inputIgnore" v="Ignoriraj vhodni signal te naprave" />
+  <text id="deviceUse" v="Uporabi to napravo" />
+  <text id="inputDeviceSettings" v="Nastavitve vhodne naprave" />
+
+  <text id="inputScaleHelp" v="Lestvica glasnosti vpliva na celotno glasnost not iz te naprave.  100% pusti note v nespremenjeni glasnosti." /> <!-- This "scale" refers to volume/loudness scaling -->
+  <text id="resetNoteRange" v="Ponastavi obseg not" />
+  <text id="noteRangeHelp" v="Za nastavitev obsega zaigraj najnižjo in najvišjo noto na tej napravi." />
+
+  <text id="outputDeviceUses" v="Uporabi to napravo za:" />
+  <text id="outputNotes" v="Note" />
+  <text id="outputBackground" v="Inštrumente v ozadju" />
+  <text id="outputPercussion" v="Zvoke tolkal" />
+  <text id="outputEverything" v="Vse" />
+
+  <text id="outputScaleHelp" v="Lestvica glasnosti vpliva na zvoke not, tolkal in udarce metronoma, ki jih program pošlje tej napravi.  100% pusti vse nespremenjeno." /> <!-- This "scale" refers to volume/loudness scaling -->
+
+  <!-- "Local" here is a technical MIDI term.  It's a keyboard setting that can be turned on or off.  -->
+  <text id="outputLocalOff" v="Izklopi lokalno" />
+  <text id="manageLocal" v="Prepreči &quot;lokalne&quot; note" />
+  <text id="localCaution" v="Vsi klavirji ne omogočajo kontrole nad &quot;lokalnimi&quot; notami.  Če jih tvoj omogoča, bo ta nastavitev začasno onemogočila zvoke tvojega klavirja.  To je priročna nastavitev, če želiš omogočiti predvajanje izhodnega signala na drugi izhodni napravi.  Zvok not bo slišen samo na drugi napravi, brez odmeva dvojnega zvoka na tvojem klavirju." />
+
+  <text id="outputIgnore" v="Ne pošlji izhodnega signala tej napravi" />
+  <text id="outputShortMyNotes" v="Moje" /> <!-- Short text shown in a list of which types of notes are sent out to the speakers: the user's notes and/or background notes -->
+
+  <text id="outputChannel" v="MIDI kanal" />
+  <text id="outputChannelHelp" v="Nekatere stare klaviature sprejemajo MIDI samo na enem kanalu.  To je nastavitev, ki vse dele v vsaki skladbi določi samo enemu inštrumentu." />
+
+  <text id="outputSoundSet" v="Nastavitev zvoka:" /> <!-- Which sounds (or "SoundFont" or "set of sounds") should the music synthesizer use? -->
+  <text id="outputReverb" v="Odmev" /> <!-- How much reverb effect should be applied to the sounds coming out of the speakers -->
+
+  <!-- This is a technical MIDI term meaning "all channels", "omni-channel output", or "omnidirectional output" -->
+  <text id="outputOmni" v="Omni (Vsi kanali)" />
+
+  <text id="testHelp" v="Test pošlje signal vsem izhodnim napravam." />
+  <text id="test" v="Test" />
+  <text id="stop" v="Stop" />
+
+  <text id="keyRange" v="%1% tipk" /> <!-- 1: the number of keys this keyboard has, usually something like 49, 61, 76, or 88 -->
+  <text id="unknown" v="Neznano" />
+
+  <text id="volumeScale" v="Glasnost" /> <!-- This "scale" refers to volume/loudness scaling -->
+  <text id="noteRange" v="Obseg not" />
+
+  <!-- Some digital piano models have LED lights built into the keys -->
+  <text id="keyLightsHeading" v="Lučke na tipkah" />
+  <text id="keyLights" v="Številka kanala %1% LED lučk" /> <!-- 1: the MIDI channel number that this keyboard uses for light signals, between 1 and 16.  The "Ch." is an abbreviation for "Channel", like a television or radio "channel".  This is used in a very small location in the application, so it has to be short. -->
+  <text id="keyChannel" v="Kanal %1%" /> <!-- 1: same as above -->
+  <text id="keyChannelMulti" v="Kanal za uporabo različnih lučk za različne prste" /> <!-- Some devices can show a different color light depending on which finger the note corresponds to -->
+  <text id="keyChannelProprietary" v="Lastniški %1%" /> <!-- 1: A simple number (1, 2, 3, etc.).  Some devices use their own proprietary scheme for key lights.  We simply number these. -->
+
+
+
+
+  <!-- Settings: Songs -->
+  <text id="folders" v="Mape" />
+
+  <text id="folderComputer" v="Računalnik" />
+  <text id="folderHome" v="Domov" />
+  <text id="folderDesktop" v="Namizje" />
+  <text id="folderDocuments" v="Datoteke" />
+  <text id="folderMusic" v="Glasba" />
+
+  <!-- Android-specific folder names -->
+  <text id="folderDevice" v="Naprava" />
+  <text id="folderStorage" v="Notranji spomin" />
+  <text id="folderRoot" v="Glavni direktorij" />
+
+  <text id="folderSongCount" v="%1% skladb v tej mapi" />
+  <text id="folderTrouble" v="Pri branju te mape je prišlo do težav!" />
+  <text id="folderMissing" v="Ni direktorija!" />
+  <text id="topLevelRecursive" v="Synthesia ne more iskati skladb po celem računalniku." />
+
+  <text id="searchLocations" v="Iskanje skladb poteka na teh mestih" />
+
+  <text id="folderBuiltIn" v="Priložene skladbe" />
+  <text id="folderItunes" v="iTunes File-Sharing" />
+  <text id="itunesHelp" v="Dodaj skladbe s pomočjo servisa File Sharing pod programi medtem, ko je tvoj iPad povezan z iTunes." />
+
+  <text id="searchFolderOnly" v="Išči samo po vsebini te mape" />
+  <text id="searchSubfolders" v="Išči v tej mapi in vseh podmapah" />
+
+  <text id="showResults" v="Vključi te skladbe v knjižnico skladb" />
+  <text id="hideResults" v="Skrij jih" />
+  <text id="resultsHidden" v="Rezultati skriti" />
+
+  <text id="stopSearching" v="Prenehaj z iskanjem skladb v tej mapi" />
+
+
+
+
+  <!-- Settings: Color Themes -->
+  <text id="colorTheme" v="Barvna shema" />
+  <text id="crystalBlue" v="Kristalno modra" />
+
+
+
+
+  <!-- Settings: Keyboard Shortcuts ("key" usually refers to a typing keyboard in this section but could also mean a piano key) -->
+  <text id="resetToDefault" v="Ponastavi na začetne vrednosti" />
+  <text id="bindKey" v="Pritisni katerokoli tipko na katerikoli napravi" />
+  <text id="deleteShortcut" v="Izbriši bližnjico" />
+  <text id="axisInfo" v="Ta bližnjica deluje na vseh napravah, ki imajo kolešček, kot naprimer kontrolni gumb, gumb za premikanje na miški." />
+
+  <text id="noBinding" v="(noben)" />
+  <text id="keyComma" v="Vejica" />
+  <text id="keyPeriod" v="Pika" />
+  <text id="keySpacebar" v="Presledek" />
+
+  <text id="shortcutHeaderMenu" v="Navigacija po meniju" />
+  <text id="shortcutHeaderSong" v="Navigacija po skladbi" />
+  <text id="shortcutHeaderPlay" v="Kontrola predvajanja" />
+  <text id="shortcutHeaderLoops" v="Ponavljanja" />
+  <text id="shortcutHeaderAdvanced" v="Napredno" />
+
+  <text id="shortcutHelp" v="Pokaži pomoč" />
+
+  <text id="menuProceed" v="Gumb Naprej" />
+  <text id="menuBack" v="Gumb Nazaj" />
+  <text id="selectNext" v="Gumb Izberi naslednjo skladbo" />
+  <text id="selectPrevious" v="Gumb Izberi prejšnjo skladbo" />
+  <text id="nextPage" v="Gumb Naslednja stran" />
+  <text id="previousPage" v="Gumb Prejšnja stran" />
+
+  <text id="parentGroup" v="Premikaj se navzgor po skupinah skladb" />
+
+  <text id="speedUp" v="Povečaj hitrost" />
+  <text id="speedDown" v="Zmanjšaj hitrost" />
+  <text id="speedUpSmall" v="Povečaj hitrost (majhni koraki)" />
+  <text id="speedDownSmall" v="Zmanjšaj hitrost (majhni koraki)" />
+  <text id="speedVariable" v="Hitrost (spremenljiva)" />
+
+  <text id="songStepBack" v="Korak nazaj" />
+  <text id="songStepForward" v="Korak naprej" />
+  <text id="songJog" v="Položaj skladbe Jog" />
+  <text id="songAbsoluteJog" v="Absolutni položaj skladbe" />
+
+  <text id="prevBookmark" v="Prejšnji zaznamek" />
+  <text id="nextBookmark" v="Naslednji zaznamek" />
+  
+  <text id="shortcutJumpBeginning" v="Skoči na začetek skladbe" />
+  <text id="shortcutJumpB1" v="Skoči na zaznamek številka 1" />
+  <text id="shortcutJumpB2" v="Skoči na zaznamek številka 2" />
+  <text id="shortcutJumpB3" v="Skoči na zaznamek številka 3" />
+  <text id="shortcutJumpB4" v="Skoči na zaznamek številka 4" />
+  <text id="shortcutJumpB5" v="Skoči na zaznamek številka 5" />
+  <text id="shortcutJumpB6" v="Skoči na zaznamek številka 6" />
+  <text id="shortcutJumpB7" v="Skoči na zaznamek številka 7" />
+  <text id="shortcutJumpB8" v="Skoči na zaznamek številka 8" />
+  <text id="shortcutJumpB9" v="Skoči na zaznamek številka 9" />
+
+  <text id="stretchNotes" v="Raztegni velikost padajočih not" />
+  <text id="compressNotes" v="Skrči velikost padajočih not" />
+  <text id="resetNoteScale" v="Ponastavi velikost padajočih not" /> <!-- This "scale" refers to stretching/squishing a visual element on the screen -->
+
+  <text id="octaveUp" v="Premakni vhodni signal za oktavo gor" />
+  <text id="octaveDown" v="Premakni vhodni signal za oktavo dol" />
+
+  <text id="pauseStandard" v="Pavza/Nadaljuj" />
+  <text id="pauseBookmark" v="Preklopi v urejanje zaznamkov" />
+  <text id="pauseLoop" v="Preklopi v urejanje ponavljanj" />
+  <text id="pauseFingerHint" v="Preklopi v urejanje prstnih namigov" />
+
+  <text id="walkLoopForward" v="Premakni celotno ponavljanje naprej" />
+  <text id="walkLoopBackward" v="Premakni celotno ponavljanje nazaj" />
+  <text id="extendLoopForward" v="Poajlšaj konec ponavljanja naprej" />
+  <text id="extendLoopBackward" v="Podaljšaj začetek ponavljanja nazaj" />
+  <text id="toggleLoop" v="Preklopi v ponavljanje" /> <!-- Enables or disables the current loop -->
+
+  <text id="hintL1" v="Preklopi na namig 1 prsta leve roke" />
+  <text id="hintL2" v="Preklopi na namig 2 prsta leve roke" />
+  <text id="hintL3" v="Preklopi na namig 3 prsta leve roke" />
+  <text id="hintL4" v="Preklopi na namig 4 prsta leve roke" />
+  <text id="hintL5" v="Preklopi na namig 5 prsta leve roke" />
+  <text id="hintR1" v="Preklopi na namig 1 prsta desne roke" />
+  <text id="hintR2" v="Preklopi na namig 2 prsta desne roke" />
+  <text id="hintR3" v="Preklopi na namig 3 prsta desne roke" />
+  <text id="hintR4" v="Preklopi na namig 4 prsta desne roke" />
+  <text id="hintR5" v="Preklopi na namig 5 prsta desne roke" />
+  <text id="hintRemove" v="Odstrani prstni namig" />
+
+  <text id="cycleNotationSize" v="Velikost notnega cikla" />
+
+  <!-- Name of an option that lets the user override (by cycling through) which MIDI channel is used
+       when sending their notes to a digital keyboard.  "MIDI" and "Channel" are technical terms -->
+  <text id="cycleOutputMidiChannel" v="Kanal izhodnega MIDI cikla" />
+
+  <text id="advancedFps" v="Preklopi v FPS Display" />
+  <text id="advancedMeasures" v="Preklopi v padajoče taktnice" /> <!-- This refers to a musical "measure" or "bar".  (Not a measurement.) -->
+  <text id="advancedVerboseLogging" v="Preklopi na Verbose Logging" />
+  <text id="advancedHiddenNotes" v="Preklopi v Vse note skrite" />
+  <text id="advancedReloadUi" v="Ponovno naloži opis uporabnikovega vmesnika" />
+  <text id="advancedResizeUi" v="Test spremembe velikosti uporabnikovega vmesnika" />
+
+
+
+
+  <!-- Settings: User Profiles -->
+  <text id="userProfiles" v="Profili uporabnikov" />
+  <text id="anonymousUser" v="Neznani uporabnik" />
+
+  <text id="deleteUser" v="Izbriši uporabnika!" />
+  <text id="deleteUserHelp" v="Uporabnik je odstranjen samo s seznama. Statistika se ne izbriše." />
+
+  <text id="newProfile" v="Nov profil" />
+  <text id="accept" v="Sprejmi" />
+
+  <text id="cannotBeBlank" v="Ime ne sme biti prazno." />
+  <text id="profileAlreadyExists" v="Profil s tem imenom že obstaja." />
+
+  <text id="statFirstSong" v="Prva zaigrana skladba" />
+  <text id="statTotalSongs" v="Skupno številko igranih skladb" />
+  <text id="statMelody" v="Število zaigranih skladb v načinu Melodija" />
+  <text id="statRhythm" v="Število zaigranih skladb v načinu Ritem" />
+  <text id="statRecital" v="Število zaigranih skladb v načinu Recital" />
+  <text id="statTotalNotes" v="Skupno število pravilno zaigranih not" />
+  <text id="statNotesHeld" v="Vsota vseh zaigranih not" /> <!-- The sum total of all the time a user has held down notes in their entire career using this application.  Value is something like "3.4 days" -->
+
+  <text id="calculating" v="Izračunavam..." />
+  <text id="never" v="Nikoli" /> <!-- Referring to a date/time that never occurred -->
+  <text id="songCount" v="%1% skladb" />
+  <text id="songCountAllFolders" v="%1% skladb v vseh mapah" />
+  <text id="playCount" v="%1% zaigrano" /> <!-- Number of times a song has been played -->
+  <text id="noteCount" v="%1% not" />
+
+  <text id="secondCount" v="%1% sekund" />
+  <text id="minuteCount" v="%1% minut" />
+  <text id="hourCount" v="%1% ur" />
+  <text id="dayCount" v="%1% dni" />
+
+
+
+
+  <!-- Settings: Gameplay/Advanced -->
+  <text id="midiData" v="MIDI Data" />
+
+  <text id="menuBarT" v="Meniska vrstica" /> <!-- This is the heading for an option that will allow you to show or hide the top menu bar of the app -->
+  
+  <text id="yourNotesT" v="Tvoje note" />
+  <text id="yourNotes1" v="Zaigraj vse" />
+  <text id="yourNotes2" v="Zaigraj samo pravilne zaigrane note" />
+
+  <text id="noteVolumeT" v="Glasnost not" />
+  <text id="noteVolume1" v="Izenači z vhodnim signalom" />
+  <text id="noteVolume2" v="Predvajaj glasnost iz skladbe" />
+
+  <text id="keyLabelsT" v="Oznake tipk" /> <!-- Refers to labels shown on the piano keys -->
+
+  <text id="melodyContinueT" v="Nadaljuj ko" />
+  <text id="melodyContinue1" v="so vse note pritisnjene naenkrat" /> <!-- "Continue when ... all notes are held at once." -->
+  <text id="melodyContinue2" v="so bile pritisnjene vse note (lahko vsaka posebej)" /> <!-- "Continue when ... each note has been pressed." -->
+
+  <text id="bestOctaveT" v="Oktava tipkovnice" />
+  <text id="bestOctave1" v="Nastavi avtomatsko" /> <!-- "Keyboard octave ... [should be] adjusted automatically." -->
+  <text id="bestOctave2" v="Samo ročno" /> <!-- "Keyboard octave ... [can only be changed] manually." -->
+  <text id="bestOctaveD" v="Če imaš manjšo tipkovnico na klavirju z manj tipkami, ti to lahko pomaga doseči več not." />
+
+  <text id="melodyMistakeT" v="Nepravilne note" />
+  <text id="melodyMistake1" v="Ustavi skladbo" /> <!-- "Incorrect notes ... [should] stop the song" -->
+  <text id="melodyMistake2" v="Jih ne upoštevaj" /> <!-- "Incorrect notes ... [should be] ignored" -->
+
+  <text id="melodyDotsT" v="Pika v pomoč pri naslednji noti" />
+  <text id="melodyDots1" v="Prikaži na tipkovnici" />
+
+  <text id="particlesT" v="Efekt ob pritisku tipke" />
+  <text id="particlesD" v="Če izbereš možnost skrij, lahko izboljšaš hitrost programa." />
+
+  <text id="messageBankSelectT" v="Sporočila izbire banke podatkov" />
+  <text id="messageBankSelectD" v="Z omogočanjem sporočil izbire banke podatkov, lahko nekatere naprave izgubijo vhodni signal." />
+  <text id="messagePedalT" v="Sporočila za pedal" />
+  <text id="messagePedalD" v="Lahko popravi skladbe, ki ne pošiljajo vhodnega signala z uporabo QuickTime synth." />
+  <text id="messageSysExT" v="SysEx sporočila" />
+  <text id="messageSysExD" v="Nekatera SysEx sporočila lahko povzročajo težave določenim napravam." />
+  <text id="messagePrChT" v="Sporočila o spremembah inštrumentov" />
+  <text id="messagePrChD" v="Sšremeni, če inštrumente raje kontroliraš sam/a." />
+
+  <text id="choiceOff" v="Izklopljen" />
+  <text id="choiceAllow" v="Dovoli" />
+  <text id="choiceFilter" v="Filtrirano" />
+  <text id="choiceHidden" v="Skrito" />
+  <text id="choiceAlwaysShown" v="Vedno prikazano" />
+  <text id="choiceEnabled" v="Omogočeno" />
+  <text id="choiceDisabled" v="Ni omogočeno" />
+  <text id="choiceDefault" v="(prednastavljeno)" />
+  <text id="choiceMuted" v="Utišano" />
+  <text id="choiceSounded" v="Zvok" /> <!-- Makes a sound -->
+
+  <text id="midiChannelsT" v="MIDI Track kanali" />
+  <text id="midiChannelsD" v="Če je omogočeno, da vsak track uporablja svoj enkraten kanal, lahko lažje uveljavljaš spremembe inštrumentov." />
+  <text id="midiChannels1" v="Vsili svoj MIDI kanal za vsak track" />
+  <text id="midiChannels2" v="Uporabi originalni kanal" />
+
+
+
+
+  <!-- Online Service Wait Prompt -->
+  <text id="contactingServer" v="Povezujem se na server..." />
+  <text id="serviceThrottled" v="Preveč ponesrečenih poizkusov.  Poizkusi ponovno čez eno uro." />
+  <text id="serviceUnknownErr" v="Server je vrnil neznano napako." />
+  <text id="serviceCannotConnect" v="Povezava s serverjem ni uspela. Preveri svojo internetno povezavo in ponovno poizkusi." />
+
+</UiDescription>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SynthesiaMetadata Version="1">
+  <Songs>
+    <Song UniqueId="8d331230ed8209af75d93bb9b1618dc7" Title="Chorale Setting in F Major" Composer="J. S. Bach" Difficulty="50" FingerHints=" t1: 68 m3: -70 m5: 88760 m9: 680 m11: 9760 m15: -0909760 m19: --0 m21: 7076906096 t2: 12452 m5: -2151 m8: 33 m10: 15151515-33-1 m16: 155153 m19: 3-13131515153 m24: 1551" HandParts="4f96d9e49407cc88eee6e180a4915f96;2a91f2fbcf227783f9ebe63b30979f61;098e71e343c8ccdad325a33ace3840e3" />
+    <Song UniqueId="8a366cf9707347bc41720dea95b51799" Title="Menuet (Trio)" Composer="G.F. Handel" Difficulty="50" FingerHints=" t1: 0678-969----6 m4: 86-986089788670706 m7: 86-0897 m8: 87606--6760 m11: 760897 m12: 86769--809 m14: --9--906---679768--786-9696--86 m20: 86-986-706--78606--6706-87 m24: 6 t2: 13 m2: --45151253215 m7: --21251-1 m11: 1 m12: 4 m13: --1--4 m16: 12515212-41512532154 m23: 1415" HandParts="b08b775424516f612ee235e4384e3a50;b337b87f95a46d9b1d99d87c13abe6a3;bd8590056d0fbbc0acb90c65c4a53932" />
+    <Song UniqueId="d01a2e1b4d468294c66b2c94a3cd9603" Title="Ode To Joy" Subtitle="Jamboxx" HandParts="d41d8cd98f00b204e9800998ecf8427e;28d1909fef4a2632acd36b4c981d1212;28d1909fef4a2632acd36b4c981d1212" Parts="t6:RA" />
+    <Song UniqueId="9c0b65eb8f8446e9777cab6e5b4afd48" Title="America The Beautiful" Subtitle="Jamboxx" HandParts="d41d8cd98f00b204e9800998ecf8427e;af4525b3bd428fc3b460a42be8a129ae;af4525b3bd428fc3b460a42be8a129ae" Parts="t6:RA" />
+    <Song UniqueId="18a70c3a239c05b4298dd78a7afb2e0a" Title="When The Saints Come Marching In" Subtitle="Jamboxx" HandParts="d41d8cd98f00b204e9800998ecf8427e;42471c9954bf722997385f79ea81a3dd;42471c9954bf722997385f79ea81a3dd" Parts="t7:RA" />
+    <Song UniqueId="83de1ad0a595082581c71cd164368a9e" Title="Four Seasons - Spring" Subtitle="Jamboxx" Composer="Antonio Vivaldi" HandParts="d41d8cd98f00b204e9800998ecf8427e;f64b27dac571d9137cb4e4ac126f4946;f64b27dac571d9137cb4e4ac126f4946" Parts="t7:RA" />
+    <Song UniqueId="94b186e18ef26516668c21c6538ce272" Title="Twinkle Twinkle Little Star" Subtitle="Jamboxx" HandParts="d41d8cd98f00b204e9800998ecf8427e;084c55ae41924083856ed5b07c9c11ce;084c55ae41924083856ed5b07c9c11ce" Parts="t7:RA" />
+  </Songs>
+  <Groups>
+    <Group Name="Keyboard Classics">
+      <Song UniqueId="8d331230ed8209af75d93bb9b1618dc7" />
+      <Song UniqueId="8a366cf9707347bc41720dea95b51799" />
+    </Group>
+    <Group Name="Jamboxx">
+      <Song UniqueId="d01a2e1b4d468294c66b2c94a3cd9603" />
+      <Song UniqueId="9c0b65eb8f8446e9777cab6e5b4afd48" />
+      <Song UniqueId="18a70c3a239c05b4298dd78a7afb2e0a" />
+      <Song UniqueId="83de1ad0a595082581c71cd164368a9e" />
+      <Song UniqueId="94b186e18ef26516668c21c6538ce272" />
+    </Group>
+  </Groups>
+</SynthesiaMetadata>

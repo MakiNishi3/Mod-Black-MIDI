@@ -1,0 +1,204 @@
+<InputBindingList version="1">
+  <Action name="Absolute Song Position" version="1">
+    <Binding version="1" name="Mouse Wheel" />
+  </Action>
+  <Action name="Change Notation Size" version="1">
+    <Binding version="1" name="F3" />
+  </Action>
+  <Action name="Compress Falling Notes" version="1">
+    <Binding version="1" name="Page Down" />
+  </Action>
+  <Action name="Cycle Output MIDI Channel" version="1" />
+  <Action name="Exit Synthesia" version="1" />
+  <Action name="Extend Loop Backward" version="1">
+    <Binding version="1" name="Key" value="44" control="1" />
+  </Action>
+  <Action name="Extend Loop Forward" version="1">
+    <Binding version="1" name="Key" value="46" control="1" />
+  </Action>
+  <Action name="Step Forward" version="1">
+    <Binding version="1" name="Right" />
+    <Binding version="1" name="Next Track" />
+    <Binding version="1" name="MMC Fast Forward" />
+  </Action>
+  <Action name="Jump to Bookmark 1" version="1">
+    <Binding version="1" name="Key" value="50" />
+  </Action>
+  <Action name="Jump to Bookmark 2" version="1">
+    <Binding version="1" name="Key" value="51" />
+  </Action>
+  <Action name="Jump to Bookmark 3" version="1">
+    <Binding version="1" name="Key" value="52" />
+  </Action>
+  <Action name="Jump to Bookmark 4" version="1">
+    <Binding version="1" name="Key" value="53" />
+  </Action>
+  <Action name="Jump to Bookmark 5" version="1">
+    <Binding version="1" name="Key" value="54" />
+  </Action>
+  <Action name="Jump to Bookmark 6" version="1">
+    <Binding version="1" name="Key" value="55" />
+  </Action>
+  <Action name="Jump to Bookmark 7" version="1">
+    <Binding version="1" name="Key" value="56" />
+  </Action>
+  <Action name="Jump to Bookmark 8" version="1">
+    <Binding version="1" name="Key" value="57" />
+  </Action>
+  <Action name="Jump to Bookmark 9" version="1">
+    <Binding version="1" name="Key" value="48" />
+  </Action>
+  <Action name="Jump to Start" version="1">
+    <Binding version="1" name="Key" value="49" />
+  </Action>
+  <Action name="Menu Back" version="1">
+    <Binding version="1" name="Escape" />
+    <Binding version="1" name="Back" />
+  </Action>
+  <Action name="Menu Continue" version="1">
+    <Binding version="1" name="Enter" />
+    <Binding version="1" name="Forward" />
+  </Action>
+  <Action name="Menu Next Page" version="1">
+    <Binding version="1" name="Page Down" />
+  </Action>
+  <Action name="Menu Previous Page" version="1">
+    <Binding version="1" name="Page Up" />
+  </Action>
+  <Action name="Menu Select Next Item" version="1">
+    <Binding version="1" name="Down" />
+  </Action>
+  <Action name="Menu Select Previous Item" version="1">
+    <Binding version="1" name="Up" />
+  </Action>
+  <Action name="Next Bookmark" version="1">
+    <Binding version="1" name="Key" value="46" />
+  </Action>
+  <Action name="Pause/Resume" version="1">
+    <Binding version="1" name="Key" value="32" />
+    <Binding version="1" name="MMC Play" />
+    <Binding version="1" name="Play/Pause" />
+  </Action>
+  <Action name="Previous Bookmark" version="1">
+    <Binding version="1" name="Key" value="44" />
+  </Action>
+  <Action name="Previous Song Group" version="1">
+    <Binding version="1" name="Key" value="96" />
+  </Action>
+  <Action name="Remove Finger Hint" version="1">
+    <Binding version="1" name="Key" value="96" />
+  </Action>
+  <Action name="Reload UI description" version="1" />
+  <Action name="Reset Falling Note Scale" version="1" />
+  <Action name="Restart Loop" version="1">
+    <Binding version="1" name="Backspace" />
+  </Action>
+  <Action name="Step Backward" version="1">
+    <Binding version="1" name="Left" />
+    <Binding version="1" name="Previous Track" />
+    <Binding version="1" name="MMC Rewind" />
+  </Action>
+  <Action name="Shift Input Octave Down" version="1">
+    <Binding version="1" name="Key" value="122" />
+  </Action>
+  <Action name="Shift Input Octave Up" version="1">
+    <Binding version="1" name="Key" value="120" />
+  </Action>
+  <Action name="Show Gameplay Help" version="1">
+    <Binding version="1" name="F1" />
+  </Action>
+  <Action name="Song Position Jog" version="1" />
+  <Action name="Speed (variable)" version="1">
+    <Binding version="1" name="Mouse Wheel" control="1" />
+  </Action>
+  <Action name="Speed Down" version="1">
+    <Binding version="1" name="Down" />
+  </Action>
+  <Action name="Speed Down (small step)" version="1">
+    <Binding version="1" name="Down" control="1" />
+  </Action>
+  <Action name="Speed Up" version="1">
+    <Binding version="1" name="Up" />
+  </Action>
+  <Action name="Speed Up (small step)" version="1">
+    <Binding version="1" name="Up" control="1" />
+  </Action>
+  <Action name="Start/Stop Recording" version="1">
+    <Binding version="1" name="MMC Record Strobe" />
+  </Action>
+  <Action name="Stretch Falling Notes" version="1">
+    <Binding version="1" name="Page Up" />
+  </Action>
+  <Action name="Toggle All Notes Hidden" version="1">
+    <Binding version="1" name="F5" />
+  </Action>
+  <Action name="Toggle Sheet Music" version="1">
+    <Binding version="1" name="F2" />
+  </Action>
+  <Action name="Toggle Bookmark at Current Position" version="1">
+    <Binding version="1" name="Key" value="63" />
+  </Action>
+  <Action name="Toggle Bookmark Editing Mode" version="1">
+    <Binding version="1" name="Key" value="98" />
+  </Action>
+  <Action name="Toggle FPS Display" version="1">
+    <Binding version="1" name="F6" />
+  </Action>
+  <Action name="Toggle Falling Measure Lines" version="1">
+    <Binding version="1" name="F4" />
+  </Action>
+  <Action name="Toggle Finger Hint Editing Mode" version="1">
+    <Binding version="1" name="Key" value="110" />
+  </Action>
+  <Action name="Toggle Finger Hint L1" version="1">
+    <Binding version="1" name="Key" value="49" />
+  </Action>
+  <Action name="Toggle Finger Hint L2" version="1">
+    <Binding version="1" name="Key" value="50" />
+  </Action>
+  <Action name="Toggle Finger Hint L3" version="1">
+    <Binding version="1" name="Key" value="51" />
+  </Action>
+  <Action name="Toggle Finger Hint L4" version="1">
+    <Binding version="1" name="Key" value="52" />
+  </Action>
+  <Action name="Toggle Finger Hint L5" version="1">
+    <Binding version="1" name="Key" value="53" />
+  </Action>
+  <Action name="Toggle Finger Hint R1" version="1">
+    <Binding version="1" name="Key" value="54" />
+    <Binding version="1" name="Key" value="33" />
+  </Action>
+  <Action name="Toggle Finger Hint R2" version="1">
+    <Binding version="1" name="Key" value="55" />
+    <Binding version="1" name="Key" value="64" />
+  </Action>
+  <Action name="Toggle Finger Hint R3" version="1">
+    <Binding version="1" name="Key" value="56" />
+    <Binding version="1" name="Key" value="35" />
+  </Action>
+  <Action name="Toggle Finger Hint R4" version="1">
+    <Binding version="1" name="Key" value="57" />
+    <Binding version="1" name="Key" value="36" />
+  </Action>
+  <Action name="Toggle Finger Hint R5" version="1">
+    <Binding version="1" name="Key" value="48" />
+    <Binding version="1" name="Key" value="37" />
+  </Action>
+  <Action name="Toggle Full Logging" version="1">
+    <Binding version="1" name="F7" />
+  </Action>
+  <Action name="Toggle Loop" version="1">
+    <Binding version="1" name="Key" value="47" />
+  </Action>
+  <Action name="Toggle Loop Editing Mode" version="1">
+    <Binding version="1" name="Key" value="118" />
+  </Action>
+  <Action name="UI Resize Test" version="1" />
+  <Action name="Walk Loop Backward" version="1">
+    <Binding version="1" name="Key" value="60" />
+  </Action>
+  <Action name="Walk Loop Forward" version="1">
+    <Binding version="1" name="Key" value="62" />
+  </Action>
+</InputBindingList>
